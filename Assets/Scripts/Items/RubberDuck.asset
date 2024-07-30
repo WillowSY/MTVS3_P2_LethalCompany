@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0088a767ad5e4b44992f0dc23ebb4e0c, type: 3}
+  m_Name: RubberDuck
+  m_EditorClassIdentifier: 
+  scrapName: RubberDuck
+  scrapPrice: 50
+  scrapWeight: 7
+  scrapPrefab: {fileID: 5473283246025901519, guid: 34fe70551404991419ed8a4a42e8c88f, type: 3}
