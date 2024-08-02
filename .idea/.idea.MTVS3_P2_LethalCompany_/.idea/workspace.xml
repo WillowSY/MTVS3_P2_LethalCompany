@@ -5,12 +5,170 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45f9bfd8-cab2-44e0-ad9d-c1044f663f74" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/PlayerMatertials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/PlayerMatertials/LethalCompanyScavenger.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/PlayerMatertials/LethalCompanyScavenger.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/PlayerMatertials/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/PlayerMatertials/New Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/PlayerMatertials/ScavengerPlayerModel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/PlayerMatertials/ScavengerPlayerModel.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/PlayerPrefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/PlayerPrefabs/LethalCompanyScavenger.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/PlayerPrefabs/LethalCompanyScavenger.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/PlayerPrefabs/Status.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/PlayerPrefabs/Status.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/UI_Texture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/UI_Texture/SprintMeter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/UI_Texture/SprintMeter.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/UI_Texture/selfTPoseFilled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/UI_Texture/selfTPoseFilled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/UI_Texture/selfTPoseOutlineB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/UI_Texture/selfTPoseOutlineB.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/InventoryScripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/InventoryScripts/Inventory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/InventoryScripts/Inventory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/InventoryScripts/Item.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/InventoryScripts/Item.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/InventoryScripts/ItemData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/InventoryScripts/ItemData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/InventoryScripts/Slot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/InventoryScripts/Slot.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/FancyLamp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/FancyLamp/FancyLamp.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/FancyLamp/FancyLamp.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/FancyLamp/FancyLamp.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/FancyLamp/FancyLamp.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Honk.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Honk/AirHone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Honk/AirHone.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Honk/Honk_Baked.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Honk/Honk_Baked.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Honk/Honk_Baked.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Honk/Honk_Baked.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Key.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Key/Key.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Key/Key.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Key/Key.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Key/Key.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/BigBolt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/BigBolt.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/BottlePack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/BottlePack.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/DustPan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/DustPan.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/FancyLamp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/FancyLamp.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/FlashLight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/FlashLight.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/Flashbang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/Flashbang.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/Flask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/Flask.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/Key.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/Key.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/LockPick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/LockPick.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/Present.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/Present.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/Shovel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/Shovel.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/V-typeEngine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/V-typeEngine.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/largeAxle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LC Sprite/largeAxle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/Large Axel Finished Variant.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/Large Axel Finished Variant.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/Large Axel Finished(Clone).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/Large Axel Finished(Clone).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/Large Axel Finished.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/Large Axel Finished.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/LargeAxel.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/LargeAxel.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/LargeAxelTexture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/LargeAxelTexture/Large_Axel_standardSurface1_BaseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/LargeAxelTexture/Large_Axel_standardSurface1_BaseColor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/LargeAxelTexture/Large_Axel_standardSurface1_Metallic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/LargeAxelTexture/Large_Axel_standardSurface1_Metallic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/LargeAxelTexture/Large_Axel_standardSurface1_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/LargeAxelTexture/Large_Axel_standardSurface1_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/LargeAxelTexture/Large_Axel_standardSurface1_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/LargeAxel/LargeAxelTexture/Large_Axel_standardSurface1_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/FancyLamp_Bake1_PBR_Diffuse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/FancyLamp_Bake1_PBR_Diffuse.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/Honk_Bake1_PBR_Diffuse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/Honk_Bake1_PBR_Diffuse.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/NutBase1_Bake1_PBR_Diffuse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/NutBase1_Bake1_PBR_Diffuse.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/NutBase2_Bake1_PBR_Diffuse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/NutBase2_Bake1_PBR_Diffuse.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/NutScrew1_Bake1_PBR_Diffuse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/NutScrew1_Bake1_PBR_Diffuse.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/NutScrew2_Bake1_PBR_Diffuse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/NutScrew2_Bake1_PBR_Diffuse.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/Rubber Ducky_Bake1_PBR_Diffuse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/ModelMap/Rubber Ducky_Bake1_PBR_Diffuse.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Nut_1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Nut_1/Big bolt.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Nut_1/Big bolt.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Nut_1/Big bolt.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Nut_1/Big bolt.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/Present Variant.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/Present Variant.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/Present.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/Present.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/Present.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/Present.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/Present.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/Present.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/PresentTexture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/PresentTexture/Present_unwrapped_standardSurface1_BaseCol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/PresentTexture/Present_unwrapped_standardSurface1_BaseCol.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/PresentTexture/Present_unwrapped_standardSurface1_Metalli.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/PresentTexture/Present_unwrapped_standardSurface1_Metalli.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/PresentTexture/Present_unwrapped_standardSurface1_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/PresentTexture/Present_unwrapped_standardSurface1_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/PresentTexture/Present_unwrapped_standardSurface1_Roughne.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Present/PresentTexture/Present_unwrapped_standardSurface1_Roughne.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/RubberDuck.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/RubberDuck/Rubber Duck.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/RubberDuck/Rubber Duck.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/RubberDuck/Rubber Duck.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/RubberDuck/Rubber Duck.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/RubberDuck/RubberDucky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/RubberDuck/RubberDucky.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Scrap Items.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Scrap Items.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Shovel/Shove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/Shovel/Shove.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Scripts/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Scripts/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Scripts/PlayerRaycast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Scripts/PlayerRaycast.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Scripts/playerCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Scripts/playerCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/ItemReplaceSample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/ItemReplaceSample.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/StartFiled.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/StartFiled.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/UI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/UI/Fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/UI/Fonts/temp.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/UI/Fonts/temp.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/BigBolt.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/BigBolt.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/FancyLamp.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/FancyLamp.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/LargeAxel.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/LargeAxel.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/RubberDuck.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/RubberDuck.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/ScrapData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/ScrapData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/ScrapSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/ScrapSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/temp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/temp.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,26 +190,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging dev__kbs",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev__kbs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\Admin\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Admin\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Unity.exe" />
@@ -100,6 +258,8 @@
       <updated>1718686942037</updated>
       <workItem from="1718686943249" duration="902000" />
       <workItem from="1722496106907" duration="3521000" />
+      <workItem from="1722585223195" duration="760000" />
+      <workItem from="1722586408783" duration="7007000" />
     </task>
     <servers />
   </component>
