@@ -1,7 +1,11 @@
+<<<<<<< Updated upstream
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+=======
+using UnityEngine;
+>>>>>>> Stashed changes
 public class PlayerRaycast : MonoBehaviour
 {
     public Inventory inventory;

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eebd3e47466839d4aba1f1e7fa308c21, type: 3}
+  m_Name: LargeAxel
+  m_EditorClassIdentifier: 
+  itemName: 
+  icon: {fileID: 21300000, guid: 21f7ed5191b884f4298fc00dda6e2f06, type: 3}
+  weight: 12
+  price: 40
+  itemPrefab: {fileID: 8951495124191465802, guid: c500b94ffce53e14eb9fefcaf5e2f286, type: 3}
