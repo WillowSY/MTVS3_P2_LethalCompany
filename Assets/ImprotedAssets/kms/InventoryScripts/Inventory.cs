@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,8 @@ public class Inventory : MonoBehaviour
     public Image quickSlotIcon_3;
     public Image quickSlotIcon_4;
 
+    public Sprite defaultSprite;
+
     public GameObject player;
     
     // 퀵슬롯 배열. 4개의 퀵슬롯을 저장할 수 있다.
@@ -17,6 +20,7 @@ public class Inventory : MonoBehaviour
 
     // 각 퀵슬롯에 저장된 아이템 배열
     public ItemData[] items = new ItemData[4];
+    
 
     // 아이템을 퀵슬롯에 추가하는 함수
     public void AddItemToQuickSlot(int slotIndex, ItemData item)
@@ -56,19 +60,27 @@ public class Inventory : MonoBehaviour
         {
             case 0:
                 if (quickSlotIcon_1 != null)
+                {
                     quickSlotIcon_1.sprite = item.icon;
+                }
                 break;
             case 1:
                 if (quickSlotIcon_2 != null)
+                {
                     quickSlotIcon_2.sprite = item.icon;
+                }
                 break;
             case 2:
                 if (quickSlotIcon_3 != null)
+                {
                     quickSlotIcon_3.sprite = item.icon;
+                }
                 break;
             case 3:
                 if (quickSlotIcon_4 != null)
+                {
                     quickSlotIcon_4.sprite = item.icon;
+                }
                 break;
         }
         
@@ -98,19 +110,27 @@ public class Inventory : MonoBehaviour
         {
             case 0:
                 if (quickSlotIcon_1 != null)
-                    quickSlotIcon_1.sprite = null;
+                {
+                    quickSlotIcon_1.sprite = defaultSprite;
+                }
                 break;
             case 1:
-                if (quickSlotIcon_2 != null)
-                    quickSlotIcon_2.sprite = null;
+                if (quickSlotIcon_2 != null) 
+                {
+                    quickSlotIcon_2.sprite = defaultSprite;
+                }
                 break;
             case 2:
                 if (quickSlotIcon_3 != null)
-                    quickSlotIcon_3.sprite = null;
+                {
+                    quickSlotIcon_3.sprite = defaultSprite;
+                }
                 break;
             case 3:
                 if (quickSlotIcon_4 != null)
-                    quickSlotIcon_4.sprite = null;
+                {
+                    quickSlotIcon_4.sprite = defaultSprite;
+                }
                 break;
         }
     }
