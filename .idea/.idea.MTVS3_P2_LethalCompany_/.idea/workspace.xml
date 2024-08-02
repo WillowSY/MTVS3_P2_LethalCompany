@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd759eb2-bd02-4a57-b010-3adcc8087310" name="Changes" comment="" />
+    <list default="true" id="45f9bfd8-cab2-44e0-ad9d-c1044f663f74" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/StartFiled.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/StartFiled.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/UI/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/UI/Fonts/temp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/UI/Fonts/temp.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,82 +21,50 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine/Editor/Upgrader/CinemachineUpgradeManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine/Editor/Utility/GameViewComposerGuides.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/raycast.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
-<<<<<<< Updated upstream:.idea/.idea.MTVS3_P2_LethalCompany/.idea/workspace.xml
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2k2Xc42F9JUWlbzprvEdTxGSIIk" />
-=======
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2k2yk50SoZGGLFOJxQ2VCgOey0N" />
->>>>>>> Stashed changes:.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< Updated upstream:.idea/.idea.MTVS3_P2_LethalCompany/.idea/workspace.xml
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev__pjh",
+    "git-widget-placeholder": "dev__kbs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
-=======
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev__pjh&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
->>>>>>> Stashed changes:.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Admin\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\Admin\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-<<<<<<< Updated upstream:.idea/.idea.MTVS3_P2_LethalCompany/.idea/workspace.xml
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Unity.exe" />
-      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\Admin\Desktop\MTVS3_P2_LethalCompany -debugCodeOptimization" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\Desktop\MTVS3_P2_LethalCompany" />
-=======
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.8f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\Admin\Desktop\LethalCompany\MTVS3_P2_LethalCompany_ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Admin\Desktop\LethalCompany\MTVS3_P2_LethalCompany_" />
->>>>>>> Stashed changes:.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-<<<<<<< Updated upstream:.idea/.idea.MTVS3_P2_LethalCompany/.idea/workspace.xml
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Unity.exe" />
-      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\Admin\Desktop\MTVS3_P2_LethalCompany -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\Admin\Desktop\MTVS3_P2_LethalCompany" />
-=======
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.8f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\Admin\Desktop\LethalCompany\MTVS3_P2_LethalCompany_ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Admin\Desktop\LethalCompany\MTVS3_P2_LethalCompany_" />
->>>>>>> Stashed changes:.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
@@ -118,13 +93,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dd759eb2-bd02-4a57-b010-3adcc8087310" name="Changes" comment="" />
-      <created>1722482720461</created>
+      <changelist id="45f9bfd8-cab2-44e0-ad9d-c1044f663f74" name="Changes" comment="" />
+      <created>1718686942037</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1722482720461</updated>
-      <workItem from="1722482721624" duration="106000" />
-      <workItem from="1722489694410" duration="3749000" />
+      <updated>1718686942037</updated>
+      <workItem from="1718686943249" duration="902000" />
+      <workItem from="1722496106907" duration="3521000" />
+      <workItem from="1722575848569" duration="967000" />
     </task>
     <servers />
   </component>
