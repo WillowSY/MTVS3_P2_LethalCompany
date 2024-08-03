@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4891201909434161486}
   - component: {fileID: 6447761901332502326}
   - component: {fileID: 2030060571806594787}
+  - component: {fileID: 576704300921062634}
   m_Layer: 0
   m_Name: FancyLamp
   m_TagString: Untagged
@@ -109,3 +110,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6385488633210859743, guid: 941c90df1bfafc54a80b9189100492ef, type: 3}
+--- !u!114 &576704300921062634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280117010310410474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae566cc115aecd4591bf3d4285770fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrap: {fileID: 11400000, guid: 51f6e615e31140d45a5d1d49c5468d94, type: 2}

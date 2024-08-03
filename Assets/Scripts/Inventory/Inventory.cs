@@ -9,6 +9,8 @@ public class Inventory : MonoBehaviour
     public Image quickSlotIcon_3;
     public Image quickSlotIcon_4;
 
+    public Sprite defaultSprite;
+
     public GameObject player;
     
     // 퀵슬롯 배열. 4개의 퀵슬롯을 저장할 수 있다.
@@ -16,10 +18,10 @@ public class Inventory : MonoBehaviour
 
 
     // 각 퀵슬롯에 저장된 아이템 배열
-    public ItemData[] items = new ItemData[4];
+    public ScrapData[] scraps = new ScrapData[4];
 
     // 아이템을 퀵슬롯에 추가하는 함수
-    public void AddItemToQuickSlot(int slotIndex, ItemData item)
+    public void AddItemToQuickSlot(int slotIndex, ScrapData scrap)
     {
         // 인덱스가 범위를 벗어나면 아무것도 하지 않음
         if (slotIndex < 0 || slotIndex >= quickSlots.Length)
@@ -28,7 +30,7 @@ public class Inventory : MonoBehaviour
             return;
         }
 
-        if (item == null)
+        if (scrap == null)
         {
             Debug.LogError("ItemData is null.");
             return;
@@ -42,33 +44,33 @@ public class Inventory : MonoBehaviour
         }
 
         // 아이콘이 null인지 확인
-        if (item.icon == null)
+        if (scrap.ScrapIcon == null)
         {
             Debug.LogWarning("Item icon is null. Assign a default icon.");
         }
         
 
         // 해당 슬롯에 아이템 데이터 저장
-        items[slotIndex] = item;
+        scraps[slotIndex] = scrap;
         
         // 아이콘을 퀵슬롯에 설정
         switch (slotIndex)
         {
             case 0:
                 if (quickSlotIcon_1 != null)
-                    quickSlotIcon_1.sprite = item.icon;
+                    quickSlotIcon_1.sprite = scrap.ScrapIcon;
                 break;
             case 1:
                 if (quickSlotIcon_2 != null)
-                    quickSlotIcon_2.sprite = item.icon;
+                    quickSlotIcon_2.sprite = scrap.ScrapIcon;
                 break;
             case 2:
                 if (quickSlotIcon_3 != null)
-                    quickSlotIcon_3.sprite = item.icon;
+                    quickSlotIcon_3.sprite = scrap.ScrapIcon;
                 break;
             case 3:
                 if (quickSlotIcon_4 != null)
-                    quickSlotIcon_4.sprite = item.icon;
+                    quickSlotIcon_4.sprite = scrap.ScrapIcon;
                 break;
         }
         
@@ -78,7 +80,7 @@ public class Inventory : MonoBehaviour
     public void DropItemFromQuickSlot(int slotIndex)
     {
         // 인덱스가 범위를 벗어나거나 해당 인덱스에 아이템이 없으면 아무것도 하지 않음
-        if (slotIndex < 0 || slotIndex >= quickSlots.Length || items[slotIndex] == null)
+        if (slotIndex < 0 || slotIndex >= quickSlots.Length || scraps[slotIndex] == null)
         {
             Debug.LogWarning("Cannot drop item. Index is out of range or no item in slot.");
             return;
@@ -87,30 +89,30 @@ public class Inventory : MonoBehaviour
         // 아이템을 현재 위치 앞에 생성
         Vector3 dropPosition = player.transform.position + player.transform.forward;
         GameObject droppedItem =
-            Instantiate(items[slotIndex].itemPrefab, dropPosition, Quaternion.identity);
+            Instantiate(scraps[slotIndex].ScrapPrefab, dropPosition, Quaternion.identity);
         
         
         // 해당 인덱스의 아이템을 null로 설정
-        items[slotIndex] = null;
+        scraps[slotIndex] = null;
         
         // 퀵슬롯에서 아이콘 제거
         switch (slotIndex)
         {
             case 0:
                 if (quickSlotIcon_1 != null)
-                    quickSlotIcon_1.sprite = null;
+                    quickSlotIcon_1.sprite = defaultSprite;
                 break;
             case 1:
                 if (quickSlotIcon_2 != null)
-                    quickSlotIcon_2.sprite = null;
+                    quickSlotIcon_2.sprite = defaultSprite;
                 break;
             case 2:
                 if (quickSlotIcon_3 != null)
-                    quickSlotIcon_3.sprite = null;
+                    quickSlotIcon_3.sprite = defaultSprite;
                 break;
             case 3:
                 if (quickSlotIcon_4 != null)
-                    quickSlotIcon_4.sprite = null;
+                    quickSlotIcon_4.sprite = defaultSprite;
                 break;
         }
     }

@@ -35,13 +35,13 @@ public class PlayerRaycast : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit)) // 레이에 닿았을 때
             {
-                Item item = hit.transform.GetComponent<Item>(); // 아이템 데이터를 가져옴
-                if (item != null)
+                Scrap scrap = hit.transform.GetComponent<Scrap>(); // 아이템 데이터를 가져옴
+                if (scrap != null)
                 {
-                    ItemData itemData = item.item; // ItemData를 가져옴
-                    if (itemData != null)
+                    ScrapData scrapData = scrap.scrap; // ItemData를 가져옴
+                    if (scrapData != null)
                     {
-                        inventory.AddItemToQuickSlot(currentQuickSlot, itemData); // 인벤토리에 아이템데이터를 넣음
+                        inventory.AddItemToQuickSlot(currentQuickSlot, scrapData); // 인벤토리에 아이템데이터를 넣음
                         Destroy(hit.transform.gameObject); // 아이템을 줍고나서 삭제
                     }
                     else
