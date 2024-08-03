@@ -117,6 +117,7 @@ public class Player : MonoBehaviour
             animator.SetBool("isWalking",false);
             animator.SetBool("isCrouchWalking",false);
             
+            
         }
         else if (_isCrouching)
         {
