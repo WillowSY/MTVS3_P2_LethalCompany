@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
 
     private StatusController _theStatusController;
     
+    public SoundEmitter soundEmitter;
+    private bool isMoving = false;
 
     private void Start()
     {
@@ -41,6 +43,7 @@ public class Player : MonoBehaviour
         TryRun();
         TryCrouch();
         Move();
+        PlayFootStepSound();
         //Debug.Log("현재속도: " + _currentSpeed);
     }
     
@@ -106,6 +109,7 @@ public class Player : MonoBehaviour
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
+        
         Vector3 dir = new Vector3(h, 0f, v).normalized;
         _currentSpeed = _isCrouching ? crouchSpeed : (_isRunning ? runSpeed : speed);
         dir = cameraTransform.TransformDirection(dir) * _currentSpeed;
@@ -116,16 +120,17 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("isWalking",false);
             animator.SetBool("isCrouchWalking",false);
-            
-            
+            isMoving = false;
         }
         else if (_isCrouching)
         {
             animator.SetBool("isCrouchWalking",true);
+            isMoving = true;
         }
         else
         {
             animator.SetBool("isWalking",true);
+            isMoving = true;
         }
     }
 
@@ -165,4 +170,12 @@ public class Player : MonoBehaviour
         }
     }
     */
+
+    private void PlayFootStepSound()
+    {
+        if (isMoving && soundEmitter != null)
+        {
+            soundEmitter.playSound();
+        }
+    }
 }
