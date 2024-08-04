@@ -14,7 +14,7 @@ public class SoundEmitter : MonoBehaviour
     void Start()
     {
         footstepSource = gameObject.GetComponent<AudioSource>();
-        //receiverDic = new Dictionary<int, SoundReceiver>();
+        receiverDic = new Dictionary<int, SoundReceiver>();
         if (emitterObject == null)
             emitterObject = gameObject;
     }
@@ -73,14 +73,14 @@ public class SoundEmitter : MonoBehaviour
         Debug.Log("PlaySound");
         if (!footstepSource.isPlaying)
         {
-            // footstepSource.PlayOneShot(footstepSound);
-            // if (receiverDic.Count!=0)
-            // {
-            //     foreach (SoundReceiver sr in receiverDic.Values)
-            //     {
-            //         sr.addWeight(1f);
-            //     }
-            // }
+            footstepSource.PlayOneShot(footstepSound);
+            if (receiverDic!=null)
+            {
+                foreach (SoundReceiver sr in receiverDic.Values)
+                {
+                    sr.addWeight(1f);
+                }
+            }
         }
     }
 }
