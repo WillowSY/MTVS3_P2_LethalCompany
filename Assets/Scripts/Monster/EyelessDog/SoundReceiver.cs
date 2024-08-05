@@ -8,7 +8,7 @@ public class SoundReceiver : MonoBehaviour
    public void Receive(float intensity, Vector3 position)
    {
       //TODO : 사운드 감지 시 행위
-      Debug.Log("사운드 감지");
+      //Debug.Log("사운드 감지");
    }
 
    public void Update()
@@ -55,5 +55,6 @@ public class SoundReceiver : MonoBehaviour
    public void addWeight(float delta)
    {
       weight = Mathf.Clamp(weight + delta, 0f, 20f);
+      Debug.Log(weight);
    }
 }

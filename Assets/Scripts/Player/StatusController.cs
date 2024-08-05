@@ -82,7 +82,7 @@ public class StatusController : MonoBehaviour
     }
     private void UpdateHp()
     {
-        Debug.Log("playerHP :"+playerHp);
+        //Debug.Log("playerHP :"+playerHp);
         if (playerHp < 51)
         {
             hp50.SetActive(true);

@@ -18,7 +18,9 @@ public abstract class MonsterPattern : MonoBehaviour
 
     public StatusController statusController;
 
-    public int damage;
+    public int damage = 50;
+    
+    
     public void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -30,5 +32,6 @@ public abstract class MonsterPattern : MonoBehaviour
 
         patterns[(int)PatternNumber.Pattern.Idle].SetActive(true);
         curPattern = patterns[(int)PatternNumber.Pattern.Idle];
+        Debug.Log("MonsterPattern curPattern: "+curPattern);
     }
 }
