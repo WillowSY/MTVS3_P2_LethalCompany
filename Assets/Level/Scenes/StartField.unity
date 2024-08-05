@@ -615,6 +615,48 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167871455}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &269591069 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2997798609318042904, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
+  m_PrefabInstance: {fileID: 550856860724615127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &269591071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269591069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502d06233cd72504ba2877170b020cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openAngle: -110
+  closeAngle: 0
+  openSpeed: 0.5
+  closeSpeed: 0.5
+--- !u!65 &269591074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269591069}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.5839, y: 253.46281, z: 130}
+  m_Center: {x: -42.97746, y: -15.782845, z: 8.3943205}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +782,46 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!1 &396354830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6174670900515059766, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
+  m_PrefabInstance: {fileID: 550856860724615127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &396354832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396354830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3055a610a65bb944789b69c62410f39b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openAngle: 110
+  openSpeed: 0.5
+--- !u!65 &396354835
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396354830}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 86.58389, y: 253.46284, z: 130}
+  m_Center: {x: -42.977943, y: -15.782602, z: 8.394386}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,6 +1493,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1573990002777733597, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997798609318042904, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
+      propertyPath: m_Name
+      value: RedStorageRightDoor
+      objectReference: {fileID: 0}
     - target: {fileID: 4474902914370552744, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.475
@@ -1418,6 +1508,10 @@ PrefabInstance:
     - target: {fileID: 4474902914370552744, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4701075749968872206, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.62
       objectReference: {fileID: 0}
     - target: {fileID: 5879821767502794647, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
       propertyPath: m_LocalScale.x
@@ -1427,6 +1521,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -5.9
       objectReference: {fileID: 0}
+    - target: {fileID: 6174670900515059766, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
+      propertyPath: m_Name
+      value: RedStorageLightDoor
+      objectReference: {fileID: 0}
     - target: {fileID: 6545654611227330726, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
       propertyPath: _lDO
       value: 
@@ -1435,6 +1533,14 @@ PrefabInstance:
       propertyPath: _rDO
       value: 
       objectReference: {fileID: 8658042779898582669}
+    - target: {fileID: 6833613762641000437, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366676564817178519, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.37
+      objectReference: {fileID: 0}
     - target: {fileID: 8139303799910254722, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
       propertyPath: m_Name
       value: Ship
@@ -1462,6 +1568,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7437514833079985308, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8458849675031093861}
+    - targetCorrespondingSourceObject: {fileID: 6174670900515059766, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 396354832}
+    - targetCorrespondingSourceObject: {fileID: 6174670900515059766, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 396354835}
+    - targetCorrespondingSourceObject: {fileID: 2997798609318042904, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 269591071}
+    - targetCorrespondingSourceObject: {fileID: 2997798609318042904, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 269591074}
     - targetCorrespondingSourceObject: {fileID: 7781239136602263438, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7120136002561010742}

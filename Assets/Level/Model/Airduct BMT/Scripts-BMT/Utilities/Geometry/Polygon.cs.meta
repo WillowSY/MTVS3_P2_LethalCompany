@@ -15,5 +15,5 @@ AssetOrigin:
   productId: 227804
   packageName: Airduct BMT
   packageVersion: 1.07b
-  assetPath: Assets/Airduct BMT/Scripts-BMT/Utilities/Geometry/Polygon.cs
+  assetPath: Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry/Polygon.cs
   uploadId: 608601

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45f9bfd8-cab2-44e0-ad9d-c1044f663f74" name="Changes" comment="" />
+    <list default="true" id="45f9bfd8-cab2-44e0-ad9d-c1044f663f74" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/RedStorageRDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/RedStorageRDoor.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
