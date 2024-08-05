@@ -14,7 +14,7 @@ public class SoundReceiver : MonoBehaviour
    public void Update()
    {
       addWeight(-Time.deltaTime);
-      Debug.Log(weight);
+      //Debug.Log(weight);
    }
 
    public bool IsDetected()

@@ -75,10 +75,14 @@ public class StatusController : MonoBehaviour
         return currentSp;
     }
 
-   
 
+    public void TakeDamage(int damage)
+    {
+        playerHp -= damage;
+    }
     private void UpdateHp()
     {
+        Debug.Log("playerHP :"+playerHp);
         if (playerHp < 51)
         {
             hp50.SetActive(true);

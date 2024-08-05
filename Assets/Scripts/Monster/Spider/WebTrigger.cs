@@ -27,6 +27,7 @@ public class WebTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log(monster);
             monster.curPattern.ExitPattern();
             monster.curPattern = monster.patterns[(int)PatternNumber.Pattern.Patrol];
             monster.curPattern.EnterPattern(Vector3.zero);

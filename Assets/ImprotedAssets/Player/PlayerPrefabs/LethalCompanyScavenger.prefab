@@ -21480,8 +21480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e4dc8088b535c46a124a7148c543df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 0.5
-  attackDamage: 20
+  attackRange: 1.5
+  attackDamage: 1
   enemyTag: Enemy
 --- !u!1 &6217571400242334621
 GameObject:

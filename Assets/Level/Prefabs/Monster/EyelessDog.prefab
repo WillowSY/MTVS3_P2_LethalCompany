@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2279695759850977197}
   m_Layer: 0
   m_Name: EyelessDog
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,7 +205,7 @@ MonoBehaviour:
   target: {fileID: 0}
   player: {fileID: 0}
   alertSound: {fileID: 8300000, guid: 2303cf6a118eb2e479bb6d9635a3b582, type: 3}
-  isPatrol: 1
+  isPatrol: 0
   isAlerted: 0
   isAttack: 0
   isSprint: 0

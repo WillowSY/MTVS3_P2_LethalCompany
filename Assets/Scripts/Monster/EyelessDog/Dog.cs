@@ -26,8 +26,8 @@ public class Dog : DogPattern
     public Vector3 followPosition;
     private Vector3 localRotate;
     public float distance;
-    
-
+    public int damage = 100;
+    public StatusController statusController;
 
     public void Start()
     {
@@ -76,10 +76,6 @@ public class Dog : DogPattern
     
     override public void Tracking()
     {
-        // distance = Vector3.Distance(target.position, transform.position);
-        //
-        // if (distance <= awareRange)
-        // {
         if (!isAlerted)
         {
             followPosition = player.position;
@@ -92,11 +88,7 @@ public class Dog : DogPattern
         if(dogPatrol.patrolCoroutine!=null){
             dogPatrol.stopPatrol();
         }
-        //}
-        /*if (NoiseDegree > 0.5f)
-        {
-            isAlerted = true;
-        }*/
+
     
         if (isAlerted)
         {
@@ -113,23 +105,17 @@ public class Dog : DogPattern
             followPosition = player.position;
             dogSprint.doSprint(agent, followPosition, audioSource);
         }
-        //Debug.Log("Sprint");
     }
     
-    // public override void Pause()
-    // {
-    //     // 정지 기능 실행
-    // }
-
     public void OnTriggerEnter(Collider coll)
     {
         if (coll.CompareTag("Player"))
         {
-            Debug.Log("PlayerAttackDead");
+            statusController.TakeDamage(damage);
         }
     }
     
-    public void monsterDamaged(int damage)
+    public void TakeDamage(int damage)
     {
         hp -= damage;
     }
