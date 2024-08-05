@@ -26,7 +26,7 @@ public class PlayerRaycast : MonoBehaviour
         }
     }
 
-    public void HandleItemPickup()
+    private void HandleItemPickup()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
