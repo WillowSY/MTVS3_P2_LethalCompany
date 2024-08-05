@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -29,7 +30,7 @@ public class RedStorageLDoor : MonoBehaviour
             }
         }
     }
-
+    
     IEnumerator OpenDoor()
     {
         float t = 0.0f;
@@ -39,5 +40,9 @@ public class RedStorageLDoor : MonoBehaviour
             transform.rotation = Quaternion.Lerp(defaultRotation, openRotation, t);
             yield return null;
         }
+
+        transform.rotation = openRotation;
     }
+
+    
 }

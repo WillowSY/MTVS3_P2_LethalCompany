@@ -6,39 +6,42 @@ using UnityEngine;
 public class RedStorageRDoor : MonoBehaviour
 {
     public float openAngle;
-    public float closeAngle;
     public float openSpeed = 0.5f;
     public float closeSpeed = 0.5f;
-
     private bool isOpen = false;
+
+    private bool doorRange = false;
 
     private Quaternion defaultRotation;
     private Quaternion openRotation;
     private Quaternion closeRotation;
     void Start()
     {
-        defaultRotation = transform.rotation;
         openRotation = Quaternion.Euler(defaultRotation.eulerAngles + Vector3.up * openAngle);
-        closeRotation = Quaternion.Euler(defaultRotation.eulerAngles + Vector3.up * closeAngle);
+        closeRotation = transform.rotation;
+    }
+
+    void Update()
+    {
+        if (doorRange && Input.GetKey(KeyCode.E))
+        {
+            if (isOpen)
+            {
+                StartCoroutine(CloseDoor());
+            }
+            else
+            {
+                StartCoroutine(OpenDoor());
+            }
+        }
+        
     }
     
     void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player") && !isOpen)
         {
-            if(Input.GetKey(KeyCode.E))
-            {
-                isOpen = true; 
-                StartCoroutine(OpenDoor());
-            }
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            StartCoroutine(CloseDoor());
+            doorRange = true;
         }
     }
 
@@ -51,6 +54,8 @@ public class RedStorageRDoor : MonoBehaviour
             transform.rotation = Quaternion.Slerp(defaultRotation, openRotation, t);
             yield return null;
         }
+
+        transform.rotation = openRotation;
     }
 
     IEnumerator CloseDoor()
@@ -62,6 +67,8 @@ public class RedStorageRDoor : MonoBehaviour
             transform.rotation = Quaternion.Slerp(defaultRotation, closeRotation, t);
             yield return null;
         }
+
+        transform.rotation = closeRotation;
     }
     
 }
