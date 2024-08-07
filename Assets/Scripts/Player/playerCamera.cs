@@ -7,6 +7,23 @@ public class playerCamera : MonoBehaviour
 
     private float _xRotation = 0f; // 카메라의 x축 회전 값 저장
 
+    public static playerCamera instance = null;
+    
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            if (instance != this)
+            {
+                Destroy(this.gameObject);
+            }
+        }
+    }
     void Start()
     {
         // 마우스 커서를 화면 중앙에 고정하고 숨김

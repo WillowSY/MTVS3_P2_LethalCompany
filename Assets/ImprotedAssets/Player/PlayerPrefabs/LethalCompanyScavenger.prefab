@@ -11139,7 +11139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 516154376b636b44297892cb9117613f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 100
+  mouseSensitivity: 150
   playerBody: {fileID: 4985025132729487194}
 --- !u!1 &3090698440568185792
 GameObject:
@@ -26854,9 +26854,11 @@ GameObject:
   - component: {fileID: 7196970637071258384}
   - component: {fileID: 5967300727199297739}
   - component: {fileID: 6130716277593710681}
+  - component: {fileID: 2561047392600575597}
+  - component: {fileID: 4070143647759967523}
   m_Layer: 0
   m_Name: LethalCompanyScavenger
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26978,6 +26980,32 @@ MonoBehaviour:
   crouchCameraHeight: 1
   standCameraHeight: 1.495
   yVelocity: 0
+--- !u!114 &2561047392600575597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8005254958054767628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aeb52889b53a274dba5440fe232ccb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
+  currentQuickSlot: 0
+--- !u!114 &4070143647759967523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8005254958054767628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ab455699497394e94ea49ebffbb497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8026921247919623390
 GameObject:
   m_ObjectHideFlags: 0
