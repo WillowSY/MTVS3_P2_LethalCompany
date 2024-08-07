@@ -1,10 +1,12 @@
 using UnityEngine;
+using TMPro;
 
 public class SoundReceiver : MonoBehaviour
 {
    public float weight = 0f;
    public float alertThreshold = 5f;
    public float attackThreshold = 10f;
+   public TMP_Text noiseText;
    public void Receive(float intensity, Vector3 position)
    {
       //TODO : 사운드 감지 시 행위
@@ -14,6 +16,7 @@ public class SoundReceiver : MonoBehaviour
    public void Update()
    {
       addWeight(-Time.deltaTime);
+      noiseText.text = weight.ToString();
       //Debug.Log(weight);
    }
 
