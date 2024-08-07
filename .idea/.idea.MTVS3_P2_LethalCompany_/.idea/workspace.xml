@@ -6,74 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="45f9bfd8-cab2-44e0-ad9d-c1044f663f74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Player/PlayerPrefabs/LethalCompanyScavenger.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Player/PlayerPrefabs/LethalCompanyScavenger.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Editor/BMTSetInstallerEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Editor/BMTSetInstallerEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Editor/BuildingUnitEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Editor/BuildingUnitEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Editor/OriginOffsetRPPEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Editor/OriginOffsetRPPEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Editor/PropGroupEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Editor/PropGroupEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Editor/RowPropPlacerEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Editor/RowPropPlacerEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/PropGroup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/PropGroup.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/RowPropPlacer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/RowPropPlacer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/BHUtilities.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/BHUtilities.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/BMTSetInstaller.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/BMTSetInstaller.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/BuildingUnit.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/BuildingUnit.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry/CompositeShape.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry/CompositeShape.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry/CompositeShapeData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry/CompositeShapeData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry/Maths2D.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry/Maths2D.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry/Polygon.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry/Polygon.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry/Shape.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry/Shape.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry/Triangulator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Geometry/Triangulator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/Combiner_ICON.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/Combiner_ICON.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/FacadeHelper2_ICON.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/FacadeHelper2_ICON.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/FacadeHelper_ICON.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/FacadeHelper_ICON.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/FootPrintMaker_ICON.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/FootPrintMaker_ICON.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/PrefabGroup_ICON.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/PrefabGroup_ICON.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/ShapeEditor_ICON.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/ShapeEditor_ICON.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/placer_ICON.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/Icons/placer_ICON.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/KeepSourceScale.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/KeepSourceScale.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/MeshExtension.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/MeshExtension.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/OriginOffsetRPP.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/OriginOffsetRPP.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/UnityRuntimePreviewGenerator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Airduct BMT/Scripts-BMT/Utilities/UnityRuntimePreviewGenerator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/Ship _Door_replace.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/Ship _Door_replace.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/Company.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/Company.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/StartField.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/StartField.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/Entrance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/Entrance.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/playerCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/playerCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/ShipDataController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/ShipDataController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +104,7 @@
       <workItem from="1722643276883" duration="3423000" />
       <workItem from="1722671907475" duration="2922000" />
       <workItem from="1722998395548" duration="15498000" />
+      <workItem from="1723024476155" duration="617000" />
     </task>
     <servers />
   </component>
