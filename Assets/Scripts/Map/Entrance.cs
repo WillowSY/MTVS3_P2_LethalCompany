@@ -8,7 +8,7 @@ public class Entrance : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 Debug.Log("E버튼 입력");
                 SceneManager.LoadScene(1); // Company Scene Start

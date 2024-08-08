@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 468685226532276688}
   - component: {fileID: 1470818258706680304}
   - component: {fileID: 7267132687869872072}
+  - component: {fileID: 7378172565064426932}
   m_Layer: 0
   m_Name: BigBolt
   m_TagString: Untagged
@@ -110,6 +111,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3014884763479302708, guid: 941c90df1bfafc54a80b9189100492ef, type: 3}
+--- !u!114 &7378172565064426932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703378408703929510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae566cc115aecd4591bf3d4285770fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrap: {fileID: 11400000, guid: 1f4c9807d1b64d74bae9dee6734927f0, type: 2}
 --- !u!1 &5873903840060927746
 GameObject:
   m_ObjectHideFlags: 0

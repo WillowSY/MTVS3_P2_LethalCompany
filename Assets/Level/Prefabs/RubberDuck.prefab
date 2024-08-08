@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5278544313742105100}
   - component: {fileID: 3583490834973766553}
   - component: {fileID: 5778913098721909151}
+  - component: {fileID: 2130026311871363242}
   m_Layer: 0
   m_Name: RubberDuck
   m_TagString: Untagged
@@ -109,3 +110,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2245713772974897948, guid: 941c90df1bfafc54a80b9189100492ef, type: 3}
+--- !u!114 &2130026311871363242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5473283246025901519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae566cc115aecd4591bf3d4285770fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrap: {fileID: 11400000, guid: 704e1b6e14bfe474c9210dec403d7914, type: 2}

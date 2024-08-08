@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
 
     private StatusController _theStatusController;
     
+    public SoundEmitter soundEmitter;
+    private bool isMoving = false;
 
     private void Start()
     {
@@ -41,6 +43,7 @@ public class Player : MonoBehaviour
         TryRun();
         TryCrouch();
         Move();
+        PlayFootStepSound();
         //Debug.Log("현재속도: " + _currentSpeed);
     }
     
@@ -106,6 +109,7 @@ public class Player : MonoBehaviour
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
+        
         Vector3 dir = new Vector3(h, 0f, v).normalized;
         _currentSpeed = _isCrouching ? crouchSpeed : (_isRunning ? runSpeed : speed);
         dir = cameraTransform.TransformDirection(dir) * _currentSpeed;
@@ -116,15 +120,17 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("isWalking",false);
             animator.SetBool("isCrouchWalking",false);
-            
+            isMoving = false;
         }
         else if (_isCrouching)
         {
             animator.SetBool("isCrouchWalking",true);
+            isMoving = true;
         }
         else
         {
             animator.SetBool("isWalking",true);
+            isMoving = true;
         }
     }
 
@@ -154,14 +160,26 @@ public class Player : MonoBehaviour
         cameraPosition.z = _isCrouching ? 0.39f : 0.17f;
         cameraTransform.localPosition = cameraPosition;
     }
-
-    /* 임시 피격시  PlayerHP감소
+    
+    // FIXME : 추후 거미&개 공통 클래스 상속으로 정리 후 몬스터별 데미지 참조로 변경 필요.
      public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
             _theStatusController.playerHp -= 30f;
+            Debug.Log("player HP : " + _theStatusController.playerHp);
         }
     }
-    */
+
+    /*
+     * playFootStepSound : 플레이어 발자국 소리 출력.
+     * FIXME : 추후 출력 소리 다양해질 시 개별 클래스로 분리 예정.
+     */
+    private void PlayFootStepSound()
+    {
+        if (isMoving && soundEmitter != null)
+        {
+            soundEmitter.playSound();
+        }
+    }
 }
