@@ -6,7 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="45f9bfd8-cab2-44e0-ad9d-c1044f663f74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/ShipDataController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/ShipDataController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/FlashLight/FlashLight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/FlashLight/FlashLight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/FlashLight/FlashLight.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/FlashLight/FlashLight.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/BigBolt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/BigBolt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/FancyLamp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/FancyLamp.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/LargeExel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/LargeExel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/Maps.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/Maps.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/RubberDuck.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/RubberDuck.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/Company.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/Company.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/ItemReplaceSample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/ItemReplaceSample.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/StartField.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/StartField.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/CompanyEntranceController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/CompanyEntranceController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +31,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/Scraps/ScrabsScripts/Scrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/CompanyEntranceController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/PresserController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerSingleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/StatusSingleton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -105,6 +118,7 @@
       <workItem from="1722671907475" duration="2922000" />
       <workItem from="1722998395548" duration="15498000" />
       <workItem from="1723024476155" duration="617000" />
+      <workItem from="1723080001325" duration="21008000" />
     </task>
     <servers />
   </component>

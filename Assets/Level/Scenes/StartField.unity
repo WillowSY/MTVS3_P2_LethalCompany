@@ -381,10 +381,10 @@ PrefabInstance:
     - target: {fileID: 4216474306221418624, guid: 3dd9cc1ca64827c4b9e2146e469c8714, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 4216474306221418624, guid: 3dd9cc1ca64827c4b9e2146e469c8714, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4254636602013512296, guid: 3dd9cc1ca64827c4b9e2146e469c8714, type: 3}
       propertyPath: m_AnchorMax.y
@@ -505,7 +505,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5068852471882800186, guid: 3dd9cc1ca64827c4b9e2146e469c8714, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1857201718}
   m_SourcePrefab: {fileID: 100100000, guid: 3dd9cc1ca64827c4b9e2146e469c8714, type: 3}
 --- !u!1 &330585543
 GameObject:
@@ -994,6 +997,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8005254958054767628, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
   m_PrefabInstance: {fileID: 596255690502690072}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1857201717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5068852471882800186, guid: 3dd9cc1ca64827c4b9e2146e469c8714, type: 3}
+  m_PrefabInstance: {fileID: 93526869}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1857201718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857201717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6439c5db2f7f5c74ea69a1f8cb15f4e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1975653336 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2448357086330032153, guid: cb05862891027df4fbe5edcb8c980c7f, type: 3}
@@ -8013,6 +8033,7 @@ GameObject:
   - component: {fileID: 4484751681249121861}
   - component: {fileID: 3081451080726600550}
   - component: {fileID: 909884359241154192}
+  - component: {fileID: 6213942585292937281}
   m_Layer: 0
   m_Name: DoorRight_Baked
   m_TagString: Untagged
@@ -9909,6 +9930,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 596615588864001857}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6213942585292937281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889873387701789049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50badf2292815b7418457daad570ad40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onFieldObject: {fileID: 4889873387701789049}
 --- !u!1 &6259437784171626126
 GameObject:
   m_ObjectHideFlags: 0
@@ -12349,6 +12383,7 @@ GameObject:
   - component: {fileID: 8360682060427770084}
   - component: {fileID: 1248542418114680458}
   - component: {fileID: 2688759454848024462}
+  - component: {fileID: 8360682060427770085}
   m_Layer: 0
   m_Name: DoorLeft_Baked
   m_TagString: Untagged
@@ -13013,6 +13048,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8360682060427770085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7807423857011742809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50badf2292815b7418457daad570ad40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onFieldObject: {fileID: 7807423857011742809}
 --- !u!64 &8361630763883495819
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13476,8 +13524,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onFieldObject: {fileID: 8597816766735884117}
-  shipPrefab: {fileID: 0}
-  rotationOffset: {x: 0, y: 180, z: 0}
 --- !u!23 &8600841971581757272
 MeshRenderer:
   m_ObjectHideFlags: 0
