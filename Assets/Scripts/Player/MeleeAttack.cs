@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class MeleeAttack : MonoBehaviour
@@ -6,11 +7,11 @@ public class MeleeAttack : MonoBehaviour
     public int attackDamage = 1;
     public string enemyTag = "Enemy"; //몬스터에 태그 Enemy
 
-    private bool isAttacking = false;
+    private bool _isAttacking = false;
     
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !isAttacking)
+        if (Input.GetMouseButtonDown(0) && !_isAttacking)
         {
             Attack();
             Debug.Log("LeftClick");
@@ -19,8 +20,7 @@ public class MeleeAttack : MonoBehaviour
 
     private void Attack()
     {
-        isAttacking = true;
-
+        StartCoroutine(AttackDecision());
         // 공격 판정
         Collider[] hitEnemies = Physics.OverlapSphere(transform.position, attackRange);
         foreach (Collider enemy in hitEnemies)
@@ -38,8 +38,15 @@ public class MeleeAttack : MonoBehaviour
                 }
             }
         }
-        isAttacking = false;
     }
+
+    IEnumerator AttackDecision()
+    {
+        _isAttacking = true;
+        yield return new WaitForSeconds(1f);
+        _isAttacking = false;
+    }
+    
 
     // 공격 범위 시각화 (디버깅 용도)
     void OnDrawGizmosSelected()

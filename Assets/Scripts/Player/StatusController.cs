@@ -1,5 +1,5 @@
-using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,6 +9,11 @@ public class StatusController : MonoBehaviour
     public float playerHp = 100f;
     public GameObject hp50;
     public GameObject hp30;
+    public TMP_Text fatalInjury;
+    public TMP_Text death;
+    public Image blackout;
+
+    private bool onfatal = false;
 
     public float sp = 100f;
     private float currentSp;
@@ -27,7 +32,7 @@ public class StatusController : MonoBehaviour
     {
         SPRechargeTime();
         SPRecover();
-        UpdateHp();
+        UpdateHpUI();
 
         spGauge.fillAmount = currentSp / sp;
     }
@@ -37,13 +42,13 @@ public class StatusController : MonoBehaviour
         spUsed = true;
         currentSpRechargeTime = 0;
 
-        if (currentSp - amount > 0)
+        if (currentSp - amount > 19.2f)
         {
             currentSp -= amount;
         }
         else
         {
-            currentSp = 0;
+            currentSp = 19.2f;
         }
     }
 
@@ -80,21 +85,49 @@ public class StatusController : MonoBehaviour
     {
         playerHp -= damage;
     }
-    private void UpdateHp()
+    
+    private void UpdateHpUI()
     {
         //Debug.Log("playerHP :"+playerHp);
-        if (playerHp < 51)
+        if (playerHp <= 30 && !onfatal)
+        {
+            hp50.SetActive(false);
+            hp30.SetActive(true);
+            fatalInjury.enabled = true;
+            Invoke("HideFatal",1f);
+        }
+        else if (playerHp <= 50 && !onfatal)
         {
             hp50.SetActive(true);
-            if (playerHp < 31)
-            {
-                hp50.SetActive(false);
-                hp30.SetActive(true);
-                if (playerHp <= 0)
-                {
-                    SceneManager.LoadScene(0);
-                }
-            }
+        }
+        else if (playerHp <= 0)
+        {
+            StartCoroutine(Fadein());
+            death.enabled = true;
+            
+            Invoke("LoadScene",2f);
+        }
+    }
+
+    private void LoadScene()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    private void HideFatal()
+    {
+        fatalInjury.enabled = false;
+        onfatal = true;
+    }
+
+    IEnumerator Fadein()
+    {
+        Color fadeColor = blackout.color;
+        for (int i = 0; i < 100; i++)
+        {
+            fadeColor.a += 0.02f;
+            blackout.color = fadeColor;
+            yield return new WaitForSeconds(0.01f);
         }
     }
 }

@@ -1026,6 +1026,8 @@ MonoBehaviour:
   playerHp: 100
   hp50: {fileID: 911827422}
   hp30: {fileID: 0}
+  fatalInjury: {fileID: 0}
+  death: {fileID: 0}
   sp: 100
   spIncreaseSpeed: 10
   spGauge: {fileID: 1975653336}
@@ -1325,6 +1327,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1141159936121461142, guid: cb05862891027df4fbe5edcb8c980c7f, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 3011975212705110716, guid: cb05862891027df4fbe5edcb8c980c7f, type: 3}
       propertyPath: m_Name
       value: Status
