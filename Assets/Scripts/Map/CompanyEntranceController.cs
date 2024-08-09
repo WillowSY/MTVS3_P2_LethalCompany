@@ -19,6 +19,8 @@ public class CompanyEntranceController : MonoBehaviour
                 SceneManager.LoadScene(0); // // Back to StartFeild
                 Debug.Log("건물 입장");
                 ShipDataController._isShipPosition = true;
+                RightDoorData._isR_DoorPosition = true;
+                LeftDoorData._isL_DoorPosition = true;
             } 
         }
     }

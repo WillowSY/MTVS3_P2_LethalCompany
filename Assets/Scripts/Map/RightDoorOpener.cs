@@ -23,6 +23,6 @@ public class RightDoorOpener : MonoBehaviour
     {
         Vector3 speed = Vector3.zero;
         Vector3 doorClose = new Vector3(-5.9f, transform.localPosition.y, transform.localPosition.z);
-        transform.localPosition = Vector3.SmoothDamp(transform.localPosition, doorClose, ref speed, 0.05f );
+        transform.localPosition = doorClose;
     }
 }

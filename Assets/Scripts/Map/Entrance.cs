@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 public class Entrance : MonoBehaviour
 {
     private ShipDataController sm;
+    private RightDoorData rd;
+    private LeftDoorData ld;
+    public ShipController ship;
     private void Start()
     {
         sm = FindObjectOfType<ShipDataController>();
+        rd = FindObjectOfType<RightDoorData>();
+        ld = FindObjectOfType<LeftDoorData>();
     }
 
     
@@ -22,6 +27,9 @@ public class Entrance : MonoBehaviour
                 Debug.Log("건물 입장");
                 
                 sm.SavePosition();
+                Debug.Log(ship.transform.position);
+                rd.SavePosition();
+                ld.SavePosition();
             } 
         }
     }
