@@ -3,7 +3,7 @@ using UnityEngine;
 public class MeleeAttack : MonoBehaviour
 {
     public float attackRange = 0.5f;
-    public int attackDamage = 20;
+    public int attackDamage = 1;
     public string enemyTag = "Enemy"; //몬스터에 태그 Enemy
 
     private bool isAttacking = false;
@@ -27,7 +27,7 @@ public class MeleeAttack : MonoBehaviour
         {
             if (enemy.CompareTag(enemyTag))
             {
-                Enemy enemyComponent = enemy.GetComponent<Enemy>();
+                MonsterHpController enemyComponent = enemy.GetComponent<MonsterHpController>();
                 if (enemyComponent != null)
                 {
                     enemyComponent.TakeDamage(attackDamage);
