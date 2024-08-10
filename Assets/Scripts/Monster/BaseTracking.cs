@@ -4,25 +4,23 @@ using UnityEngine.AI;
 public class BaseTracking : MonoBehaviour
 {
     private NavMeshAgent agent;
-    public Transform playerTransform;
     private Vector3 lastPlayerPosition;
-    
-    private void Start()
+
+    public void Awake()
     {
-        agent = GetComponent<NavMeshAgent>();
-        lastPlayerPosition = playerTransform.position;
+        this.agent = GetComponent<NavMeshAgent>();
     }
 
-    public void Tracking(float speed, float acc)
+    public void Tracking(Vector3 targetPos, float speed, float acc)
     {
-        if (Vector3.Distance(lastPlayerPosition, playerTransform.position) > 0.1f)
+        Debug.Log("Tracking");
+        if ( lastPlayerPosition==null || Vector3.Distance(lastPlayerPosition, targetPos) > 0.1f)
         {
-            //agent.speed = speed;
-            //agent.acceleration = acc;
-            agent.SetDestination(playerTransform.position);
-            lastPlayerPosition = playerTransform.position;
+            agent.speed = speed;
+            agent.acceleration = acc;
+            agent.SetDestination(targetPos);
+            lastPlayerPosition = targetPos;
         }
-        
     }
     
 }

@@ -12,12 +12,9 @@ GameObject:
   - component: {fileID: 4817290058600720927}
   - component: {fileID: 9132574408825147454}
   - component: {fileID: 4831788004477507003}
-  - component: {fileID: 119607119390951265}
-  - component: {fileID: 4281297375813938780}
-  - component: {fileID: 7578956803360736133}
-  - component: {fileID: 3031620498994851992}
   - component: {fileID: 2279695759850977197}
-  - component: {fileID: 3591108018477366229}
+  - component: {fileID: 2308009639027313992}
+  - component: {fileID: 8773922385247125022}
   m_Layer: 0
   m_Name: EyelessDog
   m_TagString: Enemy
@@ -188,73 +185,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &119607119390951265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6821264205744292140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa872d2c6c342c4ad0d2b7d6fb202e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 10
-  soundReceiver: {fileID: 7631041740275372848}
-  target: {fileID: 0}
-  player: {fileID: 0}
-  alertSound: {fileID: 8300000, guid: 2303cf6a118eb2e479bb6d9635a3b582, type: 3}
-  isPatrol: 0
-  isAlerted: 0
-  isAttack: 0
-  isSprint: 0
-  Monster_Patrol_Positions: []
-  agent: {fileID: 4817290058600720927}
-  followPosition: {x: 0, y: 0, z: 0}
-  distance: 0
-  damage: 100
-  statusController: {fileID: 0}
---- !u!114 &4281297375813938780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6821264205744292140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 826c006a3e6e47ad9368b1e55e70816d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypointTarget: {x: 0, y: 0, z: 0}
-  patrolWaypoints: {x: 0, y: 0, z: 0}
---- !u!114 &7578956803360736133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6821264205744292140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b9c4814b0a7a494081f12a577cb44a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isAlertedSoundReady: 0
---- !u!114 &3031620498994851992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6821264205744292140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 721d621a65daf56478af2250a37b66da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roarSound: {fileID: 0}
 --- !u!65 &2279695759850977197
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -276,7 +206,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 5, z: 4}
   m_Center: {x: 0, y: 2.5, z: 3}
---- !u!114 &3591108018477366229
+--- !u!114 &2308009639027313992
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,11 +215,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 6821264205744292140}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1d61d19073bd3e44bf44b858ef71df5, type: 3}
+  m_Script: {fileID: 11500000, guid: 68f2f9fe91ac4f169ec440902fb37479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curHealth: 0
-  HpSlider: {fileID: 0}
+  playerTrans: {fileID: 0}
+--- !u!114 &8773922385247125022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6821264205744292140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c59a71a38d545c5aed9f9beb22dd80d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basePatrol: {fileID: 0}
 --- !u!1001 &717771933117086024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -461,14 +403,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5, y: 5, z: 3}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7631041740275372848 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2352879972698070397, guid: 8bb849eca15c6194ba9bbbd574e1ddcd, type: 3}
-  m_PrefabInstance: {fileID: 5278768340188679757}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5047369363612671973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a745bb042025e35409ec4030a3b5a23d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
