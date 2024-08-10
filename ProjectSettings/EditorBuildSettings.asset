@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level/Scenes/ItemReplaceSample.unity
     guid: 3e9469ad410bc444bae778c153aba5f7
+  - enabled: 1
+    path: Assets/Level/Scenes/Company.unity
+    guid: 10ac500a2030efd41a58c81c52f5fdce
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
