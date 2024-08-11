@@ -25,11 +25,12 @@ public class Player : MonoBehaviour
 
     private bool _isCrouching; // 앉기 상태 확인 변수
     private bool _isRunning; // 달리기 상태 확인 변수
+    private bool _isMoving = false;
 
     private StatusController _theStatusController;
     
     public SoundEmitter soundEmitter;
-    private bool isMoving = false;
+    
 
     private void Start()
     {
@@ -47,19 +48,44 @@ public class Player : MonoBehaviour
         //Debug.Log("현재속도: " + _currentSpeed);
     }
     
+    private void CameraPosition()
+    {
+        Vector3 cameraPosition = cameraTransform.localPosition;
+        cameraPosition.y = _isCrouching ? crouchCameraHeight : standCameraHeight;
+        cameraPosition.z = _isCrouching ? 0.39f : 0.17f;
+        cameraTransform.localPosition = cameraPosition;
+    }
     
+    private void Jump()
+    {
+        if (controller.collisionFlags == CollisionFlags.Below)
+        {
+            yVelocity = 0f;
+            if (Input.GetKeyDown(KeyCode.Space)&& _theStatusController.GetCurrentSP() > 19.2f)
+            {
+                yVelocity = jumpSpeed;
+                _theStatusController.DecreaseStamina(10f);
+                animator.SetBool("isJumping",true);
+            }
+            else
+            {
+                animator.SetBool("isJumping", false); 
+            }
+        }
+        yVelocity += gravity * Time.deltaTime;
+    }
     private void TryRun()
     {
-        if (Input.GetKey(KeyCode.LeftShift) && _theStatusController.GetCurrentSP() > 0)
+        if (Input.GetKey(KeyCode.LeftShift) && _theStatusController.GetCurrentSP() > 19.2f)
         {
-            if (_isCrouching)
+            if (!_isCrouching)
             {
                 Crouch();
             }
             Running();
         }
         
-        if (Input.GetKeyUp(KeyCode.LeftShift) || _theStatusController.GetCurrentSP() <= 0)
+        if (Input.GetKeyUp(KeyCode.LeftShift) || _theStatusController.GetCurrentSP() <= 19.2f)
         {
             RunningCancel();
         }
@@ -67,10 +93,16 @@ public class Player : MonoBehaviour
 
     private void Running()
     {
-        _isRunning = true;
-        _theStatusController.DecreaseStamina(10 * Time.deltaTime); // 초당 스태미너 감소
-        animator.SetBool("isRunning",true);
-        
+        if (_isMoving)
+        {
+            _isRunning = true;
+            _theStatusController.DecreaseStamina(10 * Time.deltaTime); // 초당 스태미너 감소
+            animator.SetBool("isRunning",true);
+        }
+        else
+        {
+            RunningCancel();
+        }
     }
 
     private void RunningCancel()
@@ -81,10 +113,11 @@ public class Player : MonoBehaviour
 
     private void TryCrouch()
     {
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !_isRunning)
         {
             _isCrouching = !_isCrouching;
             Crouch();
+            
         }
     }
 
@@ -99,7 +132,7 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("isCrouching",true);
         }
-        else if(!_isCrouching)
+        if(!_isCrouching)
         {
             animator.SetBool("isCrouching",false);
         }
@@ -120,45 +153,20 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("isWalking",false);
             animator.SetBool("isCrouchWalking",false);
-            isMoving = false;
+            _isMoving = false;
         }
         else if (_isCrouching)
         {
+            animator.SetBool("isWalking",false);
             animator.SetBool("isCrouchWalking",true);
-            isMoving = true;
+            _isMoving = true;
         }
         else
         {
+            animator.SetBool("isCrouchWalking",false);
             animator.SetBool("isWalking",true);
-            isMoving = true;
+            _isMoving = true;
         }
-    }
-
-    private void Jump()
-    {
-        if (controller.isGrounded)
-        {
-            yVelocity = 0f;
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                yVelocity = jumpSpeed;
-                _theStatusController.DecreaseStamina(20f);
-                animator.SetBool("isJumping",true);
-            }
-            else
-            {
-                animator.SetBool("isJumping", false); 
-            }
-        }
-        yVelocity += gravity * Time.deltaTime;
-    }
-
-    private void CameraPosition()
-    {
-        Vector3 cameraPosition = cameraTransform.localPosition;
-        cameraPosition.y = _isCrouching ? crouchCameraHeight : standCameraHeight;
-        cameraPosition.z = _isCrouching ? 0.39f : 0.17f;
-        cameraTransform.localPosition = cameraPosition;
     }
     
     // FIXME : 추후 거미&개 공통 클래스 상속으로 정리 후 몬스터별 데미지 참조로 변경 필요.
@@ -177,7 +185,7 @@ public class Player : MonoBehaviour
      */
     private void PlayFootStepSound()
     {
-        if (isMoving && soundEmitter != null)
+        if (_isMoving && soundEmitter != null)
         {
             soundEmitter.playSound();
         }
