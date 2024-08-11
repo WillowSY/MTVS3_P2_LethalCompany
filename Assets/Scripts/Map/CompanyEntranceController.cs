@@ -4,9 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class CompanyEntranceController : MonoBehaviour
 {
+    public CanvasGroup canvasGroup;
     void Update()
     {
-       
+        canvasGroup = FindObjectOfType<CanvasGroup>();
     }
 
     private void OnTriggerStay(Collider other)
@@ -21,6 +22,8 @@ public class CompanyEntranceController : MonoBehaviour
                 ShipDataController._isShipPosition = true;
                 RightDoorData._isR_DoorPosition = true;
                 LeftDoorData._isL_DoorPosition = true;
+
+                canvasGroup.alpha = 1;
             } 
         }
     }

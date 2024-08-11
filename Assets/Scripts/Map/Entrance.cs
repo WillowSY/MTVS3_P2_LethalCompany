@@ -8,6 +8,7 @@ public class Entrance : MonoBehaviour
     private RightDoorData rd;
     private LeftDoorData ld;
     public ShipController ship;
+    public CanvasGroup canvasGroup;
     private void Start()
     {
         sm = FindObjectOfType<ShipDataController>();
@@ -30,6 +31,8 @@ public class Entrance : MonoBehaviour
                 Debug.Log(ship.transform.position);
                 rd.SavePosition();
                 ld.SavePosition();
+
+                canvasGroup.alpha = 0;
             } 
         }
     }

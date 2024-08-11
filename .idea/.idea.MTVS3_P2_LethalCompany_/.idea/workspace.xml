@@ -6,15 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="45f9bfd8-cab2-44e0-ad9d-c1044f663f74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/FlashLight/FlashLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/FlashLight/FlashLight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/FlashLight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/FlashLight.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/Company.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/Company.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/ItemReplaceSample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/ItemReplaceSample.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/StartField.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/StartField.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/ButtonOfDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/ButtonOfDoor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Tools.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/Tools.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Tools/ToolsObject/FlashLight.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Tools/ToolsObject/FlashLight.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Tools/ToolsObject/Shovel.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Tools/ToolsObject/Shovel.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/CompanyEntranceController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/CompanyEntranceController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/Entrance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/Entrance.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/LeftDoorOpener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/LeftDoorOpener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/RightDoorOpener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/RightDoorOpener.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/ShipController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/ShipController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/ShipDataController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/ShipDataController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +31,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/Scraps/ScrabsScripts/Scrap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/CompanyEntranceController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/PresserController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/Timer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterHpController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerSingleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/System/StatusSingleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core/Editor/MaterialUpgrader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Downloads/AssetRipperLC/ExportedProject/Assets/Scripts/Assembly-CSharp/TimeOfDay.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
