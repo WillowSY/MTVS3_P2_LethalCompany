@@ -4,25 +4,25 @@ using UnityEngine.AI;
 public class BaseTracking : MonoBehaviour
 {
     private NavMeshAgent agent;
-    public Transform playerTransform;
-    private Vector3 lastPlayerPosition;
-    
-    private void Start()
+    private Vector3 lastPlayerPosition;         // 마지막으로 업데이트된 플레이어 위치
+
+    public void Awake()
     {
-        agent = GetComponent<NavMeshAgent>();
-        lastPlayerPosition = playerTransform.position;
+        this.agent = GetComponent<NavMeshAgent>();
     }
 
-    public void Tracking(float speed, float acc)
+    /* targetPos 트래킹 */
+    public void Tracking(Vector3 targetPos, float speed, float acc)
     {
-        if (Vector3.Distance(lastPlayerPosition, playerTransform.position) > 0.1f)
+        //Debug.Log("Tracking");
+        // 초기 위치 업데이트 이거나, 마지막 업데이트 위치와 현재 targetPos 위치가 다르면
+        if ( lastPlayerPosition==null || Vector3.Distance(lastPlayerPosition, targetPos) > 0.1f)
         {
-            //agent.speed = speed;
-            //agent.acceleration = acc;
-            agent.SetDestination(playerTransform.position);
-            lastPlayerPosition = playerTransform.position;
+            agent.speed = speed;                //agent 속도 설정
+            agent.acceleration = acc;           //agent 가속도 설정 : default 1000f
+            agent.SetDestination(targetPos);
+            lastPlayerPosition = targetPos;     // 마지막 업데이트 위치 반영.
         }
-        
     }
     
 }

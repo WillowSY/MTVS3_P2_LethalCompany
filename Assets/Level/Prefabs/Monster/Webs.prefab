@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6296757063693492533}
   - component: {fileID: 6273809155302373297}
-  - component: {fileID: 6065723148194158957}
+  - component: {fileID: 4439870521582200609}
   m_Layer: 0
   m_Name: Webs
   m_TagString: Untagged
@@ -62,7 +62,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6065723148194158957
+--- !u!114 &4439870521582200609
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -71,14 +71,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 665001202104546636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f39e28d73cef7a04e878b5265ee4285e, type: 3}
+  m_Script: {fileID: 11500000, guid: e24e537a9a43dfc4abeec7c598b06c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   websPos:
   - {fileID: 8429191868067674569}
   - {fileID: 5861824086455868576}
   webPrefab: {fileID: 2022946673940483766, guid: 2189fdf0e7fae904aa2058da2657b9cd, type: 3}
-  monster: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!1 &8111894753334104185
 GameObject:
   m_ObjectHideFlags: 0
