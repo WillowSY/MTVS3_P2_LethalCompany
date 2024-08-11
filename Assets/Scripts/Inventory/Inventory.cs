@@ -22,6 +22,8 @@ public class Inventory : MonoBehaviour
 
     // 각 퀵슬롯에 저장된 아이템 배열
     public ScrapData[] scraps = new ScrapData[4];
+    
+    private bool isTwoHandedEquipped = false;
 
     // 아이템을 퀵슬롯에 추가하는 함수
     public void AddItemToQuickSlot(int slotIndex, ScrapData scrap)

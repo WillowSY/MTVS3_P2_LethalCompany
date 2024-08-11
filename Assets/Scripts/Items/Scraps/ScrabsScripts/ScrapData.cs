@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ScrapData", menuName = "Scriptable Objects/ScrapData", order = 0)]
@@ -41,5 +42,13 @@ public class ScrapData : ScriptableObject
         get {
             return scrapIcon;
         }
+    }
+
+    [SerializeField]
+    private bool twoHandItem;
+
+    public bool IsTwoHandItem 
+    {
+        get { return twoHandItem; }
     }
 }
