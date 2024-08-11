@@ -2,55 +2,18 @@ using UnityEngine;
 
 public class SoundReceiver : MonoBehaviour
 {
-   public float weight = 0f;
-   public float alertThreshold = 5f;
-   public float attackThreshold = 10f;
-   public Animator receiverAnim;
+   public float weight = 0f;              // 소음 세기
+   public Animator receiverAnim;          // 해당 
    public void Receive(float intensity, Vector3 position)
    {
-      //TODO : 사운드 감지 시 행위
-      //Debug.Log("사운드 감지");
+      //FIXME : 사운드 감지 시 행위 추가
    }
 
    public void Update()
    {
+      // 시간에 따라 소음 웨이트 감소.
       addWeight(-Time.deltaTime);
    }
-
-   // public bool IsDetected()
-   // {
-   //    if (weight > alertThreshold && weight < attackThreshold)
-   //    {
-   //       return true;
-   //    }
-   //    else
-   //    {
-   //       return false;
-   //    }
-   // }
-   // public bool IsSprint()
-   // {
-   //    if (weight > attackThreshold)
-   //    {
-   //       return true;
-   //    }
-   //    else
-   //    {
-   //       return false;
-   //    }
-   // }
-   //
-   // public bool IsPatorl()
-   // {
-   //    if (weight < alertThreshold)
-   //    {
-   //       return true;
-   //    }
-   //    else
-   //    {
-   //       return false;
-   //    }
-   // }
 
    public void addWeight(float delta)
    {

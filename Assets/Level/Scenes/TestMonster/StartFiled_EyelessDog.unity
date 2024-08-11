@@ -759,6 +759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 410087041}
   - component: {fileID: 410087040}
+  - component: {fileID: 410087042}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -846,6 +847,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &410087042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410087039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &561948502 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5972819069627335781, guid: cb05862891027df4fbe5edcb8c980c7f, type: 3}
@@ -933,14 +957,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1821545952}
     m_Modifications:
-    - target: {fileID: 2308009639027313992, guid: a80d78c261e45934888140c92c627760, type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 2139242325}
-    - target: {fileID: 2308009639027313992, guid: a80d78c261e45934888140c92c627760, type: 3}
-      propertyPath: playerTrans
-      value: 
-      objectReference: {fileID: 596255690502690073}
     - target: {fileID: 5388237710632676058, guid: a80d78c261e45934888140c92c627760, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.4
@@ -985,14 +1001,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EyelessDog
       objectReference: {fileID: 0}
-    - target: {fileID: 7631041740275372848, guid: a80d78c261e45934888140c92c627760, type: 3}
-      propertyPath: receiverAnim
-      value: 
-      objectReference: {fileID: 2139242325}
-    - target: {fileID: 8773922385247125022, guid: a80d78c261e45934888140c92c627760, type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 2139242325}
     - target: {fileID: 8773922385247125022, guid: a80d78c261e45934888140c92c627760, type: 3}
       propertyPath: playerTrans
       value: 
@@ -1000,10 +1008,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 375874736334128153, guid: a80d78c261e45934888140c92c627760, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2139242325}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a80d78c261e45934888140c92c627760, type: 3}
 --- !u!1 &663413066
 GameObject:
@@ -1996,33 +2001,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1144639789218189462, guid: a4407fc926a12e845be178cb80d8d7f3, type: 3}
   m_PrefabInstance: {fileID: 550856860724615127}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2139242323 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 375874736334128153, guid: a80d78c261e45934888140c92c627760, type: 3}
-  m_PrefabInstance: {fileID: 585201489}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &2139242325
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139242323}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d6d0829faa5ac044ca77dfd446edfe0e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &421602220931704293 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 866178701446273229, guid: 212f729ddc42d4a4092c057bf35f7b60, type: 3}

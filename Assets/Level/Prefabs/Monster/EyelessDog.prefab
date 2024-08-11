@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2279695759850977197}
   - component: {fileID: 2308009639027313992}
   - component: {fileID: 8773922385247125022}
+  - component: {fileID: 1086978916236355841}
   m_Layer: 0
   m_Name: EyelessDog
   m_TagString: Enemy
@@ -218,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f2f9fe91ac4f169ec440902fb37479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTrans: {fileID: 0}
+  anim: {fileID: 6970581497410906102}
 --- !u!114 &8773922385247125022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,7 +232,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c59a71a38d545c5aed9f9beb22dd80d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basePatrol: {fileID: 0}
+  anim: {fileID: 6970581497410906102}
+  playerTrans: {fileID: 0}
+--- !u!114 &1086978916236355841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6821264205744292140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620294765ab24dbe9f924d8d96534e14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &717771933117086024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -299,8 +313,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 66624adcb08886a4088f31e850a39325, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6970581497410906102}
   m_SourcePrefab: {fileID: 100100000, guid: 66624adcb08886a4088f31e850a39325, type: 3}
+--- !u!1 &375874736334128153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 66624adcb08886a4088f31e850a39325, type: 3}
+  m_PrefabInstance: {fileID: 717771933117086024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6970581497410906102
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375874736334128153}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d6d0829faa5ac044ca77dfd446edfe0e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1043903519331786403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 66624adcb08886a4088f31e850a39325, type: 3}
@@ -362,6 +406,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SoundReceiver
       objectReference: {fileID: 0}
+    - target: {fileID: 2352879972698070397, guid: 8bb849eca15c6194ba9bbbd574e1ddcd, type: 3}
+      propertyPath: receiverAnim
+      value: 
+      objectReference: {fileID: 6970581497410906102}
     m_RemovedComponents:
     - {fileID: 5080792046871735659, guid: 8bb849eca15c6194ba9bbbd574e1ddcd, type: 3}
     - {fileID: 123717659578613889, guid: 8bb849eca15c6194ba9bbbd574e1ddcd, type: 3}

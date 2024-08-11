@@ -57,8 +57,10 @@ public class BasePatrol : MonoBehaviour
                 randomDirection += transform.position;
                 NavMesh.SamplePosition(randomDirection, out hit, 10f, NavMesh.AllAreas);
                 Vector3 targetPos = hit.position;
+                
                 agent.SetDestination(targetPos);
-                yield return new WaitForSeconds(5f);
+                
+                yield return new WaitForSeconds(7f);
             }
         }
     }
