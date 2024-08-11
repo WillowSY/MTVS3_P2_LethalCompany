@@ -4,8 +4,7 @@ public class WebTrigger : MonoBehaviour
 {
     public Transform[] websPos;         // 거미줄 위치(local)
     public GameObject webPrefab;        // 설치될 거미줄 프리팹    // FIXME : 거미줄 모델 변경
-    public Animator anim;
-    
+    public bool isWebTriggerOn = false;
     private GameObject webInstance;
     
     /* 거미줄 초기 생성 */
@@ -24,9 +23,10 @@ public class WebTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("WebTriggerOn");
-            anim.SetBool("isWebTriggerOn", true);
+            //anim.SetBool("isWebTriggerOn", true);
+            isWebTriggerOn = true;
+            //FIXME : 거미줄 하나만 삭제 되게 변경하기(현재 전체 삭제)
             Destroy(gameObject);
-            
         }
     }
 }

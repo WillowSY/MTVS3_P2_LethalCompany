@@ -16,9 +16,6 @@ GameObject:
   - component: {fileID: 6883977362234253032}
   - component: {fileID: 1280573246341937382}
   - component: {fileID: 1713547942821081540}
-  - component: {fileID: 8007597675999154699}
-  - component: {fileID: 3186276424459912277}
-  - component: {fileID: 3347822155448281420}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Enemy
@@ -156,45 +153,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 3365670292814887036}
   playerTrans: {fileID: 0}
---- !u!114 &8007597675999154699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2703703561380986997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 620294765ab24dbe9f924d8d96534e14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3186276424459912277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2703703561380986997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68f2f9fe91ac4f169ec440902fb37479, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 3365670292814887036}
---- !u!114 &3347822155448281420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2703703561380986997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1d61d19073bd3e44bf44b858ef71df5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  curHealth: 0
-  HpSlider: {fileID: 2548675403375846336}
 --- !u!1 &2946160615356447826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +995,18 @@ PrefabInstance:
     - target: {fileID: 1705849404070370923, guid: 3af956640595c6e4cb9436f0f4545ffd, type: 3}
       propertyPath: m_Name
       value: Sand Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082831617555776721, guid: 3af956640595c6e4cb9436f0f4545ffd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082831617555776721, guid: 3af956640595c6e4cb9436f0f4545ffd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2082831617555776721, guid: 3af956640595c6e4cb9436f0f4545ffd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2082831617555776721, guid: 3af956640595c6e4cb9436f0f4545ffd, type: 3}
       propertyPath: m_LocalPosition.x

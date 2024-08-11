@@ -9,6 +9,7 @@ public class Spider : MonoBehaviour
     private StateMachine stateMachine;      // spider 상태 머신
     private BasePatrol basePatrol;
     private BaseTracking baseTracking;
+    public WebTrigger webTrigger;
     
     public Animator anim;                   // spider animator
     private NavMeshAgent agent;             // spider navmesh agent
@@ -19,6 +20,7 @@ public class Spider : MonoBehaviour
         basePatrol = GetComponent<BasePatrol>();
         agent = GetComponent<NavMeshAgent>();
         baseTracking = GetComponent<BaseTracking>();
+        
         stateMachine = new SpiderStateMachine(basePatrol, baseTracking, anim, agent, playerTrans);
         if (stateMachine == null)
         {
@@ -32,6 +34,16 @@ public class Spider : MonoBehaviour
     }
     public void Update()
     {
+        // webTriggerOn 여부 판별
+        SetWebTriggerOn();
         stateMachine.Update();
+    }
+
+    public void SetWebTriggerOn()
+    {
+        if (webTrigger.isWebTriggerOn)
+        {
+            anim.SetBool("isWebTriggerOn", true);
+        }
     }
 }

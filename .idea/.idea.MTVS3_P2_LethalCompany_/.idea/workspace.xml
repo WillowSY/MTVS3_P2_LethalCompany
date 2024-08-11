@@ -5,147 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45f9bfd8-cab2-44e0-ad9d-c1044f663f74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SandSpiderController.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SandSpiderController.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SpiderAttack.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SpiderAttack.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SpiderDie.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SpiderDie.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SpiderIdle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SpiderIdle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SpiderMove.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SpiderMove.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SpiderSpool.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SpiderSpool.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SpiderStunned.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Monster/SandSpider/SpiderStunned.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Animations/Attack1.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Animations/Attack1.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Animations/Attack_2.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Animations/Attack_2.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Animations/Death.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Animations/Death.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Animations/Idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Animations/Idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Animations/TakeDamage.002.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Animations/TakeDamage.002.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Animations/Walk.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Animations/Walk.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Demo.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Demo/SpidersAsset.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Demo/SpidersAsset.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Materials/BlackWidow.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Materials/BlackWidow.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Materials/Ground.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Materials/Ground.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Materials/SandSpider.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Materials/SandSpider.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Models/Spider.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Models/Spider.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Prefabs/Black Widow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Prefabs/Black Widow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Prefabs/Sand Spider.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Prefabs/Sand Spider.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Textures/BlackWidow Color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Textures/BlackWidow Color.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Textures/BlackWidowSpider Roughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Textures/BlackWidowSpider Roughness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Textures/SandSpider Roughness.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Textures/SandSpider Roughness.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Textures/SandSpiser Color.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Textures/SandSpiser Color.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Textures/Spider Norms.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/Spiders/Textures/Spider Norms.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Level/Materials/Default Material.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Level/Materials/Default Material.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Level/Scenes/TestMonster/Company_Spider.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Level/Scenes/TestMonster/Company_Spider.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogAttackState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogAttackState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogCombatState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogCombatState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogIdleState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogIdleState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogMonsterController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogMonsterController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogPatrolState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogPatrolState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogStateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogStateMachine.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/MonsterState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/PointOfView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/PointOfView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderAttackState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderAttackState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderIdleState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderIdleState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderMonsterController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderMonsterController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderPatrolState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderPatrolState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderStateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderStateMachine.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/WebTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/WebTrigger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/StateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/StateMachine.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Monster/EyelessDog/SimpleEyelessDogAnim 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Monster/EyelessDog/SimpleEyelessDogAnim 1.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Monster/EyelessDog/eyelessdog_lc_eyeless_dog.dmx_skeleton_sprint.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Monster/EyelessDog/eyelessdog_lc_eyeless_dog.dmx_skeleton_sprint.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Monster/EyelessDog/eyelessdog_lc_eyeless_dog.dmx_skeleton_walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Monster/EyelessDog/eyelessdog_lc_eyeless_dog.dmx_skeleton_walk.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/SandSpiderArmature.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/SandSpiderArmature/SandSpiderArmature.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/SandSpiderArmature/SandSpiderArmature.blend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/SandSpiderArmature/Spidertextures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/SandSpiderArmature/Spidertextures/SandSpiderTex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/SandSpiderArmature/Spidertextures/SandSpiderTex.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/SandSpiderArmature/Spidertextures/Send_Normals.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/SandSpiderArmature/Spidertextures/Send_Normals.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/SandSpiderArmature/Spidertextures/roofTilesTexNormal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/SandSpiderArmature/Spidertextures/roofTilesTexNormal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/lethal-company-eyeless-dog-rig/source/Materials/Eyeless Dog-eyeless_dog.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/lethal-company-eyeless-dog-rig/source/Materials/Eyeless Dog-eyeless_dog.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/lethal-company-eyeless-dog-rig/source/Materials/Eyeless Dog-teeth.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/lethal-company-eyeless-dog-rig/source/Materials/Eyeless Dog-teeth.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Monster/lethal-company-eyeless-dog-rig/textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Materials/WebMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Materials/WebMaterial.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/Monster/Spider.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/Monster/Spider.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/Monster/Webs.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/Monster/Webs.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/TestMonster/Company_Spider.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/TestMonster/Company_Spider.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/TestMonster/Company_Spider.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/TestMonster/Company_Spider.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/TestMonster/StartFiled_EyelessDog.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/TestMonster/StartFiled_EyelessDog.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/BasePatrol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/BasePatrol.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/BaseTracking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/BaseTracking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/AttackState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/AttackState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/CombatState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/CombatState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/Dog.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/Dog.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogPattern.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogPattern.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogSprint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogSprint.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogTracking.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogTracking.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/IdleState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/IdleState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/MonsterController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/MonsterController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/MonsterState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/MonsterState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/PatrolState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/PatrolState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/SoundReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/SoundReceiver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/StateMachine.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/StateMachine.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/SnareFlea.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/SoundEmitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/SoundEmitter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderMonsterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderMonsterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/WebTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/WebTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/temp.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/System/temp.txt.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +28,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/aa/b7bbd196/Activator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/Scraps/ScrabsScripts/Scrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogIdleState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/EyelessDog/DogSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterHpController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderAttackState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/SandSpider/SpiderStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
@@ -264,6 +134,7 @@
       <workItem from="1723278555521" duration="19000" />
       <workItem from="1723278640389" duration="9152000" />
       <workItem from="1723349662319" duration="3499000" />
+      <workItem from="1723364332356" duration="6455000" />
     </task>
     <servers />
   </component>
