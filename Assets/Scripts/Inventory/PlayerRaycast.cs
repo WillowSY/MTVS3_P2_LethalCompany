@@ -1,8 +1,18 @@
+using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.UI;
+
 public class PlayerRaycast : MonoBehaviour
 {
     public Inventory inventory;
     public int currentQuickSlot = 0;
+    public GameObject pickSlot1;           // quickSlot UI1
+    public GameObject pickSlot2;           // quickSlot UI2
+    public GameObject pickSlot3;           // quickSlot UI3
+    public GameObject pickSlot4;           // quickSlot UI4
+
+    private readonly Color _defaultColor = Color.white; // 기본 퀵슬롯 색상
+    private readonly Color _selectedColor = Color.green; // 선택됐을 때 색상
 
     void Update()
     {
@@ -21,8 +31,46 @@ public class PlayerRaycast : MonoBehaviour
             {
                 currentQuickSlot = i;
                 Debug.Log($"currentQuickSlot = {currentQuickSlot + 1}");
+                ResetSlotColors();
+                HighlightSelectedSlot(currentQuickSlot);
+                inventory.HoldItemInHand(currentQuickSlot);
                 break;
             }
+        }
+    }
+
+    void ResetSlotColors()
+    {
+        if (pickSlot1 != null)
+            pickSlot1.GetComponent<Image>().color = _defaultColor;
+        if (pickSlot2 != null)
+            pickSlot2.GetComponent<Image>().color = _defaultColor;
+        if (pickSlot3 != null)
+            pickSlot3.GetComponent<Image>().color = _defaultColor;
+        if (pickSlot4 != null)
+            pickSlot4.GetComponent<Image>().color = _defaultColor;
+    }
+    
+    void HighlightSelectedSlot(int slotIndex)
+    {
+        switch (slotIndex)
+        {
+            case 0:
+                if (pickSlot1 != null)
+                    pickSlot1.GetComponent<Image>().color = _selectedColor;
+                break;
+            case 1:
+                if (pickSlot2 != null)
+                    pickSlot2.GetComponent<Image>().color = _selectedColor;
+                break;
+            case 2:
+                if (pickSlot3 != null)
+                    pickSlot3.GetComponent<Image>().color = _selectedColor;
+                break;
+            case 3:
+                if (pickSlot4 != null)
+                    pickSlot4.GetComponent<Image>().color = _selectedColor;
+                break;
         }
     }
 
@@ -31,9 +79,8 @@ public class PlayerRaycast : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); // 카메라의 중앙에 레이 생성
-            RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit)) // 레이에 닿았을 때
+            if (Physics.Raycast(ray, out RaycastHit hit)) // 레이에 닿았을 때
             {
                 Scrap scrap = hit.transform.GetComponent<Scrap>(); // 아이템 데이터를 가져옴
                 if (scrap != null)
@@ -42,6 +89,8 @@ public class PlayerRaycast : MonoBehaviour
                     if (scrapData != null)
                     {
                         inventory.AddItemToQuickSlot(currentQuickSlot, scrapData); // 인벤토리에 아이템데이터를 넣음
+                        currentQuickSlot = FindSlotIndexForItem(scrapData);
+                        inventory.HoldItemInHand(currentQuickSlot);
                         Destroy(hit.transform.gameObject); // 아이템을 줍고나서 삭제
                     }
                     else
@@ -64,4 +113,14 @@ public class PlayerRaycast : MonoBehaviour
             inventory.DropItemFromQuickSlot(currentQuickSlot); // 현재 슬롯의 아이템 버리기
         }
     }
+    
+        int FindSlotIndexForItem(ScrapData item)
+        {
+            for (int i = 0; i < inventory.scraps.Length; i++)
+            {
+                if (inventory.scraps[i] == item)
+                    return i;
+            }
+            return -1; // 해당 아이템이 없는 경우
+        }
 }
