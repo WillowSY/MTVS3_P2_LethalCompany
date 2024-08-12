@@ -242,6 +242,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5740290248796171334, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1520899477}
     - target: {fileID: 5967300727199297739, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
       propertyPath: m_UseGravity
       value: 0
@@ -253,6 +257,14 @@ PrefabInstance:
     - target: {fileID: 8005254958054767628, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
       propertyPath: m_Name
       value: LethalCompanyScavenger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179505968154820520, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
+      propertyPath: Lens.FieldOfView
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8179505968154820520, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
+      propertyPath: Lens.NearClipPlane
+      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -333,9 +345,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
-  field of view: 68.23834
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1370,6 +1382,11 @@ MonoBehaviour:
   pickSlot2: {fileID: 0}
   pickSlot3: {fileID: 0}
   pickSlot4: {fileID: 0}
+--- !u!95 &1520899477 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7210255400599736324, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
+  m_PrefabInstance: {fileID: 211498482}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1640544199
 GameObject:
   m_ObjectHideFlags: 0

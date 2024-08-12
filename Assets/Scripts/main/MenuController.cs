@@ -17,8 +17,9 @@ public class MenuController : MonoBehaviour
         
         menuPanel.SetActive(false);
         
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        //FIXED 게임 시작시 마우스 고정이 안되길래 esc시 마우스 고정이 풀리게 수정함.
+        //Cursor.lockState = CursorLockMode.None;
+        //Cursor.visible = true; 
     }
     
     void Update()
@@ -32,13 +33,24 @@ public class MenuController : MonoBehaviour
             // 게임 일시 정지
             if (_isMenuActive)
             {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;  
                 Time.timeScale = 0f; // 게임 일시 정지
+            }
+            //FIXED 게임 재개 
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false; 
+                Time.timeScale = 1f; 
             }
         }
     }
     
     private void ResumeGame()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;  
         _isMenuActive = false;
         menuPanel.SetActive(false);
         Time.timeScale = 1f; // 게임 재개
