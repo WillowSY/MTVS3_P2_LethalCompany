@@ -5,7 +5,7 @@ public class MonsterSpawner : MonoBehaviour
     public MonsterEnums.MonsterType monsterType;
     public GameObject monsterPrefab;
     public Transform[] monsterTrans;
-    private void Start()
+    private void Awake()
     {
         switch (monsterType)
         {
@@ -36,5 +36,6 @@ public class MonsterSpawner : MonoBehaviour
         {
             Instantiate(monsterPrefab, trans.position, trans.rotation);
         }
+        //Instantiate(monsterPrefab, monsterTrans[0].position, monsterTrans[0].rotation);
     }
 }
