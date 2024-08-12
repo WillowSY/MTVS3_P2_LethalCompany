@@ -38,14 +38,14 @@ public class ShipDataController : MonoBehaviour
 
         string json = JsonUtility.ToJson(data);
 
-        File.WriteAllText(Application.persistentDataPath + "/ShipVector.json", json);
+        File.WriteAllText(Application.persistentDataPath + "/ShipVector1.json", json);
 
         Debug.Log("배 위치 정보 저장" + json);
     }
 
     public void LoadPosition() // ship의 위치 데이터를 json으로 부터 반환받는 메소드
     {
-        string path = Application.persistentDataPath + "/ShipVector.json";
+        string path = Application.persistentDataPath + "/ShipVector1.json";
 
         string json = File.ReadAllText(path);
 

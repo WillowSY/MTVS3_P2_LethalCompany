@@ -7,30 +7,26 @@ public class ShipController : MonoBehaviour
 {
     private float _Sec;
     private int _Min;
-    public void MoveShip()
-    {
-        Vector3 destination = new Vector3(19f, 0f, -33f);
-        
-        Vector3 speed = Vector3.zero;
-        transform.position = Vector3.SmoothDamp(transform.position, destination, ref speed, 0.35f);
-        
-    }
-    
+
+    public CanvasGroup CanvasGroup;
+
     private void Start()
     {
-        CountTime();
+        StartCoroutine(CanvasGroupStart());
     }
 
-    void CountTime() // Timer of InGame
+    public void MoveShip()
     {
-        _Sec += Time.deltaTime * 4;
+        Vector3 destination = new Vector3(19f, 0.5f, -33f);
+        Vector3 speed = Vector3.zero;
+        transform.localPosition = Vector3.SmoothDamp(transform.localPosition, destination, ref speed, 0.3f);
         
-        Debug.Log($"{_Min}, {_Sec}");
+    }
+
+    IEnumerator CanvasGroupStart()
+    {
+        yield return new WaitForSeconds(8);
+        CanvasGroup.alpha = 1;
         
-        if ((int)_Sec > 59)
-        {
-            _Sec = 0;
-            _Min++;
-        }
     }
 }
