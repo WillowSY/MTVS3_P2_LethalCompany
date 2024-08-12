@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.Rendering.UI;
 using Object = UnityEngine.Object;
 
 
@@ -26,6 +27,7 @@ public class Player : MonoBehaviour
     private bool _isCrouching; // 앉기 상태 확인 변수
     private bool _isRunning; // 달리기 상태 확인 변수
     private bool _isMoving = false;
+    private bool hasItem;
 
     private StatusController _theStatusController;
     
@@ -40,6 +42,7 @@ public class Player : MonoBehaviour
     private void Update()
     {
         CameraPosition();
+        PlayerHand();
         Jump();
         TryRun();
         TryCrouch();
@@ -188,6 +191,22 @@ public class Player : MonoBehaviour
         if (_isMoving && soundEmitter != null)
         {
             soundEmitter.playSound();
+        }
+    }
+
+    private void PlayerHand()
+    {
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            hasItem = !hasItem;
+            if (hasItem)
+            {
+                animator.SetBool("useitem",true);
+            }
+            else
+            {
+                animator.SetBool("useitem",false);
+            }
         }
     }
 }
