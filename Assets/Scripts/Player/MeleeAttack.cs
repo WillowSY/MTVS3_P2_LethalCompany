@@ -3,16 +3,19 @@ using UnityEngine;
 
 public class MeleeAttack : MonoBehaviour
 {
+    public Animator animator;
+    
     public float attackRange = 0.5f;
     public int attackDamage = 1;
     public string enemyTag = "Enemy"; //몬스터에 태그 Enemy
-
+    
     private bool _isAttacking = false;
     
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && !_isAttacking)
         {
+            animator.SetTrigger("attackShovel");
             Attack();
             Debug.Log("LeftClick");
         }
