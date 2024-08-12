@@ -76,11 +76,12 @@ public class PlayerRaycast : MonoBehaviour
 
     public void HandleItemPickup()
     {
+        int layerMask = (-1) - (1 << LayerMask.NameToLayer("Player"));
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); // 카메라의 중앙에 레이 생성
+            Ray ray = Camera.main.ViewportPointToRay(new Vector3 (0.5f, 0.5f, 0)); // 카메라의 중앙에 레이 생성
 
-            if (Physics.Raycast(ray, out RaycastHit hit)) // 레이에 닿았을 때
+            if (Physics.Raycast(ray, out RaycastHit hit, 10, layerMask)) // 레이에 닿았을 때
             {
                 Scrap scrap = hit.transform.GetComponent<Scrap>(); // 아이템 데이터를 가져옴
                 if (scrap != null)

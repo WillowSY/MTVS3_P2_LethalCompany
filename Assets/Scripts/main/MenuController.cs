@@ -16,9 +16,6 @@ public class MenuController : MonoBehaviour
         quitButton.onClick.AddListener(ExitGame);
         
         menuPanel.SetActive(false);
-        
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
     }
     
     void Update()
@@ -28,6 +25,8 @@ public class MenuController : MonoBehaviour
         {
             _isMenuActive = !_isMenuActive;
             menuPanel.SetActive(_isMenuActive);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
 
             // 게임 일시 정지
             if (_isMenuActive)
