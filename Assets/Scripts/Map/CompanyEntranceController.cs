@@ -17,7 +17,7 @@ public class CompanyEntranceController : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 Debug.Log("E버튼 입력");
-                SceneManager.LoadScene(0); // // Back to StartFeild
+                SceneManager.LoadScene(1); // // Back to StartFeild
                 Debug.Log("건물 입장");
                 ShipDataController._isShipPosition = true;
                 RightDoorData._isR_DoorPosition = true;
