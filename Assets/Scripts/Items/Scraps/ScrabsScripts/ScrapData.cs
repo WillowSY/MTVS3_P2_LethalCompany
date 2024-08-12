@@ -42,13 +42,4 @@ public class ScrapData : ScriptableObject
             return scrapIcon;
         }
     }
-
-    [SerializeField] 
-    private bool isTwoHanded;
-
-    public bool IsTwoHanded
-    {
-        get { return isTwoHanded; }
-    }
-    
 }
