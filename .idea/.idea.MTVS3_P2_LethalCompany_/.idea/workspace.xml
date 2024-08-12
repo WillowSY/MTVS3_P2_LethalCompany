@@ -5,9 +5,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45f9bfd8-cab2-44e0-ad9d-c1044f663f74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/RedStorageLDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/RedStorageLDoor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/RedStorageRDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/RedStorageRDoor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Demo/M_DEMO_YFMM_Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Demo/M_DEMO_YFMM_Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_03.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_04.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_04.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_05.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_05.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_06.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_06.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_07.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_07.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_08.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_08.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_09.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_09.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_10.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_10.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_11.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_11.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_12.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_12.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_13.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_13.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_14.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_14.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_15.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_15.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_16.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_16.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_17.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_17.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_18.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_18.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_19.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_19.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_20.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_20.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_21.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_21.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_22.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_22.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_23.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_23.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_24.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_24.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_25.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_25.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_26.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_26.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_27.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_27.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_28.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_28.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_29.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_29.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_30.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_30.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_31.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_31.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_32.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_32.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_33.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_33.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_34.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_34.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_35.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_35.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_36.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_36.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_37.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_37.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_38.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_38.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_39.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_39.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_40.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_40.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_41.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_41.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_42.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_42.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_43.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_43.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_44.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_44.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_45.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_45.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_46.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_46.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_47.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_47.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_48.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_48.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_49.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_49.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_50.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Model/YughuesFreeMetalMaterials/Materials/M_YFMM_50.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Orbit-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Orbit-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,29 +80,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev__kbs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\김민석\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\김민석\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\김민석\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\Admin\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity 6000.0.12f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\Admin\Desktop\LethalCompany\MTVS3_P2_LethalCompany_ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Admin\Desktop\LethalCompany\MTVS3_P2_LethalCompany_" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -60,7 +110,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity 6000.0.12f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.5f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\Admin\Desktop\LethalCompany\MTVS3_P2_LethalCompany_ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\Admin\Desktop\LethalCompany\MTVS3_P2_LethalCompany_" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -107,6 +157,7 @@
       <workItem from="1722818893321" duration="18381000" />
       <workItem from="1723359644053" duration="25000" />
       <workItem from="1723360022762" duration="716000" />
+      <workItem from="1723375922903" duration="411000" />
     </task>
     <servers />
   </component>

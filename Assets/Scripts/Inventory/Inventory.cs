@@ -166,7 +166,7 @@ public class Inventory : MonoBehaviour
         }
 
         // 아이템 프리팹을 손 위치에 생성
-        currentHeldItem = Instantiate(scraps[slotIndex].ScrapPrefab, itemPoint);
+        currentHeldItem = Instantiate(scraps[slotIndex].ScrapPrefab, itemPoint);    
         currentHeldItem.transform.localPosition = Vector3.zero;
         currentHeldItem.transform.localRotation = Quaternion.identity;
     }

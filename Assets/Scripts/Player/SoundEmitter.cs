@@ -9,7 +9,7 @@ public class SoundEmitter : MonoBehaviour
     public GameObject emitterObject;
     public Dictionary<int, SoundReceiver> receiverDic;
     private AudioSource footstepSource;
-    public AudioClip footstepSound;
+    public AudioClip footstepSound;                     // 발자국 AudioClip
     
     void Start()
     {
@@ -43,7 +43,7 @@ public class SoundEmitter : MonoBehaviour
             Debug.Log("Emitter: Receiver is Out");
             SoundReceiver receiver;
             receiver = coll.gameObject.GetComponent<SoundReceiver>();
-            if (receiver == null) // receiver가 존재하지 않으면 청각감지 덦는 컴포넌트
+            if (receiver == null)   // receiver가 존재하지 않으면 청각감지 덦는 컴포넌트
                 return;
             int objId = coll.gameObject.GetInstanceID();
             receiverDic.Remove(objId);
@@ -67,24 +67,22 @@ public class SoundEmitter : MonoBehaviour
                 distance = Vector3.Distance(srPos, emitterPos);
                 intensity = soundIntensity;
                 intensity -= soundAttenuation * distance;
-                if (sr.weight < sr.alertThreshold)
-                    continue;
-                sr.Receive(intensity, emitterPos);
             }
         }
     }
 
+    /* 플레이어 관련 소리 재생 */
     public void playSound()
     {
         //Debug.Log("PlaySound");
         if (!footstepSource.isPlaying)
         {
-            footstepSource.PlayOneShot(footstepSound);
+            footstepSource.PlayOneShot(footstepSound);      // 플레이어 발자국 소리 재생
             if (receiverDic!=null)
             {
                 foreach (SoundReceiver sr in receiverDic.Values)
                 {
-                    sr.addWeight(1f);
+                    sr.addWeight(1f);       // SoundReceiver 소리 세기 증가
                 }
             }
         }

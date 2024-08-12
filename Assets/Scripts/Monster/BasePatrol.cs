@@ -4,23 +4,26 @@ using UnityEngine.AI;
 
 public class BasePatrol : MonoBehaviour
 {
-    public  Coroutine co;
+    public Coroutine co;
     private NavMeshAgent agent;
-    public Vector3 curPos;
     private NavMeshHit hit;
+    public Animator anim;
     
-    public void Start()
+    public void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        if (this.agent == null)
+        if (agent == null)
         {
-            Debug.LogError("UpdatePatorlDestiantion : NavMeshAgent = null");
+            Debug.LogError("BasePatorl : NavMeshAgent is null");
+        }
+        if (anim == null)
+        {
+            Debug.LogError("BasePatorl : Animator is null");
         }
     }
     
-    public void StartUpdate(Vector3 curPos)
+    public void StartUpdate()
     {
-        this.curPos = curPos;
         if (co == null)
         {
             co = StartCoroutine(UpdateDest());
@@ -31,7 +34,7 @@ public class BasePatrol : MonoBehaviour
     {
         if (co == null)
         {
-            Debug.LogError("UpdatePtrolDestination : 존재하지 않는 코루틴 정지 시도");
+            Debug.LogError("BasePatrol : 존재하지 않는 코루틴 정지 시도");
         }
         else
         {
@@ -41,17 +44,23 @@ public class BasePatrol : MonoBehaviour
 
     public IEnumerator UpdateDest()
     {
-        
         while (true)
         {
+            if (agent == null)
+            {
+                Debug.LogError("BasePatrol : agent is null!");
+            }
+            
             if (!agent.pathPending && agent.remainingDistance < 0.5f)
             {
-                Vector3 randomDirection = Random.insideUnitSphere * 5f;
-                randomDirection += curPos;
+                Vector3 randomDirection = Random.insideUnitSphere * 15f;
+                randomDirection += transform.position;
                 NavMesh.SamplePosition(randomDirection, out hit, 10f, NavMesh.AllAreas);
                 Vector3 targetPos = hit.position;
+                
                 agent.SetDestination(targetPos);
-                yield return new WaitForSeconds(4f);
+                
+                yield return new WaitForSeconds(7f);
             }
         }
     }
