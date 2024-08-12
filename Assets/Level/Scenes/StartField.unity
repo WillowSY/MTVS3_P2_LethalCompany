@@ -161,7 +161,7 @@ PrefabInstance:
     - target: {fileID: 1078674581209568745, guid: 3dd9cc1ca64827c4b9e2146e469c8714, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1975220506}
     - target: {fileID: 1078674581209568745, guid: 3dd9cc1ca64827c4b9e2146e469c8714, type: 3}
       propertyPath: itemPoint
       value: 
@@ -1792,7 +1792,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8005254958054767628, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1975220513}
   m_SourcePrefab: {fileID: 100100000, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
 --- !u!1 &1716224033
 GameObject:
@@ -1830,6 +1833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_Time: {fileID: 691704550}
   text_DailyCycle: {fileID: 1386080639}
+  canvasGroup: {fileID: 1716224039}
   imageComponent: {fileID: 1314664404}
   morning: {fileID: 21300000, guid: 37b4dd950b888c2438cdbf9bed740ac8, type: 2}
   afternoon: {fileID: 21300000, guid: 0f0268e97b6476b4bb805b0b8c8c0790, type: 2}
@@ -2031,6 +2035,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1975220506 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8005254958054767628, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
+  m_PrefabInstance: {fileID: 1625639386}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1975220513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975220506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ab455699497394e94ea49ebffbb497, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1975653336 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2448357086330032153, guid: cb05862891027df4fbe5edcb8c980c7f, type: 3}
@@ -7176,7 +7197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af8c1c2622a289342a423eea4a8db9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanvasGroup: {fileID: 1716224039}
 --- !u!23 &3700461797923029667
 MeshRenderer:
   m_ObjectHideFlags: 0

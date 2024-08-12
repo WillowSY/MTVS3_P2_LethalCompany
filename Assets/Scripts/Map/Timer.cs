@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +8,7 @@ public class Timer : MonoBehaviour
 {
     public TMP_Text text_Time;
     public TMP_Text text_DailyCycle;
+    public CanvasGroup canvasGroup;
 
     private int inGameTime_Minutes;
     private int timer = 120;
@@ -26,6 +28,8 @@ public class Timer : MonoBehaviour
     private void Start()
     {
         inGameTime = inGameTime_StartHour * 3600f;
+        StartCoroutine(CanvasGroupStart());
+        canvasGroup = GetComponent<CanvasGroup>();
     }
 
     private void Update()
@@ -65,5 +69,11 @@ public class Timer : MonoBehaviour
     private void ChangeSprite(Sprite newSprite)
     {
         imageComponent.sprite = newSprite;
+    }
+
+    IEnumerator CanvasGroupStart()
+    {
+        yield return new WaitForSeconds(8);
+        canvasGroup.alpha = 1;
     }
 }
