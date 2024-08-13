@@ -24,7 +24,7 @@ public class Entrance : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 Debug.Log("E버튼 입력");
-                SceneManager.LoadScene(2); // Company Scene Start
+                SceneManager.LoadScene(3); // Company Scene Start
                 Debug.Log("건물 입장");
                 
                 sm.SavePosition();
