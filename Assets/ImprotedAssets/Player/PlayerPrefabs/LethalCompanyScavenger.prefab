@@ -11140,6 +11140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 516154376b636b44297892cb9117613f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  min: -10
+  max: 85
   mouseSensitivity: 150
   playerBody: {fileID: 4985025132729487194}
 --- !u!114 &6280988131586333920
@@ -27091,6 +27093,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aeb52889b53a274dba5440fe232ccb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  quickSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   inventory: {fileID: 0}
   currentQuickSlot: 0
   pickSlot1: {fileID: 0}

@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Level/Scenes/StartField.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Level/Scenes/ItemReplaceSample.unity
-    guid: 3e9469ad410bc444bae778c153aba5f7
-  - enabled: 1
     path: Assets/Level/Scenes/Company.unity
     guid: 10ac500a2030efd41a58c81c52f5fdce
   m_configObjects: {}
