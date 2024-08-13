@@ -17,3 +17,5 @@ MonoBehaviour:
   scrapWeight: 0
   scrapPrefab: {fileID: 3903767566040549375, guid: 49964bc76428f7849b927f710b85408c, type: 3}
   scrapIcon: {fileID: 21300000, guid: d5291f27342678a48a67480cb9645b4b, type: 3}
+  isTwoHanded: 0
+  isShovel: 1

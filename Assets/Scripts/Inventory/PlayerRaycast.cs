@@ -1,36 +1,65 @@
+using System;
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerRaycast : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject[] quickSlots;
+    [SerializeField]
+    private GameObject[] currentSlots;
+    
+    
     public Inventory inventory;
     public int currentQuickSlot = 0;
-    public GameObject pickSlot1;           // quickSlot UI1
-    public GameObject pickSlot2;           // quickSlot UI2
-    public GameObject pickSlot3;           // quickSlot UI3
-    public GameObject pickSlot4;           // quickSlot UI4
 
-    private readonly Color _defaultColor = Color.white; // 기본 퀵슬롯 색상
-    private readonly Color _selectedColor = Color.green; // 선택됐을 때 색상
-
+    private readonly Color _defaultColor = Color.white;
+    private readonly Color _selectedColor = Color.green;
+    
+    private RaycastHit hit;
+    private const float RayLength = 2.0f;
+    private const float SphereRadius = 1f;
+    
     void Update()
     {
-        if (inventory == null) return; // inventory가 할당되지 않았을 때 조기 종료
+        if (inventory == null) return;
 
         HandleQuickSlotSelection();
         HandleItemPickup();
         HandleItemDrop();
     }
 
+    private void OnDrawGizmos()
+    {
+        Vector3 rayOrigin = Camera.main.transform.position;
+        Vector3 rayDirection = Camera.main.transform.forward;
+
+        if (Physics.SphereCast(rayOrigin, SphereRadius, rayDirection, out hit, RayLength))
+        {
+            DrawGizmos(rayOrigin, hit.point, hit.distance);
+        }
+    }
+
+    private void DrawGizmos(Vector3 origin, Vector3 hitPoint, float distance)
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(origin, Camera.main.transform.forward * distance);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(origin + Camera.main.transform.forward * distance, SphereRadius);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawSphere(hitPoint, SphereRadius * 0.25f);
+    }
+
     void HandleQuickSlotSelection()
     {
-        for (int i = 0; i <= 3; i++)
+        for (int i = 0; i < quickSlots.Length; i++)
         {
             if (Input.GetKeyDown(KeyCode.Alpha1 + i))
             {
                 currentQuickSlot = i;
-                Debug.Log($"currentQuickSlot = {currentQuickSlot + 1}");
                 ResetSlotColors();
                 HighlightSelectedSlot(currentQuickSlot);
                 inventory.HoldItemInHand(currentQuickSlot);
@@ -41,68 +70,51 @@ public class PlayerRaycast : MonoBehaviour
 
     void ResetSlotColors()
     {
-        if (pickSlot1 != null)
-            pickSlot1.GetComponent<Image>().color = _defaultColor;
-        if (pickSlot2 != null)
-            pickSlot2.GetComponent<Image>().color = _defaultColor;
-        if (pickSlot3 != null)
-            pickSlot3.GetComponent<Image>().color = _defaultColor;
-        if (pickSlot4 != null)
-            pickSlot4.GetComponent<Image>().color = _defaultColor;
-    }
-    
-    void HighlightSelectedSlot(int slotIndex)
-    {
-        switch (slotIndex)
+        foreach (var slot in currentSlots)
         {
-            case 0:
-                if (pickSlot1 != null)
-                    pickSlot1.GetComponent<Image>().color = _selectedColor;
-                break;
-            case 1:
-                if (pickSlot2 != null)
-                    pickSlot2.GetComponent<Image>().color = _selectedColor;
-                break;
-            case 2:
-                if (pickSlot3 != null)
-                    pickSlot3.GetComponent<Image>().color = _selectedColor;
-                break;
-            case 3:
-                if (pickSlot4 != null)
-                    pickSlot4.GetComponent<Image>().color = _selectedColor;
-                break;
+            if (slot != null)
+            {
+                var image = slot.GetComponent<Image>();
+                if (image != null)
+                    image.color = _defaultColor;
+            }
         }
     }
 
-    public void HandleItemPickup()
+    void HighlightSelectedSlot(int slotIndex)
     {
-        int layerMask = (-1) - (1 << LayerMask.NameToLayer("Player"));
-        if (Input.GetKeyDown(KeyCode.E))
+        var slot = currentSlots[slotIndex];
+        if (slot != null)
         {
-            Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward); // 카메라의 중앙에 레이 생성
+            var image = slot.GetComponent<Image>();
+            if (image != null)
+                image.color = _selectedColor;
+        }
+    }
 
-            if (Physics.Raycast(ray, out RaycastHit hit, 10, layerMask)) // 레이에 닿았을 때
+    private void HandleItemPickup()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && hit.transform != null)
+        {
+            Scrap scrap = hit.transform.GetComponent<Scrap>();
+            if (scrap != null)
             {
-                Scrap scrap = hit.transform.GetComponent<Scrap>(); // 아이템 데이터를 가져옴
-                if (scrap != null)
+                ScrapData scrapData = scrap.scrap;
+                if (scrapData != null)
                 {
-                    ScrapData scrapData = scrap.scrap; // ItemData를 가져옴
-                    if (scrapData != null)
-                    {
-                        inventory.AddItemToQuickSlot(currentQuickSlot, scrapData); // 인벤토리에 아이템데이터를 넣음
-                        currentQuickSlot = FindSlotIndexForItem(scrapData);
-                        inventory.HoldItemInHand(currentQuickSlot);
-                        Destroy(hit.transform.gameObject); // 아이템을 줍고나서 삭제
-                    }
-                    else
-                    {
-                        Debug.LogWarning("ItemData is null on the picked item.");
-                    }
+                    inventory.AddItemToQuickSlot(currentQuickSlot, scrapData);
+                    currentQuickSlot = FindSlotIndexForItem(scrapData);
+                    inventory.HoldItemInHand(currentQuickSlot);
+                    Destroy(hit.transform.gameObject);
                 }
                 else
                 {
-                    Debug.LogWarning("No Item component found on the picked object.");
+                    Debug.LogWarning("ItemData is null on the picked item.");
                 }
+            }
+            else
+            {
+                Debug.LogWarning("No Item component found on the picked object.");
             }
         }
     }
@@ -111,17 +123,17 @@ public class PlayerRaycast : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
-            inventory.DropItemFromQuickSlot(currentQuickSlot); // 현재 슬롯의 아이템 버리기
+            inventory.DropItemFromQuickSlot(currentQuickSlot);
         }
     }
-    
-        int FindSlotIndexForItem(ScrapData item)
+
+    int FindSlotIndexForItem(ScrapData item)
+    {
+        for (int i = 0; i < inventory.scraps.Length; i++)
         {
-            for (int i = 0; i < inventory.scraps.Length; i++)
-            {
-                if (inventory.scraps[i] == item)
-                    return i;
-            }
-            return -1; // 해당 아이템이 없는 경우
+            if (inventory.scraps[i] == item)
+                return i;
         }
+        return -1;
+    }
 }
