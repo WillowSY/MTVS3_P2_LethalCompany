@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4379026533352221915}
   m_Layer: 0
   m_Name: LargeExel
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -1,12 +1,25 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    public TextMeshProUGUI infoText; // TextMeshProUGUI 컴포넌트
+    public TextMeshProUGUI scanText; // TextMeshProUGUI 컴포넌트
 
-    public void DisplayInfo(string info)
+    private void Start()
     {
-        infoText.text = info;
+        scanText.text = null;
     }
+
+    public IEnumerator DisplayInfo(string info)
+    {
+        scanText.text = info;
+        yield return new WaitForSeconds(1f);
+        scanText.text = null;
+    }
+    /*public void DisplayInfo(string info)
+    {
+        scanText.text = info;
+    }*/
 }

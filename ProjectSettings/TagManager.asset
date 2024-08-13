@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - SoundReceiver
   - Ship
+  - Item
   layers:
   - Default
   - TransparentFX

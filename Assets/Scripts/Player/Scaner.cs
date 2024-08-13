@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Scanner : MonoBehaviour
@@ -10,13 +11,11 @@ public class Scanner : MonoBehaviour
 
     void Start()
     {
-        // UIManager 스크립트 참조 가져오기
         _uiManager = Object.FindFirstObjectByType<UIManager>();
     }
 
     void Update()
     {
-        // 우클릭 시 주변 스캔
         if (Input.GetMouseButtonDown(1))
         {
             ScanSurroundings();
@@ -26,7 +25,8 @@ public class Scanner : MonoBehaviour
     // 주변 스캔
     private void ScanSurroundings()
     {
-        RaycastHit[] hits = Physics.RaycastAll(Camera.main.transform.position, Camera.main.transform.forward, scanRange);
+        RaycastHit[] hits = Physics.RaycastAll(Camera.main.transform.position,
+            Camera.main.transform.forward, scanRange);
         
         GameObject closestDetectableObject = null;
         float closestDistance = Mathf.Infinity;
@@ -46,7 +46,7 @@ public class Scanner : MonoBehaviour
 
         if (closestDetectableObject != null)
         {
-            DisplayInfo(closestDetectableObject);
+            ItemDataInfo(closestDetectableObject);
         }
         else
         {
@@ -66,19 +66,20 @@ public class Scanner : MonoBehaviour
         }
         return false;
     }
-
+    
     // 정보 표시
-    private void DisplayInfo(GameObject scannedObject)
+    private void ItemDataInfo(GameObject scannedObject)
     {
+        Scrap data = scannedObject.GetComponent<Scrap>();
         string info = "";
         if (scannedObject.CompareTag("Item"))
         {
-            info = "아이템 발견: <br>" + scannedObject.name;
+            info = "아이템 발견<br>가격: " + data.scrap.ScrapPrice;
         }
         else if (scannedObject.CompareTag("Enemy"))
         {
             info = "적 발견: <br>" + scannedObject.name;
         }
-        _uiManager.DisplayInfo(info);
+        StartCoroutine(_uiManager.DisplayInfo(info));
     }
 }
