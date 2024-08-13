@@ -34,6 +34,6 @@ public class DogMonsterController : MonoBehaviour
         //Debug.Log("MonsterController Updating");
         stateMachine.Update();
         
-
+    
     }
 }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class DogPatrolState : MonsterState
 {
@@ -33,10 +34,12 @@ public class DogPatrolState : MonsterState
         {
             if (stateMachine._agent.remainingDistance <= stateMachine._agent.stoppingDistance)
             {
+                Debug.Log("IsPause On");
                 anim.SetBool("isPause", true);
             }
             else
             {
+                Debug.Log("IsPause Off");
                 anim.SetBool("isPause", false);
             }
         }
