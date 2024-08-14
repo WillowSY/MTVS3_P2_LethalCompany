@@ -103,8 +103,10 @@ public class PlayerRaycast : MonoBehaviour
                 if (scrapData != null)
                 {
                     inventory.AddItemToQuickSlot(currentQuickSlot, scrapData);
+                    
                     currentQuickSlot = FindSlotIndexForItem(scrapData);
                     inventory.HoldItemInHand(currentQuickSlot);
+                    
                     Destroy(hit.transform.gameObject);
                 }
                 else
