@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3626873605930513238}
   - component: {fileID: 7473714855692357979}
   - component: {fileID: 8419825637466208708}
-  - component: {fileID: 2420040683944633841}
   - component: {fileID: -2639238519003444085}
   m_Layer: 0
   m_Name: AirductStraight00
@@ -27,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6947546280401364644}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7473714855692357979
 MeshFilter:
@@ -60,6 +59,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -85,30 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2420040683944633841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6947546280401364644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e7e7c709e2b8c141826fbf7bfff0857, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableTransformationInheritance: 1
-  pseudoChildren: []
-  pseudoParent: {fileID: 0}
-  forceTransformChanged: 1
-  spawnPivot:
-    originOffset: {x: 0, y: 0, z: 0}
-    originRotation: {x: 0, y: 0, z: 0}
-    pivPosition: {x: 0, y: 0, z: 1}
-    pivRotation: {x: 0, y: 0, z: 0}
-  prefabs: []
-  prefabGroups:
-  - {fileID: 11400000, guid: 0ddd44d575a78e8428b16622c1281762, type: 2}
 --- !u!64 &-2639238519003444085
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -117,9 +95,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6947546280401364644}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8545760648804750865, guid: 8ae3f377cc3b86b458fbfcdeccaf7720, type: 3}
