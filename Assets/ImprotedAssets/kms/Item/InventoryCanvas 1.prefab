@@ -505,13 +505,15 @@ MonoBehaviour:
   quickSlotIcon_2: {fileID: 4550262054829267730}
   quickSlotIcon_3: {fileID: 4262977971181089514}
   quickSlotIcon_4: {fileID: 3197160665507403888}
+  itemPoint: {fileID: 0}
+  defaultSprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   player: {fileID: 0}
   quickSlots:
   - {fileID: 655695403850924825}
   - {fileID: 1646560015623800097}
   - {fileID: 7507213329852755037}
   - {fileID: 3393503286915908294}
-  items:
+  scraps:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

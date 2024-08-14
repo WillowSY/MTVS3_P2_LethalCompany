@@ -9,8 +9,8 @@ TagManager:
   - Enemy
   - SoundReceiver
   - Ship
-  - Item
-  - Scrap
+
+
   layers:
   - Default
   - TransparentFX
@@ -18,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 

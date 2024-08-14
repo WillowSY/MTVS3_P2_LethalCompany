@@ -116,6 +116,7 @@ public class Inventory : MonoBehaviour
         Vector3 dropPosition = player.transform.position + player.transform.forward;
         GameObject droppedItem =
             Instantiate(scraps[slotIndex].ScrapPrefab, dropPosition, Quaternion.identity);
+        ReleaseItem(droppedItem);
 
 
         // 해당 인덱스의 아이템을 null로 설정
@@ -165,9 +166,24 @@ public class Inventory : MonoBehaviour
             return;
         }
 
-        // 아이템 프리팹을 손 위치에 생성
+        // 아이템 프리팹을 ItemPoint 위치에 생성
         currentHeldItem = Instantiate(scraps[slotIndex].ScrapPrefab, itemPoint);    
         currentHeldItem.transform.localPosition = Vector3.zero;
         currentHeldItem.transform.localRotation = Quaternion.identity;
+        SetLayerRecursively(currentHeldItem, LayerMask.NameToLayer("HeldItem"));
+    }
+    
+    void SetLayerRecursively(GameObject obj, int newLayer)
+    {
+        obj.layer = newLayer;
+        foreach (Transform child in obj.transform)
+        {
+            SetLayerRecursively(child.gameObject, newLayer);
+        }
+    }
+    
+    public void ReleaseItem(GameObject item)
+    {
+        SetLayerRecursively(item, LayerMask.NameToLayer("Default"));
     }
 }
