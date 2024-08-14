@@ -6,6 +6,8 @@ public class PresserController : MonoBehaviour
 {
     public float moveDistance = 1f;
     public float moveDuration = 1f;
+    public float pressDamage = 100f;
+    public StatusController stc;
 
     private Vector3 startPosition;
     private Vector3 endPosition;
@@ -14,6 +16,7 @@ public class PresserController : MonoBehaviour
         startPosition = transform.position;
         endPosition = startPosition + Vector3.up * moveDistance;
         StartCoroutine(Press());
+        stc = FindObjectOfType<StatusController>();
     }
 
     IEnumerator Press()
@@ -42,7 +45,7 @@ public class PresserController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //player의 hp - pressDamage , player의 사망상태에 접근
+            stc.playerHp -= pressDamage;
         }
     }
 }
