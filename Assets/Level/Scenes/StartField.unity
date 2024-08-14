@@ -712,7 +712,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 100
+  far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -4799,6 +4799,66 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8005254958054767628, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
   m_PrefabInstance: {fileID: 414110204}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &498382172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 498382175}
+  - component: {fileID: 498382174}
+  - component: {fileID: 498382173}
+  m_Layer: 0
+  m_Name: SkyBoxController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &498382173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498382172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0354add40169524884046ae9d24c499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &498382174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498382172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c5c4ad8a9829874883071048bf3c04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skyboxMaterial: {fileID: 2100000, guid: 46eb0c39fe6aa134f9fe7b839a4994d1, type: 2}
+  blendDuration: 10
+  blendSpeed: 0.005
+--- !u!4 &498382175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498382172}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &561948502 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5972819069627335781, guid: cb05862891027df4fbe5edcb8c980c7f, type: 3}
@@ -5282,12 +5342,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6667892974403863698, guid: cff729ce4ddb16449b3edbc312839d2f, type: 3}
-
 --- !u!1 &1362593066 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2341891240332623926, guid: 3dd9cc1ca64827c4b9e2146e469c8714, type: 3}
   m_PrefabInstance: {fileID: 93526869}
-
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &1685350496 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 2649268462542870069, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
+  m_PrefabInstance: {fileID: 6445045185753488247}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1718980262 stripped
 MonoBehaviour:
@@ -5810,11 +5873,11 @@ PrefabInstance:
     - target: {fileID: 6384246887372185760, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
       propertyPath: canvasGroup
       value: 
-      objectReference: {fileID: 1716224039}
+      objectReference: {fileID: 1685350496}
     - target: {fileID: 6384246887372185760, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
       propertyPath: skyboxController
       value: 
-      objectReference: {fileID: 1143530754}
+      objectReference: {fileID: 498382174}
     - target: {fileID: 8929741389706304082, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -6022,8 +6085,7 @@ SceneRoots:
   - {fileID: 611624249}
   - {fileID: 1967441641}
   - {fileID: 878533285}
-
   - {fileID: 414110204}
   - {fileID: 6445045185753488247}
   - {fileID: 273783790}
-
+  - {fileID: 498382175}
