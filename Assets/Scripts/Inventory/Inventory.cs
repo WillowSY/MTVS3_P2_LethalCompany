@@ -1,4 +1,4 @@
-using UnityEngine;
+    using UnityEngine;
 using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
@@ -10,7 +10,9 @@ public class Inventory : MonoBehaviour
     public Image quickSlotIcon_4;
 
     public Transform itemPoint;
-    private GameObject currentHeldItem;
+    public Transform shovelPoint;
+    
+    public GameObject currentHeldItem;
 
     public Sprite defaultSprite;
 
@@ -165,8 +167,16 @@ public class Inventory : MonoBehaviour
             return;
         }
 
+        if (scraps[slotIndex].IsShovel)
+        {
+            currentHeldItem = Instantiate(scraps[slotIndex].ScrapPrefab, shovelPoint);    
+        }
         // 아이템 프리팹을 손 위치에 생성
-        currentHeldItem = Instantiate(scraps[slotIndex].ScrapPrefab, itemPoint);    
+        else
+        {
+            currentHeldItem = Instantiate(scraps[slotIndex].ScrapPrefab, itemPoint);    
+        }
+        
         currentHeldItem.transform.localPosition = Vector3.zero;
         currentHeldItem.transform.localRotation = Quaternion.identity;
     }

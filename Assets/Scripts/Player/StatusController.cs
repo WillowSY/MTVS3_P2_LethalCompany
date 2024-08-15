@@ -13,6 +13,8 @@ public class StatusController : MonoBehaviour
     public TMP_Text death;
     public Image blackout;
 
+    private UIManager _uiManager;
+
     private bool onfatal = false;
 
     public float sp = 100f;
@@ -25,6 +27,7 @@ public class StatusController : MonoBehaviour
     public Image spGauge;
     private void Start()
     {
+        _uiManager = FindFirstObjectByType<UIManager>();
         currentSp = sp; // currentSp 초기화
     }
 
@@ -35,6 +38,21 @@ public class StatusController : MonoBehaviour
         UpdateHpUI();
 
         spGauge.fillAmount = currentSp / sp;
+    }
+    
+    private void WeightDataInfo(GameObject scannedObject)
+    {
+        Scrap data = scannedObject.GetComponent<Scrap>();
+        string info = "";
+        if (scannedObject.CompareTag("Item"))
+        {
+            info = "아이템 발견<br>가격: " + data.scrap.ScrapPrice;
+        }
+        else if (scannedObject.CompareTag("Enemy"))
+        {
+            info = "적 발견: <br>" + scannedObject.name;
+        }
+        StartCoroutine(_uiManager.ScanDisplayInfo(info));
     }
 
     public void DecreaseStamina(float amount)
@@ -130,4 +148,10 @@ public class StatusController : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
     }
+
+    /*private void Weight(string info)
+    {
+        info = sc
+        WeightDataInfo(info);
+    }*/
 }

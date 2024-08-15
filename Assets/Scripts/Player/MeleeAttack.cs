@@ -1,10 +1,12 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class MeleeAttack : MonoBehaviour
 {
     public Animator animator;
-    
+    public Inventory inventory;
+    public PlayerRaycast playerRaycast;
     public float attackRange = 0.5f;
     public int attackDamage = 1;
     public string enemyTag = "Enemy"; //몬스터에 태그 Enemy
@@ -13,17 +15,21 @@ public class MeleeAttack : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !_isAttacking)
+        if (inventory.scraps[playerRaycast.currentQuickSlot] != null &&
+            inventory.scraps[playerRaycast.currentQuickSlot].IsShovel)
         {
-            animator.SetTrigger("attackShovel");
-            Attack();
-            Debug.Log("LeftClick");
+            if (Input.GetMouseButtonDown(0) && !_isAttacking)
+            {
+                StartCoroutine(AttackDecision());
+                animator.SetTrigger("attackShovel");
+                Invoke("Attack",0.9f);
+                Debug.Log("attack");
+            }
         }
     }
-
+    
     private void Attack()
     {
-        StartCoroutine(AttackDecision());
         // 공격 판정
         Collider[] hitEnemies = Physics.OverlapSphere(transform.position, attackRange);
         foreach (Collider enemy in hitEnemies)

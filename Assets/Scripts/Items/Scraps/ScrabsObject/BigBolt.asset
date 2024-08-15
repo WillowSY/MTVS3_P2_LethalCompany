@@ -15,5 +15,7 @@ MonoBehaviour:
   scrapName: BigBolt
   scrapPrice: 32
   scrapWeight: 19
-  scrapPrefab: {fileID: 703378408703929510, guid: 0a02c706b9c9c5e459e3cf560fc9b36f, type: 3}
+  scrapPrefab: {fileID: 9001549490883522388, guid: dc265ed9031ba504cb6e804af59fe265, type: 3}
   scrapIcon: {fileID: 21300000, guid: 6d473f7773dc5d942ba55eb545d7fb8a, type: 3}
+  isTwoHanded: 0
+  isShovel: 0

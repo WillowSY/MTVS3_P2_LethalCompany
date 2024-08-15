@@ -80,6 +80,6 @@ public class Scanner : MonoBehaviour
         {
             info = "적 발견: <br>" + scannedObject.name;
         }
-        StartCoroutine(_uiManager.DisplayInfo(info));
+        StartCoroutine(_uiManager.ScanDisplayInfo(info));
     }
 }
