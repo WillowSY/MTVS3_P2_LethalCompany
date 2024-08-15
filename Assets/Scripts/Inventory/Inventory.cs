@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
@@ -23,7 +24,7 @@ public class Inventory : MonoBehaviour
     // 각 퀵슬롯에 저장된 아이템 배열
     public ScrapData[] scraps = new ScrapData[4];
     
-    private bool isTwoHandedEquipped = false;
+    [FormerlySerializedAs("_isTwoHandedEquipped")] public bool isTwoHandedEquipped = false;
 
     // 아이템을 퀵슬롯에 추가하는 함수
     public void AddItemToQuickSlot(int slotIndex, ScrapData scrap)
@@ -149,6 +150,10 @@ public class Inventory : MonoBehaviour
                     quickSlotIcon_4.sprite = defaultSprite;
                 break;
         }
+        
+        // 아이템을 삭제한 후에는 양손 아이템 상태를 초기화
+        isTwoHandedEquipped = false;
+
     }
     
     public void HoldItemInHand(int slotIndex)
@@ -171,6 +176,9 @@ public class Inventory : MonoBehaviour
         currentHeldItem.transform.localPosition = Vector3.zero;
         currentHeldItem.transform.localRotation = Quaternion.identity;
         SetLayerRecursively(currentHeldItem, LayerMask.NameToLayer("HeldItem"));
+        
+        // 아이템이 양손 아이템인지 여부 확인 (예시: ScrapData에 isTwoHanded 필드가 있다고 가정)
+        isTwoHandedEquipped = scraps[slotIndex].IsTwoHanded;
     }
     
     void SetLayerRecursively(GameObject obj, int newLayer)

@@ -55,6 +55,13 @@ public class PlayerRaycast : MonoBehaviour
 
     void HandleQuickSlotSelection()
     {
+        // 양손 아이템이 장착되어 있으면 퀵슬롯 변경을 제한
+        if (inventory.isTwoHandedEquipped)
+        {
+            Debug.Log("Cannot change quick slots while holding a two-handed item.");
+            return;
+        }
+        
         for (int i = 0; i < quickSlots.Length; i++)
         {
             if (Input.GetKeyDown(KeyCode.Alpha1 + i))
@@ -94,6 +101,13 @@ public class PlayerRaycast : MonoBehaviour
 
     private void HandleItemPickup()
     {
+        // 양손 아이템이 장착되어 있으면 아이템 줍기를 제한
+        if (inventory.isTwoHandedEquipped)
+        {
+            Debug.Log("Cannot pick up items while holding a two-handed item.");
+            return;
+        }
+        
         if (Input.GetKeyDown(KeyCode.E) && hit.transform != null)
         {
             Scrap scrap = hit.transform.GetComponent<Scrap>();
