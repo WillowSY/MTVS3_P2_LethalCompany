@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
 
     public Transform itemPoint;
     public Transform shovelPoint;
+    public Transform flashLightPoint;
     
     public GameObject currentHeldItem;
 
@@ -172,17 +173,24 @@ public class Inventory : MonoBehaviour
         {
             return;
         }
+        
         if (scraps[slotIndex].IsShovel)
         {
             currentHeldItem = Instantiate(scraps[slotIndex].ScrapPrefab, shovelPoint);    
+        }
+        else if (scraps[slotIndex].IsFlashLight)
+        {
+            currentHeldItem = Instantiate(scraps[slotIndex].ScrapPrefab, flashLightPoint);
         }
         // 아이템 프리팹을 손 위치에 생성
         else
         {
             currentHeldItem = Instantiate(scraps[slotIndex].ScrapPrefab, itemPoint);    
         }
-        currentHeldItem.transform.localPosition = Vector3.zero;
+        
+        currentHeldItem.transform.localPosition = Vector3.zero; 
         currentHeldItem.transform.localRotation = Quaternion.identity;
+        
         SetLayerRecursively(currentHeldItem, LayerMask.NameToLayer("HeldItem"));
         
         // 아이템이 양손 아이템인지 여부 확인 (예시: ScrapData에 isTwoHanded 필드가 있다고 가정)

@@ -51,4 +51,11 @@ public class ScrapData : ScriptableObject
     {
         get { return isShovel; }
     }
+
+    [SerializeField] private bool isFlashLight;
+    
+    public bool IsFlashLight
+    {
+        get { return isFlashLight; }
+    }
 }
