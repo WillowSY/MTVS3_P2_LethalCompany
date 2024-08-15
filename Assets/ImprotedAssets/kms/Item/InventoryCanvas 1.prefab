@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 2275974539504313228}
   - component: {fileID: 8675373490228946343}
   - component: {fileID: 1935652356354191812}
+  - component: {fileID: 5550811672000481794}
   m_Layer: 5
   m_Name: InventoryCanvas 1
   m_TagString: Untagged
@@ -391,6 +392,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5550811672000481794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5068852471882800186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6439c5db2f7f5c74ea69a1f8cb15f4e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5991235756248427760
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +520,7 @@ MonoBehaviour:
   quickSlotIcon_4: {fileID: 3197160665507403888}
   itemPoint: {fileID: 0}
   shovelPoint: {fileID: 0}
+  flashLightPoint: {fileID: 0}
   currentHeldItem: {fileID: 0}
   defaultSprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   player: {fileID: 0}
@@ -520,6 +534,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  isTwoHandedEquipped: 0
 --- !u!1 &6329951251625435936
 GameObject:
   m_ObjectHideFlags: 0
