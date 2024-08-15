@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: eyelessdog_lc_eyeless_dog.dmx_skeleton_eat
+  m_Name: Bite_EyelessDog
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0

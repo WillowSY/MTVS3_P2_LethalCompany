@@ -5251,6 +5251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CornerSpawnPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 3174814554565207063, guid: 1ae45d7d0642f964084abc6edb925711, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6846896904043030228, guid: 1ae45d7d0642f964084abc6edb925711, type: 3}
       propertyPath: m_Name
       value: ShipSpawnPoint
