@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class MineController : MonoBehaviour
@@ -7,10 +8,12 @@ public class MineController : MonoBehaviour
     public float lightOnRange;
     public Light pointLight;
     public Player player;
+    public StatusController stc;
     
     void Start()
     {
         player = FindObjectOfType<Player>();
+        stc = FindObjectOfType<StatusController>();
     }
 
     
@@ -31,7 +34,14 @@ public class MineController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //vfx효과를 instantiate시키고 캐릭터의 체력 - exploseDamage 하는코드를 작성
+            StartCoroutine(Explose());
+            
         }
+    }
+
+    IEnumerator Explose()
+    {
+        yield return new WaitForSeconds(2);
+        stc.playerHp -= exploseDamage;
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PanelController : MonoBehaviour
 {
@@ -32,7 +33,14 @@ public class PanelController : MonoBehaviour
                 Debug.Log("E버튼 입력");
                 isTriggerActive = true;
                 Debug.Log("커멘더 센터 지정 좌표로 이동");
-           } 
+           }
+
+           if (Input.GetKey(KeyCode.F))
+           {
+               Debug.Log("F버튼 입력");
+               SceneManager.LoadScene(3);
+               ScrapDataContoroller._isScrapPosition = true;
+           }
         }
     }
 }

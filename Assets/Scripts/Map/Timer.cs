@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
     public TMP_Text text_Time;
     public TMP_Text text_DailyCycle;
     public CanvasGroup canvasGroup;
+    public SkyboxController skyboxController;
 
     private int inGameTime_Minutes;
     private int timer = 120;
@@ -30,6 +31,7 @@ public class Timer : MonoBehaviour
         inGameTime = inGameTime_StartHour * 3600f;
         StartCoroutine(CanvasGroupStart());
         canvasGroup = GetComponent<CanvasGroup>();
+        
     }
 
     private void Update()
@@ -41,6 +43,7 @@ public class Timer : MonoBehaviour
 
         text_Time.color = color;
         text_Time.text = $"{inGameTime_Hours:D2}:{inGameTime_Minutes:D2}";
+        skyboxController.StartBlending();
         ChangeSprite(morning);
         if (inGameTime_Hours >= 12)
         {

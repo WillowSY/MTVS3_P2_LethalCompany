@@ -7,7 +7,7 @@ public class ButtonOfDoor : MonoBehaviour
     private bool isTriggerActive = false;
     public RightDoorOpener _rDO;
     public LeftDoorOpener _lDO;
-    
+    public ScrapDataContoroller sdCon;
 
     private void OnTriggerStay(Collider other)
     {
@@ -16,10 +16,15 @@ public class ButtonOfDoor : MonoBehaviour
             if(Input.GetKey(KeyCode.E))
             {
                 Debug.Log("E버튼 입력");
-                Debug.Log("문 제어");
+                Debug.Log("문 닫힘");
                OnButtonPlay();
+                sdCon.SavePosition();
+            }
 
-            } 
+            if (Input.GetKey(KeyCode.F))
+            {
+                OnButtonOpen();
+            }
         }
     }
 
@@ -29,5 +34,10 @@ public class ButtonOfDoor : MonoBehaviour
         _rDO.CloseRightDoor();
         _lDO.CloseLeftDoor();
     }
-    
+
+    private void OnButtonOpen()
+    {
+        _rDO.OpenRightDoor();
+        _lDO.OpenLeftDoor();
+    }
 }
