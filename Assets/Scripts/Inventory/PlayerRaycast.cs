@@ -21,6 +21,13 @@ public class PlayerRaycast : MonoBehaviour
     private const float RayLength = 2.0f;
     private const float SphereRadius = 1f;
     
+    private SoundEmitter _soundEmitter;
+
+    private void Start()
+    {
+        _soundEmitter = FindFirstObjectByType<SoundEmitter>();
+    }
+
     void Update()
     {
         if (inventory == null) return;
@@ -122,6 +129,7 @@ public class PlayerRaycast : MonoBehaviour
                     inventory.HoldItemInHand(currentQuickSlot);
                     
                     Destroy(hit.transform.gameObject);
+                    _soundEmitter.PlayDropItem();
                 }
                 else
                 {
@@ -140,6 +148,7 @@ public class PlayerRaycast : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             inventory.DropItemFromQuickSlot(currentQuickSlot);
+            _soundEmitter.PlayDropItem();
         }
     }
 

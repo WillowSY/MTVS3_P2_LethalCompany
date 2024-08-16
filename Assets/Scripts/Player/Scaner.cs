@@ -8,16 +8,19 @@ public class Scanner : MonoBehaviour
     public string weaponTag = "Weapon"; // 무기 태그
 
     private UIManager _uiManager;
+    private SoundEmitter _soundEmitter;
 
     void Start()
     {
         _uiManager = Object.FindFirstObjectByType<UIManager>();
+        _soundEmitter = Object.FindFirstObjectByType<SoundEmitter>();
     }
 
     void Update()
     {
         if (Input.GetMouseButtonDown(1))
         {
+            _soundEmitter.PlayScanSound();
             ScanSurroundings();
         }
     }
@@ -70,11 +73,10 @@ public class Scanner : MonoBehaviour
     // 정보 표시
     private void ItemDataInfo(GameObject scannedObject)
     {
-        Scrap data = scannedObject.GetComponent<Scrap>();
         string info = "";
         if (scannedObject.CompareTag("Item"))
         {
-            info = "아이템 발견<br>가격: " + data.scrap.ScrapPrice;
+            info = "아이템 발견<br>가격: " + scannedObject.name;
         }
         else if (scannedObject.CompareTag("Enemy"))
         {

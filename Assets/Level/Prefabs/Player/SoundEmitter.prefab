@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8482699551359217254}
   - component: {fileID: 3618132807635128557}
   - component: {fileID: 8602837553335807846}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SoundEmitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,3 +196,6 @@ MonoBehaviour:
   soundAttenuation: 0
   emitterObject: {fileID: 0}
   footstepSound: {fileID: 8300000, guid: 04906ba07f1fbcf429387ef0c0a870d6, type: 3}
+  dropItemSound: {fileID: 0}
+  scanSound: {fileID: 0}
+  hitShovel: {fileID: 0}

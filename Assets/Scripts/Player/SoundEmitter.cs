@@ -9,7 +9,17 @@ public class SoundEmitter : MonoBehaviour
     public GameObject emitterObject;
     public Dictionary<int, SoundReceiver> receiverDic;
     private AudioSource footstepSource;
+    
     public AudioClip footstepSound;                     // 발자국 AudioClip
+
+    [SerializeField]
+    private AudioClip dropItemSound; //아이템 드롭사운드
+
+    [SerializeField] 
+    private AudioClip scanSound; //스캔사운드 
+
+    [SerializeField] 
+    private AudioClip hitShovel; //공격 사운드
     
     void Start()
     {
@@ -72,19 +82,38 @@ public class SoundEmitter : MonoBehaviour
     }
 
     /* 플레이어 관련 소리 재생 */
-    public void playSound()
+    public void PlayFootStepSound()
     {
         //Debug.Log("PlaySound");
-        if (!footstepSource.isPlaying)
+        footstepSource.PlayOneShot(footstepSound);      // 플레이어 발자국 소리 재생
+        if (receiverDic!=null)
         {
-            footstepSource.PlayOneShot(footstepSound);      // 플레이어 발자국 소리 재생
-            if (receiverDic!=null)
+            foreach (SoundReceiver sr in receiverDic.Values)
             {
-                foreach (SoundReceiver sr in receiverDic.Values)
-                {
-                    sr.addWeight(1f);       // SoundReceiver 소리 세기 증가
-                }
+                sr.addWeight(1f);       // SoundReceiver 소리 세기 증가
             }
         }
+    }
+
+    public void PlayDropItem()
+    {
+        footstepSource.PlayOneShot(dropItemSound);
+        if (receiverDic!=null)
+        {
+            foreach (SoundReceiver sr in receiverDic.Values)
+            {
+                sr.addWeight(2f);       // SoundReceiver 소리 세기 증가
+            }
+        }
+    }
+
+    public void PlayAttackSound()
+    {
+        footstepSource.PlayOneShot(hitShovel);
+    }
+
+    public void PlayScanSound()
+    {
+        footstepSource.PlayOneShot(scanSound);
     }
 }
