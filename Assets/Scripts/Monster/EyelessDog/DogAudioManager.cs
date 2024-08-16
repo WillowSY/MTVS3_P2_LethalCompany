@@ -86,6 +86,11 @@ public class DogSoundController : MonoBehaviour
         
     }
 
+    public void PlayLungeSound()
+    {
+        audioSource.clip = lungeSound;
+        audioSource.Play();
+    }
     private IEnumerator PlayRoarSound()
     {
         yield return new WaitUntil(()=>isRoaring);
@@ -110,11 +115,11 @@ public class DogSoundController : MonoBehaviour
             yield return new WaitForSeconds(growlSound.length + 3f);
         }
     }
-    private IEnumerator PlayWalkSound()
-    {
-        audioSource.PlayOneShot(walkSound);
-        yield return new WaitForSeconds(audioSource.clip.length);
-    }
+    // private IEnumerator PlayWalkSound()
+    // {
+    //     audioSource.PlayOneShot(walkSound);
+    //     yield return new WaitForSeconds(audioSource.clip.length);
+    // }
     
     // IEnumerator PlaySprintSound()
     // {
