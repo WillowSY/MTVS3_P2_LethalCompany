@@ -1,30 +1,25 @@
+using System;
 using System.Collections;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StatusController : MonoBehaviour
 {
-    public float playerHp = 100f;
-    public GameObject hp50;
-    public GameObject hp30;
-    public TMP_Text fatalInjury;
-    public TMP_Text death;
-    public Image blackout;
-
     private UIManager _uiManager;
-
-    private bool onfatal = false;
-
+    
+    public float playerHp = 100f;
     public float sp = 100f;
     private float currentSp;
-    public float spIncreaseSpeed = 10f; // sp 회복량
+    public float spIncreaseSpeed = 10f; // sp 회복량 
     private float spRechargeTime = 2f; // sp 회복시간 
     private float currentSpRechargeTime;
     private bool spUsed; // sp 사용여부
     
-    public Image spGauge;
+    
+
+    public bool onFatal;
+    
     private void Start()
     {
         _uiManager = FindFirstObjectByType<UIManager>();
@@ -33,29 +28,33 @@ public class StatusController : MonoBehaviour
 
     private void Update()
     {
+        PlayerHPUpdata();
         SPRechargeTime();
         SPRecover();
-        UpdateHpUI();
-        Debug.Log("현재체력: " + playerHp);
+        _uiManager.spGauge.fillAmount = currentSp / sp;
+    }
 
-        spGauge.fillAmount = currentSp / sp;
+    public void TakeDamage(int damage)
+    {
+        playerHp -= damage;
+    }
+
+    private void PlayerHPUpdata()
+    {
+        if (playerHp <= 0)
+        {
+            _uiManager.UIDead();
+        }
+        else if (playerHp <= 30 && !onFatal) 
+        {
+            _uiManager.UIHp30() ;
+        }
+        else if (playerHp <= 50 && !onFatal) 
+        {
+            _uiManager.UIHp50();
+        }
     }
     
-    private void WeightDataInfo(GameObject scannedObject)
-    {
-        Scrap data = scannedObject.GetComponent<Scrap>();
-        string info = "";
-        if (scannedObject.CompareTag("Item"))
-        {
-            info = "아이템 발견<br>가격: " + data.scrap.ScrapPrice;
-        }
-        else if (scannedObject.CompareTag("Enemy"))
-        {
-            info = "적 발견: <br>" + scannedObject.name;
-        }
-        StartCoroutine(_uiManager.ScanDisplayInfo(info));
-    }
-
     public void DecreaseStamina(float amount)
     {
         spUsed = true;
@@ -100,58 +99,8 @@ public class StatusController : MonoBehaviour
     }
 
 
-    public void TakeDamage(int damage)
-    {
-        playerHp -= damage;
-    }
     
-    private void UpdateHpUI()
-    {
-        //Debug.Log("playerHP :"+playerHp);
-        if (playerHp <= 30 && !onfatal)
-        {
-            hp50.SetActive(false);
-            hp30.SetActive(true);
-            fatalInjury.enabled = true;
-            Invoke("HideFatal",1f);
-        }
-        else if (playerHp <= 50 && !onfatal)
-        {
-            hp50.SetActive(true);
-        }
-        else if (playerHp <= 0)
-        {
-            StartCoroutine(Fadein());
-            death.enabled = true;
-            
-            
-            Invoke("LoadScene",2f);
-        }
-    }
-
-    private void LoadScene()
-    {
-        Debug.Log("LoadScene");
-        playerHp = 100f;
-        SceneManager.LoadScene(1);
-    }
-
-    private void HideFatal()
-    {
-        fatalInjury.enabled = false;
-        onfatal = true;
-    }
-
-    IEnumerator Fadein()
-    {
-        Color fadeColor = blackout.color;
-        for (int i = 0; i < 100; i++)
-        {
-            fadeColor.a += 0.02f;
-            blackout.color = fadeColor;
-            yield return new WaitForSeconds(0.01f);
-        }
-    }
+    
 
     /*private void Weight(string info)
     {

@@ -49,11 +49,6 @@ public class Player : MonoBehaviour
         Move();
         //Debug.Log("현재속도: " + _currentSpeed);
     }
-
-    private void Weight()
-    {
-        
-    }
     
     private void CameraPosition()
     {
