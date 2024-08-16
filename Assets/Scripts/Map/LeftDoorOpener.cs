@@ -13,13 +13,6 @@ public class LeftDoorOpener : MonoBehaviour
         transform.localPosition = Vector3.SmoothDamp(transform.localPosition, doorOpen, ref speed, 0.1f);
     }
 
-    public void ReOpenLeftDoor()
-    {
-        Vector3 speed = Vector3.zero;
-        Vector3 doorOpen = new Vector3(19f, transform.localPosition.y, transform.localPosition.z); // LocalPosition of Door
-        transform.localPosition = Vector3.SmoothDamp(transform.localPosition, doorOpen, ref speed, 0.1f);
-    }
-
     public void CloseLeftDoor()
     {
         Vector3 speed = Vector3.zero;
