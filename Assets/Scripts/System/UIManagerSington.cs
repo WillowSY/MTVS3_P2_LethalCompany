@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class UISingleton : MonoBehaviour
+public class UIManagerSington : MonoBehaviour
 {
-    public static UISingleton instance = null;
+    public static UIManagerSington instance = null;
     private void Awake()
     {
         if (instance == null)

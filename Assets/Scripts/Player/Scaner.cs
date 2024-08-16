@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Scanner : MonoBehaviour
 {
@@ -10,7 +9,7 @@ public class Scanner : MonoBehaviour
     public string weaponTag = "Weapon"; // 무기 태그
     private bool _isScanning;
 
-    public GameObject scanFX;
+    public GameObject ScanFX;
     private UIManager _uiManager;
     private SoundEmitter _soundEmitter;
 
@@ -67,10 +66,10 @@ public class Scanner : MonoBehaviour
         ScanSurroundings();
         for (int i = 0; i < 100; i++)
         {
-            scanFX.transform.localScale += new Vector3(0.2f,0.2f,0.2f);
+            ScanFX.transform.localScale += new Vector3(0.2f,0.2f,0.2f);
             yield return new WaitForSeconds(0.01f);
         }
-        scanFX.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+        ScanFX.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
         _isScanning = false;
     }
 
@@ -90,11 +89,10 @@ public class Scanner : MonoBehaviour
     // 정보 표시
     private void ItemDataInfo(GameObject scannedObject)
     {
-        Scrap scandata = scannedObject.GetComponent<Scrap>();
         string info = "";
-        if (scandata.CompareTag("Item"))
+        if (scannedObject.CompareTag("Item"))
         {
-            info = "아이템 발견: <br>" + scandata.scrap.ScrapName;
+            info = "아이템 발견<br>가격: " + scannedObject.name;
         }
         else if (scannedObject.CompareTag("Enemy"))
         {
