@@ -7,20 +7,14 @@
     <list default="true" id="45f9bfd8-cab2-44e0-ad9d-c1044f663f74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Materials/SkyBoxMaterial/SkyBoxMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Materials/SkyBoxMaterial/SkyBoxMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Tools.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/BigBolt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/BigBolt.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/FancyLamp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/FancyLamp.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/LargeExel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/LargeExel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/RubberDuck.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/RubberDuck.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/Company.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/Company.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/ItemReplaceSample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/ItemReplaceSample.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/LethalBuilding.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/LethalBuilding.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/MainScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/MainScreen.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/StartField.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/StartField.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MineController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MineController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/ButtonOfDoor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/ButtonOfDoor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/LeftDoorOpener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/LeftDoorOpener.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/PanelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/PanelController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/ShipController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/ShipController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Orbit-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Orbit-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/PresserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/PresserController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/ScrapRecognizeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/Scraps/ScrabsScripts/Scrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterHpController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui/Runtime/UGUI/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
