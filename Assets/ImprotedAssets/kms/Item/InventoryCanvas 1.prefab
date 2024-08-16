@@ -514,10 +514,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120fd7d93428e0e40ba60e9aed471272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quickSlotIcon_1: {fileID: 4216474306221418624}
-  quickSlotIcon_2: {fileID: 4550262054829267730}
-  quickSlotIcon_3: {fileID: 4262977971181089514}
-  quickSlotIcon_4: {fileID: 3197160665507403888}
+  quickSlotIcons:
+  - {fileID: 4216474306221418624}
+  - {fileID: 0}
+  - {fileID: 4262977971181089514}
+  - {fileID: 3197160665507403888}
   itemPoint: {fileID: 0}
   shovelPoint: {fileID: 0}
   flashLightPoint: {fileID: 0}
