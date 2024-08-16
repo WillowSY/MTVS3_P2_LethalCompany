@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -5,11 +6,11 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     // 퀵슬롯에 추가할 아이콘 이미지들
-    public Image quickSlotIcon_1;
-    public Image quickSlotIcon_2;
-    public Image quickSlotIcon_3;
-    public Image quickSlotIcon_4;
-
+    [SerializeField] private Image quickSlotIcon_1;
+    [SerializeField] private Image quickSlotIcon_2;
+    [SerializeField] private Image quickSlotIcon_3;
+    [SerializeField] private Image quickSlotIcon_4;
+    
     // 아이템이 장착될 위치들
     public Transform itemPoint;
     public Transform shovelPoint;
@@ -36,6 +37,11 @@ public class Inventory : MonoBehaviour
     // 퀵슬롯의 기본 색상과 선택된 색상
     private readonly Color _defaultColor = Color.white;
     private readonly Color _selectedColor = Color.green;
+
+    public Inventory(Image quickSlotIcon1)
+    {
+        quickSlotIcon_1 = quickSlotIcon1;
+    }
 
     // 아이템을 퀵슬롯에 추가하는 함수
     public void AddItemToQuickSlot(int slotIndex, ScrapData scrap)
@@ -82,25 +88,7 @@ public class Inventory : MonoBehaviour
         scraps[slotIndex] = scrap;
 
         // 아이템의 아이콘을 해당 퀵슬롯에 설정
-        switch (slotIndex)
-        {
-            case 0:
-                if (quickSlotIcon_1 != null)
-                    quickSlotIcon_1.sprite = scrap.ScrapIcon;
-                break;
-            case 1:
-                if (quickSlotIcon_2 != null)
-                    quickSlotIcon_2.sprite = scrap.ScrapIcon;
-                break;
-            case 2:
-                if (quickSlotIcon_3 != null)
-                    quickSlotIcon_3.sprite = scrap.ScrapIcon;
-                break;
-            case 3:
-                if (quickSlotIcon_4 != null)
-                    quickSlotIcon_4.sprite = scrap.ScrapIcon;
-                break;
-        }
+        UpdateQuickSlotIcon(slotIndex, scrap.ScrapIcon);
         
         // 모든 퀵슬롯의 색상을 기본 색상으로 초기화한 후, 선택된 슬롯을 강조
         ResetAllSlotColors();
@@ -117,7 +105,6 @@ public class Inventory : MonoBehaviour
 
             return -1;
         }
-
     }
     
     // 특정 퀵슬롯을 선택하는 함수
@@ -166,6 +153,30 @@ public class Inventory : MonoBehaviour
         }
     }
     
+    // 퀵슬롯 아이콘 업데이트 함수
+    private void UpdateQuickSlotIcon(int slotIndex, Sprite icon)
+    {
+        switch (slotIndex)
+        {
+            case 0:
+                if (quickSlotIcon_1 != null)
+                    quickSlotIcon_1.sprite = icon;
+                break;
+            case 1:
+                if (quickSlotIcon_2 != null)
+                    quickSlotIcon_2.sprite = icon;
+                break;
+            case 2:
+                if (quickSlotIcon_3 != null)
+                    quickSlotIcon_3.sprite = icon;
+                break;
+            case 3:
+                if (quickSlotIcon_4 != null)
+                    quickSlotIcon_4.sprite = icon;
+                break;
+        }
+    }
+
     // 아이템을 퀵슬롯에서 삭제하고, 게임 월드에 아이템을 떨어뜨리는 함수
     public void DropItemFromQuickSlot(int slotIndex)
     {
@@ -193,32 +204,14 @@ public class Inventory : MonoBehaviour
         }
 
         // 퀵슬롯에서 아이콘을 기본 아이콘으로 변경
-        switch (slotIndex)
-        {
-            case 0:
-                if (quickSlotIcon_1 != null)
-                    quickSlotIcon_1.sprite = defaultSprite;
-                break;
-            case 1:
-                if (quickSlotIcon_2 != null)
-                    quickSlotIcon_2.sprite = defaultSprite;
-                break;
-            case 2:
-                if (quickSlotIcon_3 != null)
-                    quickSlotIcon_3.sprite = defaultSprite;
-                break;
-            case 3:
-                if (quickSlotIcon_4 != null)
-                    quickSlotIcon_4.sprite = defaultSprite;
-                break;
-        }
+        UpdateQuickSlotIcon(slotIndex, defaultSprite);
         
         // 아이템을 삭제한 후 양손 아이템 상태를 초기화
         isTwoHandedEquipped = false;
     }
     
     // 퀵슬롯에서 선택된 아이템을 손에 들게 하는 함수
-    public void HoldItemInHand(int slotIndex)
+    private void HoldItemInHand(int slotIndex)
     {
         // 손에 들고 있는 기존 아이템을 제거
         if (currentHeldItem != null)
@@ -271,7 +264,7 @@ public class Inventory : MonoBehaviour
     }
     
     // 아이템을 월드에 드롭했을 때 레이어를 "Default"로 설정하는 함수
-    public void ReleaseItem(GameObject item)
+    private void ReleaseItem(GameObject item)
     {
         SetLayerRecursively(item, LayerMask.NameToLayer("Default"));
     }

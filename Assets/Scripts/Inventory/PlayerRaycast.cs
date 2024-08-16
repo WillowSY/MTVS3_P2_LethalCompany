@@ -22,10 +22,17 @@ public class PlayerRaycast : MonoBehaviour
     private const float RayLength = 2.0f;
     private const float SphereRadius = 1f;
     
+    // UI 요소들
+    [SerializeField] private GameObject getItemMsg;
+    [SerializeField] private GameObject twoHandedMsg;
+    
     void Update()
     {
         // 인벤토리가 할당되지 않은 경우 함수 종료
         if (inventory == null) return;
+        
+        // 레이캐스트를 통해 아이템과의 충돌 감지
+        PerformRaycast();
 
         // 퀵슬롯 선택 처리
         HandleQuickSlotSelection();
@@ -35,8 +42,32 @@ public class PlayerRaycast : MonoBehaviour
         
         // 아이템 드롭 처리
         HandleItemDrop();
+        
+        // UI 업데이트
+        UpdateUI();
     }
 
+    // 레이캐스트를 통해 아이템과의 충돌 감지
+    private void PerformRaycast()
+    {
+        Vector3 rayOrigin = Camera.main.transform.position;
+        Vector3 rayDirection = Camera.main.transform.forward;
+
+        if (Physics.SphereCast(rayOrigin, SphereRadius, rayDirection, out hit, RayLength))
+        {
+            // 히트된 오브젝트에 Scrap 컴포넌트가 있는지 확인
+            Scrap scrap = hit.transform.GetComponent<Scrap>();
+            if (scrap != null)
+            {
+                getItemMsg.SetActive(true);
+            }
+        }
+        else
+        {
+            getItemMsg.SetActive(false);
+        }
+    }
+    
     // 에디터에서 레이와 히트 지점을 시각적으로 표시하기 위한 함수
     private void OnDrawGizmos()
     {
@@ -152,5 +183,19 @@ public class PlayerRaycast : MonoBehaviour
                 return i;
         }
         return 0;
+    }
+    
+    // UI 업데이트 함수
+    private void UpdateUI()
+    {
+        // 양손 아이템을 들고 있을 때 UI 업데이트
+        if (inventory.isTwoHandedEquipped)
+        {
+            twoHandedMsg.SetActive(true);
+        }
+        else
+        {
+            twoHandedMsg.SetActive(false);
+        }
     }
 }
