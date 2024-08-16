@@ -6,20 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="45f9bfd8-cab2-44e0-ad9d-c1044f663f74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MTVS3_P2_LethalCompany_/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/Player/PlayerPrefabs/LethalCompanyScavenger.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/Player/PlayerPrefabs/LethalCompanyScavenger.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/InventoryCanvas 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ImprotedAssets/kms/Item/InventoryCanvas 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Materials/SkyBoxMaterial/SkyBoxMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Materials/SkyBoxMaterial/SkyBoxMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Model/Tools.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/BigBolt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/BigBolt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/FancyLamp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/FancyLamp.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/LargeExel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/LargeExel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Prefabs/RubberDuck.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Prefabs/RubberDuck.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/Company.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/Company.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/ItemReplaceSample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/ItemReplaceSample.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/LethalBuilding.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/LethalBuilding.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level/Scenes/StartField.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level/Scenes/StartField.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerRaycast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/PlayerRaycast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Scraps/ScrabsObject/FlashLight.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/Scraps/ScrabsObject/FlashLight.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Scraps/ScrabsObject/LargeAxel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/Scraps/ScrabsObject/LargeAxel.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Scraps/ScrabsObject/Shovel.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/Scraps/ScrabsObject/Shovel.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Items/Scraps/ScrabsScripts/ScrapData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/Scraps/ScrabsScripts/ScrapData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/CompanyEntranceController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/CompanyEntranceController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/playerCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/playerCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/MineController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/MineController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/PanelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/PanelController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/ShipController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/ShipController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Orbit-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Orbit-Regular SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +31,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/ScrapRecognizeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/Scraps/ScrabsScripts/Scrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Monster/MonsterHpController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -45,7 +47,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev__kbs&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -122,6 +124,8 @@
       <workItem from="1723375922903" duration="411000" />
       <workItem from="1723508627764" duration="1061000" />
       <workItem from="1723517805381" duration="10170000" />
+      <workItem from="1723697714451" duration="16120000" />
+      <workItem from="1723785675785" duration="419000" />
     </task>
     <servers />
   </component>

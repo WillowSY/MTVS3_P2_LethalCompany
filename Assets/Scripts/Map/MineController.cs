@@ -9,6 +9,7 @@ public class MineController : MonoBehaviour
     public Light pointLight;
     public Player player;
     public StatusController stc;
+    public AudioSource audioSource;
     
     void Start()
     {
@@ -23,10 +24,12 @@ public class MineController : MonoBehaviour
         if (Vector3.Distance(transform.position, player.transform.position) < lightOnRange)
         {
             pointLight.intensity = 1f;
+            audioSource.Play();
         }
         else
         {
             pointLight.intensity = 0f;
+            audioSource.Stop();
         }
     }
 
