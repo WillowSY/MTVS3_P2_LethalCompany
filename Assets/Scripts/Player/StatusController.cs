@@ -36,6 +36,7 @@ public class StatusController : MonoBehaviour
         SPRechargeTime();
         SPRecover();
         UpdateHpUI();
+        Debug.Log("현재체력: " + playerHp);
 
         spGauge.fillAmount = currentSp / sp;
     }
@@ -123,13 +124,16 @@ public class StatusController : MonoBehaviour
             StartCoroutine(Fadein());
             death.enabled = true;
             
+            
             Invoke("LoadScene",2f);
         }
     }
 
     private void LoadScene()
     {
-        SceneManager.LoadScene(0);
+        Debug.Log("LoadScene");
+        playerHp = 100f;
+        SceneManager.LoadScene(1);
     }
 
     private void HideFatal()

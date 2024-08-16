@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,19 +7,24 @@ public class Scanner : MonoBehaviour
     public float scanRange = 100f; // 스캔 범위
     public string[] detectableTags = { "Item", "Enemy" }; // 감지 가능한 태그 목록
     public string weaponTag = "Weapon"; // 무기 태그
+    private bool _isScanning;
 
+    public GameObject ScanFX;
     private UIManager _uiManager;
+    private SoundEmitter _soundEmitter;
 
     void Start()
     {
         _uiManager = Object.FindFirstObjectByType<UIManager>();
+        _soundEmitter = Object.FindFirstObjectByType<SoundEmitter>();
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && !_isScanning)
         {
-            ScanSurroundings();
+            _soundEmitter.PlayScanSound();
+            StartCoroutine(Scanning());
         }
     }
 
@@ -54,6 +60,19 @@ public class Scanner : MonoBehaviour
         }
     }
 
+    private IEnumerator Scanning()
+    {
+        _isScanning = true;
+        ScanSurroundings();
+        for (int i = 0; i < 100; i++)
+        {
+            ScanFX.transform.localScale += new Vector3(0.2f,0.2f,0.2f);
+            yield return new WaitForSeconds(0.01f);
+        }
+        ScanFX.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+        _isScanning = false;
+    }
+
     // 감지 가능한 태그인지 확인
     private bool IsDetectableTag(string tag)
     {
@@ -70,11 +89,10 @@ public class Scanner : MonoBehaviour
     // 정보 표시
     private void ItemDataInfo(GameObject scannedObject)
     {
-        Scrap data = scannedObject.GetComponent<Scrap>();
         string info = "";
         if (scannedObject.CompareTag("Item"))
         {
-            info = "아이템 발견<br>가격: " + data.scrap.ScrapPrice;
+            info = "아이템 발견<br>가격: " + scannedObject.name;
         }
         else if (scannedObject.CompareTag("Enemy"))
         {

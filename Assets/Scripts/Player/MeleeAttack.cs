@@ -12,7 +12,14 @@ public class MeleeAttack : MonoBehaviour
     public string enemyTag = "Enemy"; //몬스터에 태그 Enemy
     
     private bool _isAttacking = false;
-    
+
+    private SoundEmitter _soundEmitter;
+
+    private void Start()
+    {
+        _soundEmitter = FindFirstObjectByType<SoundEmitter>();
+    }
+
     void Update()
     {
         if (inventory.scraps[playerRaycast.currentQuickSlot] != null &&
@@ -28,8 +35,9 @@ public class MeleeAttack : MonoBehaviour
         }
     }
     
-    private void Attack()
+    public void Attack()
     {
+        _soundEmitter.PlayAttackSound();
         // 공격 판정
         Collider[] hitEnemies = Physics.OverlapSphere(transform.position, attackRange);
         foreach (Collider enemy in hitEnemies)

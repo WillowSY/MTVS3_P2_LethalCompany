@@ -8,6 +8,7 @@ public class PresserController : MonoBehaviour
     public float moveDuration = 1f;
     public float pressDamage = 100f;
     public StatusController stc;
+    public AudioSource audioSource;
 
     private Vector3 startPosition;
     private Vector3 endPosition;
@@ -17,6 +18,7 @@ public class PresserController : MonoBehaviour
         endPosition = startPosition + Vector3.up * moveDistance;
         StartCoroutine(Press());
         stc = FindObjectOfType<StatusController>();
+        audioSource.Play(3);
     }
 
     IEnumerator Press()
@@ -39,6 +41,12 @@ public class PresserController : MonoBehaviour
                 yield return null;
             }
         }
+    }
+
+    IEnumerator PressSound()
+    {
+        yield return new WaitForSeconds(2);
+        
     }
 
     private void OnTriggerEnter(Collider other)

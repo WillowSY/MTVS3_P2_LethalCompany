@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
 
         if (isMoving && soundEmitter != null)
         {
-                soundEmitter.playSound();
+                soundEmitter.PlayFootStepSound();
         }
         transform.position = pos;
     }

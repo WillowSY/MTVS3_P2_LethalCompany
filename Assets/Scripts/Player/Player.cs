@@ -47,7 +47,6 @@ public class Player : MonoBehaviour
         TryRun();
         TryCrouch();
         Move();
-        PlayFootStepSound();
         //Debug.Log("현재속도: " + _currentSpeed);
     }
 
@@ -202,11 +201,11 @@ public class Player : MonoBehaviour
      * playFootStepSound : 플레이어 발자국 소리 출력.
      * FIXME : 추후 출력 소리 다양해질 시 개별 클래스로 분리 예정.
      */
-    private void PlayFootStepSound()
+    private void FootStepSound()
     {
-        if (_isMoving && soundEmitter != null)
+        if (_isMoving && controller.isGrounded && soundEmitter != null)
         {
-            soundEmitter.playSound();
+            soundEmitter.PlayFootStepSound();
         }
     }
 

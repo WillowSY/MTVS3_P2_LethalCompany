@@ -22,9 +22,18 @@ public class PlayerRaycast : MonoBehaviour
     private const float RayLength = 2.0f;
     private const float SphereRadius = 1f;
     
+
     // UI 요소들
     [SerializeField] private GameObject getItemMsg;
     [SerializeField] private GameObject twoHandedMsg;
+    
+
+    private SoundEmitter _soundEmitter;
+
+    private void Start()
+    {
+        _soundEmitter = FindFirstObjectByType<SoundEmitter>();
+    }
     
     void Update()
     {
@@ -136,6 +145,7 @@ public class PlayerRaycast : MonoBehaviour
                     
                     // 히트된 오브젝트 삭제
                     Destroy(hit.transform.gameObject);
+                    _soundEmitter.PlayDropItem();
                 }
                 else
                 {
@@ -156,6 +166,7 @@ public class PlayerRaycast : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             inventory.DropItemFromQuickSlot(currentQuickSlot);
+            _soundEmitter.PlayDropItem();
         }
     }
 

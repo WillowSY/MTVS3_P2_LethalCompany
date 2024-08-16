@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: 23de8bfe8340dd74b9f53e28e1020953
+AssetOrigin:
+  serializedVersion: 1
+  productId: 286945
+  packageName: Omni Animation - Core Locomotion Pack
+  packageVersion: 1.0
+  assetPath: Assets/Opsive/OmniAnimation/Packs/CoreLocomotion/Animations/Original/WalkForward.fbx
+  uploadId: 671667
 ModelImporter:
-  serializedVersion: 21202
+  serializedVersion: 22200
   internalIDToNameTable:
   - first:
       74: 5065078985690110279
@@ -22,11 +29,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
-      copied configuration does not match position in animation file:\n\t'LeftThigh'
-      : position error = 3.518972 mm\n\t'LeftShin' : position error = 16.197260 mm\n\t'LeftFoot'
-      : position error = 15.112840 mm\n\t'LeftToe' : position error = 7.395416 mm\n"
     animationImportErrors: 
     animationImportWarnings: "\nClip 'WalkForward.bvh' has import animation warnings
       that might lower retargeting quality:\nNote: Activate translation DOF on avatar
@@ -68,7 +70,21 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.3040576
+        functionName: FootStepSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.79119396
+        functionName: FootStepSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -81,6 +97,7 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -108,6 +125,7 @@ ModelImporter:
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -890,21 +908,15 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: f40707028e5c90a428c6f0c68c2189ee,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: f40707028e5c90a428c6f0c68c2189ee, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
   avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 286945
-  packageName: Omni Animation - Core Locomotion Pack
-  packageVersion: 1.0
-  assetPath: Assets/Opsive/OmniAnimation/Packs/CoreLocomotion/Animations/Original/WalkForward.fbx
-  uploadId: 671667
