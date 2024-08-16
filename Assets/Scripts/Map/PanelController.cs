@@ -44,7 +44,7 @@ public class PanelController : MonoBehaviour
            if (Input.GetKey(KeyCode.F))
            {
                Debug.Log("F버튼 입력");
-               SceneManager.LoadScene(2);
+               SceneManager.LoadScene(3);
                ScrapDataContoroller._isScrapPosition = true;
            }
         }

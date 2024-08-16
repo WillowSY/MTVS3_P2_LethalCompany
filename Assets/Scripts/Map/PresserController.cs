@@ -18,7 +18,7 @@ public class PresserController : MonoBehaviour
         endPosition = startPosition + Vector3.up * moveDistance;
         StartCoroutine(Press());
         stc = FindObjectOfType<StatusController>();
-        audioSource.Play(4);
+        audioSource.Play(3);
     }
 
     IEnumerator Press()
