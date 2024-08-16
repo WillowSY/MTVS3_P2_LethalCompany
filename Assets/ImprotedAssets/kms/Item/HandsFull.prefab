@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 6993474280107246140}
   - component: {fileID: 60949636987916268}
   - component: {fileID: 4226141333164109356}
+  - component: {fileID: 8059916561693221455}
   m_Layer: 5
   m_Name: HandsFull
   m_TagString: Untagged
@@ -257,3 +258,15 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8059916561693221455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9217327397592605026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3eabc2c06b488e42962470fd55ba409, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

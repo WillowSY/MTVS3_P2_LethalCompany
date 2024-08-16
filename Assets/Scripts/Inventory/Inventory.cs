@@ -1,79 +1,38 @@
-using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    // 퀵슬롯에 추가할 아이콘 이미지들
-    [SerializeField] private Image quickSlotIcon_1;
-    [SerializeField] private Image quickSlotIcon_2;
-    [SerializeField] private Image quickSlotIcon_3;
-    [SerializeField] private Image quickSlotIcon_4;
-    
-    // 아이템이 장착될 위치들
+    // 퀵슬롯 아이콘 이미지들
+    [SerializeField] private Image[] quickSlotIcons = new Image[4];
     public Transform itemPoint;
     public Transform shovelPoint;
     public Transform flashLightPoint;
     
-    // 현재 플레이어가 손에 들고 있는 아이템
     public GameObject currentHeldItem;
-
-    // 기본 아이콘 스프라이트 (아이템이 없을 때 보여줄 이미지)
     public Sprite defaultSprite;
-
-    // 플레이어 객체
     public GameObject player;
-
-    // 4개의 퀵슬롯을 저장할 수 있는 배열
-    public Transform[] quickSlots = new Transform[4];
     
-    // 각 퀵슬롯에 저장된 아이템 데이터를 저장할 배열
+    // 퀵슬롯 배열과 각 슬롯의 아이템 데이터
+    public Transform[] quickSlots = new Transform[4];
     public ScrapData[] scraps = new ScrapData[4];
     
-    // 두 손으로 아이템을 들고 있는지 여부를 나타내는 플래그
     [FormerlySerializedAs("_isTwoHandedEquipped")] public bool isTwoHandedEquipped = false;
     
-    // 퀵슬롯의 기본 색상과 선택된 색상
     private readonly Color _defaultColor = Color.white;
     private readonly Color _selectedColor = Color.green;
 
-    public Inventory(Image quickSlotIcon1)
-    {
-        quickSlotIcon_1 = quickSlotIcon1;
-    }
-
-    // 아이템을 퀵슬롯에 추가하는 함수
+    // 아이템을 퀵슬롯에 추가
     public void AddItemToQuickSlot(int slotIndex, ScrapData scrap)
     {
-        // 인덱스가 유효 범위를 벗어나면 오류 로그를 출력하고 함수를 종료
-        if (slotIndex < 0 || slotIndex >= quickSlots.Length)
+        if (IsInvalidSlotIndex(slotIndex) || scrap == null || quickSlots[slotIndex] == null)
         {
-            Debug.LogError("Slot index is out of range.");
+            Debug.LogError("Invalid slot index or scrap data.");
             return;
         }
 
-        // 추가하려는 아이템 데이터가 null이면 오류 로그를 출력하고 함수를 종료
-        if (scrap == null)
-        {
-            Debug.LogError("ItemData is null.");
-            return;
-        }
-
-        // 퀵슬롯이 할당되어 있지 않으면 오류 로그를 출력하고 함수를 종료
-        if (quickSlots[slotIndex] == null)
-        {
-            Debug.LogError("QuickSlot Transform is null.");
-            return;
-        }
-
-        // 아이템 아이콘이 null인지 확인하고 경고 로그 출력
-        if (scrap.ScrapIcon == null)
-        {
-            Debug.LogWarning("Item icon is null. Assign a default icon.");
-        }
-
-        // 선택된 슬롯에 이미 아이템이 있는 경우, 빈 슬롯을 찾음
+        // 빈 슬롯 찾기
         if (scraps[slotIndex] != null)
         {
             slotIndex = FindNextEmptySlot();
@@ -84,41 +43,29 @@ public class Inventory : MonoBehaviour
             }
         }
 
-        // 해당 슬롯에 아이템 데이터 저장
+        // 슬롯에 아이템 추가
         scraps[slotIndex] = scrap;
-
-        // 아이템의 아이콘을 해당 퀵슬롯에 설정
         UpdateQuickSlotIcon(slotIndex, scrap.ScrapIcon);
-        
-        // 모든 퀵슬롯의 색상을 기본 색상으로 초기화한 후, 선택된 슬롯을 강조
+
         ResetAllSlotColors();
         HighlightSlot(slotIndex);
-
-        // 빈 슬롯을 찾는 내부 함수
-        int FindNextEmptySlot()
-        {
-            for (int i = 0; i < scraps.Length; i++)
-            {
-                if (scraps[i] == null)
-                    return i;
-            }
-
-            return -1;
-        }
     }
-    
-    // 특정 퀵슬롯을 선택하는 함수
+
+    // 퀵슬롯 선택
     public void SelectQuickSlot(int slotIndex)
     {
-        // 모든 퀵슬롯의 색상을 기본 색상으로 초기화한 후, 선택된 퀵슬롯만 초록색으로 변경
+        if (IsInvalidSlotIndex(slotIndex))
+        {
+            Debug.LogError("Invalid slot index.");
+            return;
+        }
+
         ResetAllSlotColors();
         HighlightSlot(slotIndex);
-
-        // 퀵슬롯 선택에 따른 추가 로직 (예: 아이템 장착)
         HoldItemInHand(slotIndex);
     }
     
-    // 모든 퀵슬롯의 색상을 기본 색상으로 초기화하는 함수
+    // 퀵슬롯의 모든 색상을 기본 색상으로 초기화
     private void ResetAllSlotColors()
     {
         for (int i = 0; i < quickSlots.Length; i++)
@@ -126,135 +73,90 @@ public class Inventory : MonoBehaviour
             ResetSlotColor(i);
         }
     }
-    
-    // 특정 퀵슬롯의 색상을 강조하는 함수 (초록색으로 변경)
+
+    // 퀵슬롯 색상 강조
     private void HighlightSlot(int slotIndex)
     {
-        if (quickSlots[slotIndex] != null)
-        {
-            var image = quickSlots[slotIndex].GetComponent<Image>();
-            if (image != null)
-            {
-                image.color = _selectedColor;
-            }
-        }
+        SetSlotColor(slotIndex, _selectedColor);
     }
-    
-    // 특정 퀵슬롯의 색상을 기본 색상으로 초기화하는 함수
+
+    // 퀵슬롯 색상 초기화
     private void ResetSlotColor(int slotIndex)
     {
+        SetSlotColor(slotIndex, _defaultColor);
+    }
+
+    // 슬롯 색상 설정
+    private void SetSlotColor(int slotIndex, Color color)
+    {
         if (quickSlots[slotIndex] != null)
         {
             var image = quickSlots[slotIndex].GetComponent<Image>();
             if (image != null)
             {
-                image.color = _defaultColor;
+                image.color = color;
             }
         }
     }
     
-    // 퀵슬롯 아이콘 업데이트 함수
-    private void UpdateQuickSlotIcon(int slotIndex, Sprite icon)
-    {
-        switch (slotIndex)
-        {
-            case 0:
-                if (quickSlotIcon_1 != null)
-                    quickSlotIcon_1.sprite = icon;
-                break;
-            case 1:
-                if (quickSlotIcon_2 != null)
-                    quickSlotIcon_2.sprite = icon;
-                break;
-            case 2:
-                if (quickSlotIcon_3 != null)
-                    quickSlotIcon_3.sprite = icon;
-                break;
-            case 3:
-                if (quickSlotIcon_4 != null)
-                    quickSlotIcon_4.sprite = icon;
-                break;
-        }
-    }
-
-    // 아이템을 퀵슬롯에서 삭제하고, 게임 월드에 아이템을 떨어뜨리는 함수
+    // 아이템을 퀵슬롯에서 삭제하고, 게임 월드에 아이템을 떨어뜨림
     public void DropItemFromQuickSlot(int slotIndex)
     {
-        // 인덱스가 범위를 벗어나거나 해당 인덱스에 아이템이 없으면 경고 로그를 출력하고 함수를 종료
-        if (slotIndex < 0 || slotIndex >= quickSlots.Length || scraps[slotIndex] == null)
+        if (IsInvalidSlotIndex(slotIndex) || scraps[slotIndex] == null)
         {
-            Debug.LogWarning("Cannot drop item. Index is out of range or no item in slot.");
+            Debug.LogWarning("Cannot drop item. Invalid index or no item in slot.");
             return;
         }
 
-        // 플레이어의 현재 위치 앞에 아이템을 생성
+        // 아이템 떨어뜨리기
         Vector3 dropPosition = player.transform.position + player.transform.forward;
-        GameObject droppedItem =
-            Instantiate(scraps[slotIndex].ScrapPrefab, dropPosition, Quaternion.identity);
+        GameObject droppedItem = Instantiate(scraps[slotIndex].ScrapPrefab, dropPosition, Quaternion.identity);
         ReleaseItem(droppedItem);
 
-        // 해당 인덱스의 아이템을 null로 설정
+        // 슬롯과 현재 들고 있는 아이템 초기화
         scraps[slotIndex] = null;
-
-        // 손에 들고 있는 아이템을 제거
-        if (currentHeldItem != null)
-        {
-            Destroy(currentHeldItem);
-            currentHeldItem = null;
-        }
-
-        // 퀵슬롯에서 아이콘을 기본 아이콘으로 변경
+        DestroyCurrentHeldItem();
         UpdateQuickSlotIcon(slotIndex, defaultSprite);
-        
-        // 아이템을 삭제한 후 양손 아이템 상태를 초기화
         isTwoHandedEquipped = false;
     }
-    
-    // 퀵슬롯에서 선택된 아이템을 손에 들게 하는 함수
-    private void HoldItemInHand(int slotIndex)
-    {
-        // 손에 들고 있는 기존 아이템을 제거
-        if (currentHeldItem != null)
-        {
-            Destroy(currentHeldItem);
-            currentHeldItem = null;
-        }
 
-        // 인덱스가 유효 범위를 벗어나거나 해당 인덱스에 아이템이 없으면 함수를 종료
-        if (slotIndex < 0 || slotIndex >= scraps.Length || scraps[slotIndex] == null)
+    // 현재 아이템을 손에 들게 설정
+    public void HoldItemInHand(int slotIndex)
+    {
+        DestroyCurrentHeldItem();
+
+        if (IsInvalidSlotIndex(slotIndex) || scraps[slotIndex] == null)
         {
             return;
         }
-        
-        // 아이템이 삽인지 확인하고, 그렇다면 삽 위치에 아이템을 생성
-        if (scraps[slotIndex].IsShovel)
-        {
-            currentHeldItem = Instantiate(scraps[slotIndex].ScrapPrefab, shovelPoint);    
-        }
-        // 아이템이 손전등인지 확인하고, 그렇다면 손전등 위치에 아이템을 생성
-        else if (scraps[slotIndex].IsFlashLight)
-        {
-            currentHeldItem = Instantiate(scraps[slotIndex].ScrapPrefab, flashLightPoint);
-        }
-        // 기본 아이템 위치에 아이템을 생성
-        else
-        {
-            currentHeldItem = Instantiate(scraps[slotIndex].ScrapPrefab, itemPoint);    
-        }
-        
-        // 생성된 아이템의 위치와 회전을 초기화
-        currentHeldItem.transform.localPosition = Vector3.zero; 
+
+        // 아이템 프리팹 생성
+        Transform point = scraps[slotIndex].IsShovel ? shovelPoint :
+                          scraps[slotIndex].IsFlashLight ? flashLightPoint :
+                          itemPoint;
+
+        currentHeldItem = Instantiate(scraps[slotIndex].ScrapPrefab, point);
+        currentHeldItem.transform.localPosition = Vector3.zero;
         currentHeldItem.transform.localRotation = Quaternion.identity;
         
-        // 생성된 아이템의 레이어를 "HeldItem"으로 설정
         SetLayerRecursively(currentHeldItem, LayerMask.NameToLayer("HeldItem"));
-        
-        // 아이템이 양손 아이템인지 확인하고 상태를 설정
+
+        // 양손 아이템 상태 설정
         isTwoHandedEquipped = scraps[slotIndex].IsTwoHanded;
     }
-    
-    // 아이템과 그 하위 객체들의 레이어를 재귀적으로 설정하는 함수
-    void SetLayerRecursively(GameObject obj, int newLayer)
+
+    // 현재 들고 있는 아이템 삭제
+    private void DestroyCurrentHeldItem()
+    {
+        if (currentHeldItem != null)
+        {
+            Destroy(currentHeldItem);
+            currentHeldItem = null;
+        }
+    }
+
+    // 모든 자식 오브젝트에 대해 레이어 설정
+    private void SetLayerRecursively(GameObject obj, int newLayer)
     {
         obj.layer = newLayer;
         foreach (Transform child in obj.transform)
@@ -263,9 +165,35 @@ public class Inventory : MonoBehaviour
         }
     }
     
-    // 아이템을 월드에 드롭했을 때 레이어를 "Default"로 설정하는 함수
-    private void ReleaseItem(GameObject item)
+    // 아이템을 기본 레이어로 설정
+    public void ReleaseItem(GameObject item)
     {
         SetLayerRecursively(item, LayerMask.NameToLayer("Default"));
+    }
+
+    // 빈 슬롯 찾기
+    private int FindNextEmptySlot()
+    {
+        for (int i = 0; i < scraps.Length; i++)
+        {
+            if (scraps[i] == null)
+                return i;
+        }
+        return -1;
+    }
+
+    // 퀵슬롯 아이콘 업데이트
+    private void UpdateQuickSlotIcon(int slotIndex, Sprite icon)
+    {
+        if (slotIndex >= 0 && slotIndex < quickSlotIcons.Length && quickSlotIcons[slotIndex] != null)
+        {
+            quickSlotIcons[slotIndex].sprite = icon;
+        }
+    }
+
+    // 슬롯 인덱스 유효성 검사
+    private bool IsInvalidSlotIndex(int slotIndex)
+    {
+        return slotIndex < 0 || slotIndex >= quickSlots.Length;
     }
 }

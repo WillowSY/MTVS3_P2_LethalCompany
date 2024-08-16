@@ -31,9 +31,6 @@ public class PlayerRaycast : MonoBehaviour
         // 인벤토리가 할당되지 않은 경우 함수 종료
         if (inventory == null) return;
         
-        // 레이캐스트를 통해 아이템과의 충돌 감지
-        PerformRaycast();
-
         // 퀵슬롯 선택 처리
         HandleQuickSlotSelection();
         
@@ -46,27 +43,6 @@ public class PlayerRaycast : MonoBehaviour
         // UI 업데이트
         UpdateUI();
     }
-
-    // 레이캐스트를 통해 아이템과의 충돌 감지
-    private void PerformRaycast()
-    {
-        Vector3 rayOrigin = Camera.main.transform.position;
-        Vector3 rayDirection = Camera.main.transform.forward;
-
-        if (Physics.SphereCast(rayOrigin, SphereRadius, rayDirection, out hit, RayLength))
-        {
-            // 히트된 오브젝트에 Scrap 컴포넌트가 있는지 확인
-            Scrap scrap = hit.transform.GetComponent<Scrap>();
-            if (scrap != null)
-            {
-                getItemMsg.SetActive(true);
-            }
-        }
-        else
-        {
-            getItemMsg.SetActive(false);
-        }
-    }
     
     // 에디터에서 레이와 히트 지점을 시각적으로 표시하기 위한 함수
     private void OnDrawGizmos()
@@ -78,7 +54,17 @@ public class PlayerRaycast : MonoBehaviour
         // 구 레이캐스트를 실행하여 충돌이 감지되면 Gizmo를 그림
         if (Physics.SphereCast(rayOrigin, SphereRadius, rayDirection, out hit, RayLength))
         {
+            // 히트된 오브젝트에 Scrap 컴포넌트가 있는지 확인
+            Scrap scrap = hit.transform.GetComponent<Scrap>();
+            if (scrap != null)
+            {
+                getItemMsg.SetActive(true);
+            }
             DrawGizmos(rayOrigin, hit.point, hit.distance);
+        }
+        else
+        {
+            getItemMsg.SetActive(false);
         }
     }
 
