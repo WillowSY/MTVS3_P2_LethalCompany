@@ -114,6 +114,7 @@ Material:
     - _Blend: 0.052443624
 
 
+    - _Blend: 0.67704964
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0

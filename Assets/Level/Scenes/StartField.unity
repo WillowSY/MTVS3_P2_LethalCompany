@@ -687,7 +687,6 @@ GameObject:
   m_Component:
   - component: {fileID: 330585546}
   - component: {fileID: 330585545}
-  - component: {fileID: 330585544}
   - component: {fileID: 330585548}
   - component: {fileID: 330585549}
   - component: {fileID: 330585550}
@@ -698,14 +697,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &330585544
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330585543}
-  m_Enabled: 1
 --- !u!20 &330585545
 Camera:
   m_ObjectHideFlags: 0
@@ -4853,6 +4844,14 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2244955391494577096, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1774633212}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3083401398906245813, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 414110212}
   m_SourcePrefab: {fileID: 100100000, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
 --- !u!4 &414110205 stripped
 Transform:
@@ -4869,6 +4868,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 397482232969329268, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
   m_PrefabInstance: {fileID: 414110204}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &414110206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3083401398906245813, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
+  m_PrefabInstance: {fileID: 414110204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!81 &414110212
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 414110206}
+  m_Enabled: 1
 --- !u!1 &426753764 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8005254958054767628, guid: c9a23bfcecb1f2841a41e65d17ab6c07, type: 3}
@@ -4961,9 +4973,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 100
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -4996,7 +5008,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -5539,7 +5551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1046934813
 MonoBehaviour:
   m_ObjectHideFlags: 0

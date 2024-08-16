@@ -8,7 +8,7 @@ public class ButtonOfDoor : MonoBehaviour
     public RightDoorOpener _rDO;
     public LeftDoorOpener _lDO;
     public ScrapDataContoroller sdCon;
-
+    public AudioSource audioSource;
     private void OnTriggerStay(Collider other)
     {
         if(other.gameObject.CompareTag("Player"))
@@ -19,11 +19,13 @@ public class ButtonOfDoor : MonoBehaviour
                 Debug.Log("문 닫힘");
                OnButtonPlay();
                 sdCon.SavePosition();
+                audioSource.Play();
             }
 
             if (Input.GetKey(KeyCode.F))
             {
                 OnButtonOpen();
+                audioSource.Play();
             }
         }
     }
@@ -38,6 +40,6 @@ public class ButtonOfDoor : MonoBehaviour
     private void OnButtonOpen()
     {
         _rDO.OpenRightDoor();
-        _lDO.OpenLeftDoor();
+        _lDO.ReOpenLeftDoor();
     }
 }
