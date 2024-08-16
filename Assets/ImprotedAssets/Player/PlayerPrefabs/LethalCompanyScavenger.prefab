@@ -11192,7 +11192,7 @@ MonoBehaviour:
   - Item
   - Enemy
   weaponTag: Weapon
-  ScanFX: {fileID: 5633077933718891283}
+  scanFX: {fileID: 5633077933718891283}
 --- !u!1 &3090698440568185792
 GameObject:
   m_ObjectHideFlags: 0
@@ -18050,7 +18050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5166936946391094315}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.30475953, y: 0.2673136, z: -0.28691763, w: -0.8679535}
+  m_LocalRotation: {x: 0.24860068, y: -0.29111987, z: -0.4852801, w: -0.7860981}
   m_LocalPosition: {x: -0.01131, y: 0.00943, z: 0.01068}
   m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 0

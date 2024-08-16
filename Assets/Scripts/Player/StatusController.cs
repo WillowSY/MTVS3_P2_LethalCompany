@@ -36,26 +36,10 @@ public class StatusController : MonoBehaviour
         SPRechargeTime();
         SPRecover();
         UpdateHpUI();
-        Debug.Log("현재체력: " + playerHp);
 
         spGauge.fillAmount = currentSp / sp;
     }
     
-    private void WeightDataInfo(GameObject scannedObject)
-    {
-        Scrap data = scannedObject.GetComponent<Scrap>();
-        string info = "";
-        if (scannedObject.CompareTag("Item"))
-        {
-            info = "아이템 발견<br>가격: " + data.scrap.ScrapPrice;
-        }
-        else if (scannedObject.CompareTag("Enemy"))
-        {
-            info = "적 발견: <br>" + scannedObject.name;
-        }
-        StartCoroutine(_uiManager.ScanDisplayInfo(info));
-    }
-
     public void DecreaseStamina(float amount)
     {
         spUsed = true;

@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class UISingleton : MonoBehaviour
+public class UISingleton2 : MonoBehaviour
 {
-    public static UISingleton instance = null;
+    public static UISingleton2 instance = null;
     private void Awake()
     {
         if (instance == null)
