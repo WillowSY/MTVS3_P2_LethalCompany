@@ -72,14 +72,14 @@ ModelImporter:
       curves: []
       events:
       - time: 0.35047463
-        functionName: PlayFootStepSound
+        functionName: FootStepSound
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: 0.84032106
-        functionName: PlayFootStepSound
+        functionName: FootStepSound
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0

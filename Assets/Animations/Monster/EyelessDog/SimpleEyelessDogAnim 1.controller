@@ -11,7 +11,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -1847426226928270830}
-    m_Position: {x: 240, y: 120, z: 0}
+    m_Position: {x: 230, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5495921806698456399}
     m_Position: {x: 800, y: 60, z: 0}
@@ -337,7 +337,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Attack - Lunge
+  m_Name: Attack_Lunge
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -566,7 +566,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Attack - Roar
+  m_Name: Attack_Roar
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -593,7 +593,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Attack - Tracking
+  m_Name: Attack_Tracking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:

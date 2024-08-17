@@ -16,6 +16,7 @@ public class DogMonsterController : MonoBehaviour
         basePatrol = GetComponent<BasePatrol>();
         agent = GetComponent<NavMeshAgent>();
         baseTracking = GetComponent<BaseTracking>();
+        playerTrans = GameObject.FindGameObjectWithTag("Player").transform;
         stateMachine = new DogStateMachine(basePatrol, baseTracking, anim, agent, playerTrans);
         if (stateMachine == null)
         {
@@ -34,6 +35,6 @@ public class DogMonsterController : MonoBehaviour
         //Debug.Log("MonsterController Updating");
         stateMachine.Update();
         
-
+    
     }
 }

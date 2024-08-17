@@ -53,15 +53,16 @@ public class BasePatrol : MonoBehaviour
             
             if (!agent.pathPending && agent.remainingDistance < 0.5f)
             {
-                Vector3 randomDirection = Random.insideUnitSphere * 15f;
-                randomDirection += transform.position;
-                NavMesh.SamplePosition(randomDirection, out hit, 10f, NavMesh.AllAreas);
-                Vector3 targetPos = hit.position;
+                 Vector3 randomDirection = Random.insideUnitSphere * 15f;
+                 randomDirection += transform.position;
+                 NavMesh.SamplePosition(randomDirection, out hit, 10f, NavMesh.AllAreas);
+                 Vector3 targetPos = hit.position;
                 
                 agent.SetDestination(targetPos);
                 
-                yield return new WaitForSeconds(7f);
+                //yield return new WaitForSeconds(10f);
             }
+           yield return new WaitForSeconds(3f);
         }
     }
 }

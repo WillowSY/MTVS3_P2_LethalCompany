@@ -14,6 +14,7 @@ public class Entrance : MonoBehaviour
         sm = FindObjectOfType<ShipDataController>();
         rd = FindObjectOfType<RightDoorData>();
         ld = FindObjectOfType<LeftDoorData>();
+        canvasGroup = FindObjectOfType<CanvasGroup>();
     }
 
     
@@ -24,7 +25,7 @@ public class Entrance : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 Debug.Log("E버튼 입력");
-                SceneManager.LoadScene(3); // Company Scene Start
+                SceneManager.LoadScene(2); // Company Scene Start
                 Debug.Log("건물 입장");
                 
                 sm.SavePosition();

@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,7 +6,7 @@ public class Spider : MonoBehaviour
     private StateMachine stateMachine;      // spider 상태 머신
     private BasePatrol basePatrol;
     private BaseTracking baseTracking;
-    public WebTrigger webTrigger;
+    private WebTrigger webTrigger;
     
     public Animator anim;                   // spider animator
     private NavMeshAgent agent;             // spider navmesh agent
@@ -18,17 +15,45 @@ public class Spider : MonoBehaviour
     private void Awake()
     {
         basePatrol = GetComponent<BasePatrol>();
+        Debug.Log(basePatrol);
         agent = GetComponent<NavMeshAgent>();
+        Debug.Log(agent);
         baseTracking = GetComponent<BaseTracking>();
-        
+        Debug.Log(baseTracking);
+
+        if (basePatrol == null)
+        {
+            Debug.Log("SpiderMonsterController : basePatrol is null");
+        }
+        if (agent == null)
+        {
+            Debug.Log("SpiderMonsterController : agent is null");
+        }
+        if (baseTracking == null)
+        {
+            Debug.Log("SpiderMonsterController : baseTracking is null");
+        }
+        playerTrans = GameObject.FindWithTag("Player").transform;
+        Debug.Log(playerTrans);
         stateMachine = new SpiderStateMachine(basePatrol, baseTracking, anim, agent, playerTrans);
+        Debug.Log(stateMachine);
+        
+        
+        webTrigger = GameObject.Find("Webs").GetComponent<WebTrigger>();
+        if (webTrigger == null)
+        {
+            Debug.Log("SpiderMonsterController : webTrigger is null");
+        }
+        //Debug.Log(playerTrans);
         if (stateMachine == null)
         {
             Debug.LogError("MonsterController : stateMachine is null");
         }
+        Debug.Log(webTrigger);
     }
     private void Start()
     {
+        
         // 초기 spider 상태 : Idle
         stateMachine.ChangeState(MonsterEnums.State.Idle);
     }
