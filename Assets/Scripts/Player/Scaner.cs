@@ -66,7 +66,7 @@ public class Scanner : MonoBehaviour
         ScanSurroundings();
         for (int i = 0; i < 100; i++)
         {
-            ScanFX.transform.localScale += new Vector3(0.2f,0.2f,0.2f);
+            ScanFX.transform.localScale += new Vector3(0.4f,0.4f,0.4f);
             yield return new WaitForSeconds(0.01f);
         }
         ScanFX.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
@@ -89,14 +89,17 @@ public class Scanner : MonoBehaviour
     // 정보 표시
     private void ItemDataInfo(GameObject scannedObject)
     {
+        Scrap data = scannedObject.GetComponent<Scrap>();
+
+        SOMonster monster = scannedObject.GetComponent<SOMonster>();
         string info = "";
         if (scannedObject.CompareTag("Item"))
         {
-            info = "아이템 발견<br>가격: " + scannedObject.name;
+            info = "아이템 발견 :<br>" + data.scrap.name;
         }
         else if (scannedObject.CompareTag("Enemy"))
         {
-            info = "적 발견: <br>" + scannedObject.name;
+            info = "적 발견 :<br>" + monster.monsterName;
         }
         StartCoroutine(_uiManager.ScanDisplayInfo(info));
     }
