@@ -7,14 +7,12 @@ public class MonsterHpController : MonoBehaviour
     public int curHealth;
     public Animator anim;
 
-    public Slider HpSlider;
     void Start()
     {
         curHealth = maxHealth;
     }
     void Update()
     {
-        HpSlider.value = (float) curHealth / maxHealth;
         if (curHealth == 0)
         {
             anim.SetBool("isDead", true);
