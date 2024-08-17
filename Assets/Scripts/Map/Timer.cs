@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
     public SkyboxController skyboxController;
 
     private int inGameTime_Minutes;
-    private int timer = 120;
+    private int timer = 600;
     private int inGameTime_StartHour = 08;
     private int inGameTime_Hours;
     private float inGameTime;
