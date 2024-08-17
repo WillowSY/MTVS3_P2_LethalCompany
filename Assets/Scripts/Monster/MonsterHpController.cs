@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class MonsterHpController : MonoBehaviour
 {
-    private int maxHealth = 5;
+    private int maxHealth = 3;
     public int curHealth;
     public Animator anim;
 
@@ -20,7 +20,6 @@ public class MonsterHpController : MonoBehaviour
             anim.SetBool("isDead", true);
         }
     }
-    
     public void TakeDamage(int damage)
     {
         curHealth -= damage;
