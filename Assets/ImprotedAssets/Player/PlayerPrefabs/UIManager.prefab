@@ -240,7 +240,6 @@ GameObject:
   - component: {fileID: 7776464358735226708}
   - component: {fileID: 5197633971478952827}
   - component: {fileID: 4158085861338460650}
-  - component: {fileID: 3704059498688186825}
   m_Layer: 5
   m_Name: ItemMSG
   m_TagString: Untagged
@@ -331,18 +330,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &3704059498688186825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3914716640908253095}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3eabc2c06b488e42962470fd55ba409, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4446901203188115189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,7 +994,6 @@ GameObject:
   - component: {fileID: 619020242873259395}
   - component: {fileID: 8227929642545905185}
   - component: {fileID: 3270136835996697730}
-  - component: {fileID: 6157855905981779499}
   m_Layer: 5
   m_Name: HandsFull
   m_TagString: Untagged
@@ -1098,18 +1084,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &6157855905981779499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7329332799486007713}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3eabc2c06b488e42962470fd55ba409, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7635874266667129160
 GameObject:
   m_ObjectHideFlags: 0

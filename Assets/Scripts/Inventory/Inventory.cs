@@ -45,6 +45,7 @@ public class Inventory : MonoBehaviour
 
         // 슬롯에 아이템 추가
         scraps[slotIndex] = scrap;
+        Debug.Log("Inventory : slot index["+slotIndex+"] icon [ "+scrap.ScrapIcon);
         UpdateQuickSlotIcon(slotIndex, scrap.ScrapIcon);
 
         ResetAllSlotColors();
