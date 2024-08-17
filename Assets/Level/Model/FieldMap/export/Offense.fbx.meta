@@ -3,7 +3,352 @@ guid: cff729ce4ddb16449b3edbc312839d2f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BackgroundHill_Baked
+    second: {fileID: 2100000, guid: 8ea6e90e8f54dbf4aa8e6a94ab80a3b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base_Baked
+    second: {fileID: 2100000, guid: 5970c77ff8c61a74f8a22fc68327e05c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BottomRailingFull_Baked
+    second: {fileID: 2100000, guid: af87616120d28e340ada6f3e9a7f5e86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BuildingDoor_Baked
+    second: {fileID: 2100000, guid: 5be8b2042e91df741958c6e125cdb338, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Detail1_Baked
+    second: {fileID: 2100000, guid: 1f8d8d7e2cd39364dbbc007decf3f143, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Detail2_Baked
+    second: {fileID: 2100000, guid: 6e58c71428550a54098fff11f2b6b470, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Detail3_Baked
+    second: {fileID: 2100000, guid: c2302ea8b2f716b479ae4d30fc40cdb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door_Baked
+    second: {fileID: 2100000, guid: 3766436dffc6e3d4cbedd92f67ff67c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Factory_Baked
+    second: {fileID: 2100000, guid: e5058e6f69e666b418b7b6016436cc69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor_Baked
+    second: {fileID: 2100000, guid: 77e02582488b95146aac1329d4fa6699, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FuelTank_Baked
+    second: {fileID: 2100000, guid: f36bfecdaf9d46d43b871c9ed21f8882, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ground_Baked
+    second: {fileID: 2100000, guid: e24de791869ebbc438a4be645d5ce0f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hill.001_Baked
+    second: {fileID: 2100000, guid: aba7437912f6f7143988c9b9385480f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hill.002_Baked
+    second: {fileID: 2100000, guid: ce3271a7e6c351b419926c6a0ebb5639, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hill.003_Baked
+    second: {fileID: 2100000, guid: 54cb6508fb0e36443b7e322b282aaaea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hill.005_Baked
+    second: {fileID: 2100000, guid: 0ca254c69d2f62542aeaf6a11b759e14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hill.006_Baked
+    second: {fileID: 2100000, guid: ca97797e02d8cd047bd3cd377b9d4573, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hill.007_Baked
+    second: {fileID: 2100000, guid: b13614bc7008bd64d97e18afa7d32366, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hill.008_Baked
+    second: {fileID: 2100000, guid: bda181b4d44e33649b9e02699d2e0f04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hill.009_Baked
+    second: {fileID: 2100000, guid: 901f3a06d2cad344fad70e932e6c3885, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hill.010_Baked
+    second: {fileID: 2100000, guid: 0dc6ab0469dee164d87ae6d44f4accc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hill.011_Baked
+    second: {fileID: 2100000, guid: fc2614c7735b5be4bb9a6ca2d33ac5cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hill.013_Baked
+    second: {fileID: 2100000, guid: af44ae46a6f75364f8d6a7381f957619, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hill_Baked
+    second: {fileID: 2100000, guid: 554e903d4a848e94bbb8d9979af4dc58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LongTank_Baked
+    second: {fileID: 2100000, guid: 062769e411c55234b8371dea315fec4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalColums_Baked
+    second: {fileID: 2100000, guid: bb8824cad47ac67409ac917138fc548b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalReinforcment2.001_Baked
+    second: {fileID: 2100000, guid: bd53a6fa4ca770f4a85a91876e3e8012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalReinforcment2_Baked
+    second: {fileID: 2100000, guid: 5120dd0cabab5d049900998f562a588a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalReinforcment_Baked
+    second: {fileID: 2100000, guid: c7dc03532af7af2428af5878e998a952, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MiddleGrate_Baked
+    second: {fileID: 2100000, guid: 285d18581ee15b147baf1f9154841609, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipe1_Baked
+    second: {fileID: 2100000, guid: 5579ab5a00cdcee4aa0587b22c47483e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipe2_Baked
+    second: {fileID: 2100000, guid: 75e412ef960b22e44af664efff4cbd0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipe3_Baked
+    second: {fileID: 2100000, guid: e507e484192a3fd40b9cf85c92927e61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipe4_Baked
+    second: {fileID: 2100000, guid: 5039f2512bb76a5489b5d394175a12c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PipeRing.001_Baked
+    second: {fileID: 2100000, guid: be850f89676728f4498bcce061f22530, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PipeRing.002_Baked
+    second: {fileID: 2100000, guid: b779708448f0ee34892805b064be1554, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PipeRing.003_Baked
+    second: {fileID: 2100000, guid: 4a9f492bb89be7547853939e16a479c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PipeRing.004_Baked
+    second: {fileID: 2100000, guid: a4eca24349f0a2e4d82798088ca517ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PipeRing.005_Baked
+    second: {fileID: 2100000, guid: 953708c9d6b0f894ebbab1155904a2a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PipeRing_Baked
+    second: {fileID: 2100000, guid: dae0ead9b4b3b8c4eb3e4558ec28f604, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Platform_Baked
+    second: {fileID: 2100000, guid: b4c59e5f7b46443478c69fd90a55923b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Railing.002_Baked
+    second: {fileID: 2100000, guid: 10554a8b4f9725145ac1e6b94585ae3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RailingFloor.002_Baked
+    second: {fileID: 2100000, guid: f7192cd6a0fdf084b85947322ff14f86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RailingFull_Baked
+    second: {fileID: 2100000, guid: 9899e63b3335bc842a1eb54c258e0495, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RailingGrate.001_Baked
+    second: {fileID: 2100000, guid: e35846a8298ea5845ab17350af2449c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RailingGrate.002_Baked
+    second: {fileID: 2100000, guid: 8493e0bfcf4291343a2bbd89582a7dbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RailingGrate_Baked
+    second: {fileID: 2100000, guid: c97d17e18ddc40941ad50abd9046b669, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RailingTop.002_Baked
+    second: {fileID: 2100000, guid: d558497b3a6fc3e4e94823d4a7ec3734, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RailingTopFull_Baked
+    second: {fileID: 2100000, guid: 907d5669fc191fa46939115f514d89b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShortTank_Baked.001
+    second: {fileID: 2100000, guid: 000a3ac5751c7c9419d4405ef50d868f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Text.009_Baked.001
+    second: {fileID: 2100000, guid: 0467140b3b27fe442ab79d8a4af702dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Text.020_Baked.001
+    second: {fileID: 2100000, guid: dc82230142f58074794c3e0be2532583, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Text_Baked.001
+    second: {fileID: 2100000, guid: 36e8d734f5a072d438535803cdf0e7f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_Baked.001
+    second: {fileID: 2100000, guid: 49c520947854f0d4ea83b7f2d56c45a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wheels_Baked.001
+    second: {fileID: 2100000, guid: d537e88994aefaa47b3d43dc3ea9b23c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.003_Baked
+    second: {fileID: 2100000, guid: 2396eaf967be6134aaa3d85a8f99047d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.004_Baked
+    second: {fileID: 2100000, guid: d08ba2bcf039fb84e831c212e90f59b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.005_Baked
+    second: {fileID: 2100000, guid: aadca386ea2abef4fb5f8c904a2bc6b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.006_Baked
+    second: {fileID: 2100000, guid: cd33d0f71faa9bd4d879422abccfc38d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.007_Baked
+    second: {fileID: 2100000, guid: bff00a0f7b22dec4185911e59a00e14e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.008_Baked
+    second: {fileID: 2100000, guid: b243d807a67e4fa4f8746bb5df290b81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.012_Baked
+    second: {fileID: 2100000, guid: 1cd1913816f34264f8767e070f9a4006, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.013_Baked
+    second: {fileID: 2100000, guid: b80efd6d298beb34dbad68921c642e38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.014_Baked
+    second: {fileID: 2100000, guid: 6f6085fd8932eb04dab9da1b4489210f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.015_Baked
+    second: {fileID: 2100000, guid: 428b7abeb707dfe46b8d777c1eac8860, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.016_Baked
+    second: {fileID: 2100000, guid: 3958010d4740df64292c58238aac2af0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.017_Baked
+    second: {fileID: 2100000, guid: 2ca3c33ac1d154f42b881d4dcf7a27be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.018_Baked
+    second: {fileID: 2100000, guid: a8e9f22e164d9f54b812adde34e60224, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock.020_Baked
+    second: {fileID: 2100000, guid: 386f9264bc975d7459d1d5a4e0569ffb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

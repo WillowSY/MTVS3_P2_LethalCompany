@@ -3,7 +3,687 @@ guid: a9e6dddfe2ff5fb418eca1de368a8fcf
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ALTLeft.001_Baked
+    second: {fileID: 2100000, guid: 5471c5aa9a5b76247a430b5d547efa8f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ALTLeft.002_Baked
+    second: {fileID: 2100000, guid: 04802d0c451b7b94a96b9dadd587797b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ALTLeft.003_Baked
+    second: {fileID: 2100000, guid: fb4cf37f06f1b00408c2505cdb26b280, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ALTLeft.004_Baked
+    second: {fileID: 2100000, guid: 44e59be26f265f54f88df2b95a74e6bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ALTLeft_Baked
+    second: {fileID: 2100000, guid: 6b2cf577eeb69614493b39fd82d618b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AntennaBase_Baked
+    second: {fileID: 2100000, guid: 1fd22eb77421ded4a9bfbafef8346d7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Backspace_Baked
+    second: {fileID: 2100000, guid: 9e189d4eef08a2c489cacf9b251f124c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BatteryPack.001_Baked
+    second: {fileID: 2100000, guid: 5245faf15670e7e4ba1b42c6392ed91e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BatterySingle.001_Baked
+    second: {fileID: 2100000, guid: 1d3cd20cc88a0a64db088149917293e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BatterySingle__1_.001_Baked
+    second: {fileID: 2100000, guid: 1b35c77fa00883447b0875c425d47e9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BatterySingle__2_.001_Baked
+    second: {fileID: 2100000, guid: 17d000ce978cd22479a4f15e52c9bd23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Battery_Baked
+    second: {fileID: 2100000, guid: cd7e996571f47f748bc6c5a0c2685c64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bed_Baked
+    second: {fileID: 2100000, guid: 3ec714b36da731543b314fd0ada4b21b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt1_Baked
+    second: {fileID: 2100000, guid: 564892f22589ce5478e9a61cdac31729, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt2_Baked
+    second: {fileID: 2100000, guid: e873f66c9ce95a040b6f9a1e226c91b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt3_Baked
+    second: {fileID: 2100000, guid: d618316990fe861479d056c474a25b68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Belt4_Baked
+    second: {fileID: 2100000, guid: da3a2a3812c8f814cad967b42ea6e5ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BigButton.001_Baked
+    second: {fileID: 2100000, guid: cc4dbfbd8b65ec84f9da1c9c15b0d5cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BigButton.002_Baked
+    second: {fileID: 2100000, guid: 54ea71353a5593346b69ce0fdd64b051, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BigButton_Baked
+    second: {fileID: 2100000, guid: 8d5b704e94b696040a27075a334d3dda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boot.001_Baked
+    second: {fileID: 2100000, guid: 06d841f390ba0864abec74641963dbe7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boot_Baked
+    second: {fileID: 2100000, guid: 68efc95b9687e194aa5fa2d92435226e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ButtonsRed1_Baked
+    second: {fileID: 2100000, guid: 1d3e84ea7d861de49a75290245c9224d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ButtonsRed2_Baked
+    second: {fileID: 2100000, guid: 4f90a88cfc246dc43bd20f79a9b95b60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buttons_Baked
+    second: {fileID: 2100000, guid: 1d98f26b10924d4488daed65fc347a31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CNRLLeft.001_Baked
+    second: {fileID: 2100000, guid: b6473038b0f3965439fa1d72368edd3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CNRLLeft_Baked
+    second: {fileID: 2100000, guid: b2862480c2b93374aae7cc8689c3791a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cable_Baked
+    second: {fileID: 2100000, guid: 9bdd22e40674f314c8261a03ff5242db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CameraMonitorOnButton.001_Baked
+    second: {fileID: 2100000, guid: c875b511ab8d86746a0c1459ca120a41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CameraMonitorSwitchButton.001_Baked
+    second: {fileID: 2100000, guid: 9dce5c3ff4e4d8943b2700297b143540, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cannister_Baked
+    second: {fileID: 2100000, guid: 7ce214cf948caaa40b378328cea7c2bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Caps_Baked
+    second: {fileID: 2100000, guid: 25e9c512f9db97e4c81d0a46f0f95af6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CatwalkGrate_Baked
+    second: {fileID: 2100000, guid: f95d0807790f68044b3d6799109ff1c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CatwalkRailLining.001_Baked
+    second: {fileID: 2100000, guid: e9f866683b3dfb64ea42947382beccfe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CatwalkRailLiningB.001_Baked
+    second: {fileID: 2100000, guid: 0e7a5ab6cc8d1be4bab6f728c8ff822e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CatwalkUnderneathSupports.001_Baked
+    second: {fileID: 2100000, guid: f44004d2254b23f4580e86328124df2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cloths1_Baked
+    second: {fileID: 2100000, guid: 7d3f8ef4b9e69e94db99192691070d3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cloths2_Baked
+    second: {fileID: 2100000, guid: beaa6c4bf5b5e4444b1da2908cbcd449, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cloths3_Baked
+    second: {fileID: 2100000, guid: dc128ffd655284546afd7f48203595d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collum1_Baked
+    second: {fileID: 2100000, guid: 51cde8ef93746584f8637720ed937ca2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collum3_Baked
+    second: {fileID: 2100000, guid: 8bf24c8c46aa01c4697e8543456d22d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Collums2_Baked
+    second: {fileID: 2100000, guid: f75976dd609c8294296ea8e1ffdab281, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ControlPanel_Baked
+    second: {fileID: 2100000, guid: e11a0ea85d6b02443992b7eba9e29011, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Copper1_Baked
+    second: {fileID: 2100000, guid: f703aa0fdc15d28419c9b92170cf706d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Copper2_Baked
+    second: {fileID: 2100000, guid: 86d0a228a10373c47b31bd1831142746, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Copper3_Baked
+    second: {fileID: 2100000, guid: 2225c96c438d16748a78d1cfde3df61d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_000.001_Baked
+    second: {fileID: 2100000, guid: 847501fd21f203a4cb3e5051bf366f4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube_002.001_Baked
+    second: {fileID: 2100000, guid: 153cc0d7e617a464da6dc756dc3f03b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder.001_Baked
+    second: {fileID: 2100000, guid: 94e8e3035ce2e4b4096ecb7032e018af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder_Baked
+    second: {fileID: 2100000, guid: 044a528c84b33404383963000a7be143, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Desk1_Baked
+    second: {fileID: 2100000, guid: f4266502f183a8f4bab793e58b9daaaf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Desk2_Baked
+    second: {fileID: 2100000, guid: 03fb289cb670161478b79d57e06dd18a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorArch_Baked
+    second: {fileID: 2100000, guid: 1d188137961435940a4f54c74bc80a64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorEngineIDK_Baked
+    second: {fileID: 2100000, guid: 6c9ff953b1d5de244a269a004b2377e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorEnginePipe_Baked
+    second: {fileID: 2100000, guid: 3055279f74a0afd43a9f89372737fade, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorFrameLeft_Baked
+    second: {fileID: 2100000, guid: 76fada191a8bf8c44ba96cfbae2fe698, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorFrameRight_Baked
+    second: {fileID: 2100000, guid: eda16293ad9347a459b5ce39ac1a43e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorLeft_Baked
+    second: {fileID: 2100000, guid: 7e787b293d3b8da42972568aecdfcb51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorLockLeft_Baked
+    second: {fileID: 2100000, guid: a3f78a7794e190847a4db25f0a4486cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorLockRight_Baked
+    second: {fileID: 2100000, guid: 5cfa4a93409180b4e98f8b409847cf98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorRight_Baked
+    second: {fileID: 2100000, guid: 62ca7dc1f77ac2641b5c25f58189e294, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floodlight1.001_Baked
+    second: {fileID: 2100000, guid: a023e7b6a38c98a42a22da43c315fa9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floodlight2.001_Baked
+    second: {fileID: 2100000, guid: 1e924d974a482d945895ca41c0e438e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontDoorSecurityCam_Baked
+    second: {fileID: 2100000, guid: 1259243bb9bcf9b44bf250d83003e6e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontLight.001_Baked
+    second: {fileID: 2100000, guid: c7fac833ccfa50249a008048ab31dfd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontLight_Baked
+    second: {fileID: 2100000, guid: c4270c47c8fe1e24a8801652564ac9af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrontPipes_Baked
+    second: {fileID: 2100000, guid: 122efab2427df474ca71d83e4bf57268, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handles.001_Baked
+    second: {fileID: 2100000, guid: f916d690851ed194e8df305cfc6c070c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handles_Baked
+    second: {fileID: 2100000, guid: 7a3b9737d94de1246bf8966a0d05de99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Helmet_Baked
+    second: {fileID: 2100000, guid: ac8b4e884cd9c174e8781a23a3467ebb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IDKLOL_Baked
+    second: {fileID: 2100000, guid: e64d5e04a95494645a8408eeb9fd27ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Keyboard_Baked
+    second: {fileID: 2100000, guid: 70d41d1860902d947b0ce1a301494553, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LadderOutside_Baked
+    second: {fileID: 2100000, guid: 51b9263b6b90b6947b71ba282b6393eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LadderShort.001_Baked
+    second: {fileID: 2100000, guid: 7ad7b77d59d3a3b408c391ca8d1bd68d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LadderShort__1_.001_Baked
+    second: {fileID: 2100000, guid: 3f686f346ac68ef4080a654dce0fa5fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lamp1_Baked
+    second: {fileID: 2100000, guid: a00c2d9d02e8fcb44abac26390fe5d0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lamp2_Baked
+    second: {fileID: 2100000, guid: 81bd1e51db846f140bc0405a73e67764, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lamp3_Baked
+    second: {fileID: 2100000, guid: 2c5309ba572cc0f4888e4470894395e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LeftKeys_Baked
+    second: {fileID: 2100000, guid: 214263294aeccd84e9db00e9916db718, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lever.001_Baked
+    second: {fileID: 2100000, guid: b01bfe71745f7fb40a3769b712e6ba79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LightSwitch_Baked
+    second: {fileID: 2100000, guid: 8d633c9fa27eb7a449e6b22467b72652, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Manual_Baked
+    second: {fileID: 2100000, guid: 816630cd710704f4595e2e794a681cb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mesh.002_Baked
+    second: {fileID: 2100000, guid: 4d8940385bb260d49b1055aef1514a96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NurbsPath_001.001_Baked
+    second: {fileID: 2100000, guid: 6b7a95aa99488b446b771bda2d9a2e5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutsideArch_Baked
+    second: {fileID: 2100000, guid: 03d51adf9fc7b9041aa3273a6ac4e8eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipe1_Baked
+    second: {fileID: 2100000, guid: 0cb0eebc4a3ebbd449fc722f0dcbd734, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pipe2_Baked
+    second: {fileID: 2100000, guid: 254863420d9446f4f98edba46cb4e965, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PipesConnector_Baked
+    second: {fileID: 2100000, guid: e2bde826d01e9194abfd4456586db1a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plane.001_Baked
+    second: {fileID: 2100000, guid: 7f2742d246bf0f74aae14db325efb85f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plane.004_Baked
+    second: {fileID: 2100000, guid: b68a303291b2a4e4c96c8005f8860500, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plane_001_1.002_Baked
+    second: {fileID: 2100000, guid: 2a599a74b59846c4bb4e3598a68026e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plane_002.002_Baked
+    second: {fileID: 2100000, guid: a006e72fea959894da434380f0322f7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plane_003.002_Baked
+    second: {fileID: 2100000, guid: 9be5fb38286d4f24690bfa04236c5e34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plane_Baked
+    second: {fileID: 2100000, guid: 4a038d00622e000448ccf9af129b6141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Poster7_Baked
+    second: {fileID: 2100000, guid: a99635bc2211e42479bffb12dc09e0b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Posters_Baked
+    second: {fileID: 2100000, guid: 9eb5f751a59a4d445b4a047e597e92bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pushers.001_Baked
+    second: {fileID: 2100000, guid: 08345a254a5e07e40ae60e728ed01248, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pushers.002_Baked
+    second: {fileID: 2100000, guid: 333f9512602739d4ea7671d49bb4d5c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pushers.003_Baked
+    second: {fileID: 2100000, guid: a7df248ee36500545a01fe7946b2e378, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pushers_Baked
+    second: {fileID: 2100000, guid: 50700ab344ba6424e93c6a0a19ed5ff9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedLight_Baked
+    second: {fileID: 2100000, guid: cb1e3bbd5a4271742b608b94c3979a60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedStorage_Baked
+    second: {fileID: 2100000, guid: 41f89e36e9bd34a42a973d623c0b2d4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Reinforcements1_Baked
+    second: {fileID: 2100000, guid: 0fc8909afc54da84b803394af536938a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Screen1_Baked
+    second: {fileID: 2100000, guid: b462a3501fd219846bdb08239a87c99e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScreenDetail_Baked
+    second: {fileID: 2100000, guid: 60f42b35497b89b4997239e9d7bb588f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shift_Baked
+    second: {fileID: 2100000, guid: e29c967c38b76d246852b5afb9260d38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShipFoundation_Baked
+    second: {fileID: 2100000, guid: d63444648c535dd4f99bd35ae53e0ad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShipHull_Baked
+    second: {fileID: 2100000, guid: 970d0fe67e1c67a4f9c896a3ac3bad74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShipRailPosts.001_Baked
+    second: {fileID: 2100000, guid: b395c096004e0b74490f952a74f13324, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShipRails.001_Baked
+    second: {fileID: 2100000, guid: 8734dc62b01869f459f5617465697cc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShipRoofInside_Baked
+    second: {fileID: 2100000, guid: 589408d580b4c5d41ad009eb2502c2d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShipSupportBeams.001_Baked
+    second: {fileID: 2100000, guid: 0754933b17fd7ec40ae3a3df3db9484c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShipSupportBeams_001.001_Baked
+    second: {fileID: 2100000, guid: c09f03defa091f241a869ff118362410, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SideMachineryLeft.001_Baked
+    second: {fileID: 2100000, guid: 015ab71f36056074f8915adea3d44af8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SideMachineryRight.001_Baked
+    second: {fileID: 2100000, guid: 86cc8cdf1c0773746853796810a0385d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Speaker1_Baked
+    second: {fileID: 2100000, guid: ec8c1f5ccc6ab0644a7857256a2dda4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Speaker2_Baked
+    second: {fileID: 2100000, guid: 92db59edfbc596e4e889a2cefe05c4ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tab_Baked
+    second: {fileID: 2100000, guid: 15a8031132295ab4f8f4715c0ed59e80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Terminal_Baked
+    second: {fileID: 2100000, guid: 0a445db153223644296ed9076291e0fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ThrusterBackLeft.001_Baked
+    second: {fileID: 2100000, guid: a10f67c118ecdd141a92a0b3f4031c27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ThrusterBackRight.001_Baked
+    second: {fileID: 2100000, guid: b612d68868c563e46b9f8428e759f18e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ThrusterBackRightTube_Baked
+    second: {fileID: 2100000, guid: eeabfddc92690e647a829fe39eaf2a68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ThrusterFrontLeft.001_Baked
+    second: {fileID: 2100000, guid: f518a879603627348aafa7fb9e21a598, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ThrusterFrontRight.001_Baked
+    second: {fileID: 2100000, guid: fc541b38a11fb7c4cbcc1317ecdcb6fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tissue_Baked
+    second: {fileID: 2100000, guid: 7d7d957f2cc3d5840a59d31eedd4d628, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: UnderbellyMachineParts.001_Baked
+    second: {fileID: 2100000, guid: f38727f26e839b641be5c49de8e47589, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vent1_Baked
+    second: {fileID: 2100000, guid: 354fdb4dcee7f3f4c88da353b798063f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vent2Desk_Baked
+    second: {fileID: 2100000, guid: 7fb53e8eda3049841b7b336d1678ac1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallWires_Baked
+    second: {fileID: 2100000, guid: 1e2cce37f63631848929be84613ab807, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowsLeft.001_Baked
+    second: {fileID: 2100000, guid: cce6bee0f06792041906e3a04cb479f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowsLeft_Baked
+    second: {fileID: 2100000, guid: dfd93973d54ec5a408713e6a5060df3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: YellowDrawer_Baked
+    second: {fileID: 2100000, guid: 186a7da3a0679d64583505a6c0763e66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ~.001_Baked
+    second: {fileID: 2100000, guid: 99cd63cffbecd34489f845871c8d6a81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ~.002_Baked
+    second: {fileID: 2100000, guid: a85fc217d0d568b419552d7f00c45781, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ~.003_Baked
+    second: {fileID: 2100000, guid: 68a52719028da2b48bd458e592812ff1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ~_Baked
+    second: {fileID: 2100000, guid: bdb0de2791630504e91078e6b4e7753a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -1,6 +1,4 @@
-
 using UnityEngine;
-using UnityEngine.Rendering.UI;
 using Object = UnityEngine.Object;
 
 
@@ -9,6 +7,8 @@ public class Player : MonoBehaviour
     public Transform cameraTransform;
     public CharacterController controller;
     public Animator animator;
+    public Inventory inventory;
+    public PlayerRaycast playerRaycast;
 
     public float speed = 3f; // 기본 이동 속도
     public float runSpeed = 6f; // 달리기 속도
@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
     private bool _isCrouching; // 앉기 상태 확인 변수
     private bool _isRunning; // 달리기 상태 확인 변수
     private bool _isMoving = false;
-    private bool hasItem;
+    private bool _hasItem;
 
     private StatusController _theStatusController;
     
@@ -47,7 +47,6 @@ public class Player : MonoBehaviour
         TryRun();
         TryCrouch();
         Move();
-        PlayFootStepSound();
         //Debug.Log("현재속도: " + _currentSpeed);
     }
     
@@ -55,7 +54,18 @@ public class Player : MonoBehaviour
     {
         Vector3 cameraPosition = cameraTransform.localPosition;
         cameraPosition.y = _isCrouching ? crouchCameraHeight : standCameraHeight;
-        cameraPosition.z = _isCrouching ? 0.39f : 0.17f;
+        if (_isCrouching && _isMoving)
+        {
+            cameraPosition.z = 0.7f;
+        }
+        else if (_isCrouching && !_isMoving)
+        {
+            cameraPosition.z = 0.39f;
+        }
+        else
+        {
+            cameraPosition.z = 0.17f;
+        }
         cameraTransform.localPosition = cameraPosition;
     }
     
@@ -186,27 +196,34 @@ public class Player : MonoBehaviour
      * playFootStepSound : 플레이어 발자국 소리 출력.
      * FIXME : 추후 출력 소리 다양해질 시 개별 클래스로 분리 예정.
      */
-    private void PlayFootStepSound()
+    private void FootStepSound()
     {
-        if (_isMoving && soundEmitter != null)
+        if (_isMoving && controller.isGrounded && soundEmitter != null)
         {
-            soundEmitter.playSound();
+            soundEmitter.PlayFootStepSound();
         }
     }
 
     private void PlayerHand()
     {
-        if (Input.GetKey(KeyCode.Alpha1))
+        if (inventory.currentHeldItem != null && 
+            inventory.scraps[playerRaycast.currentQuickSlot].IsTwoHanded)
         {
-            hasItem = !hasItem;
-            if (hasItem)
-            {
-                animator.SetBool("useitem",true);
-            }
-            else
-            {
-                animator.SetBool("useitem",false);
-            }
+            animator.SetBool("twoHand", true);
+            animator.SetBool("oneHand", false);
+        }
+
+        else if (inventory.currentHeldItem != null && 
+                 inventory.scraps[playerRaycast.currentQuickSlot].IsShovel == false)
+        {
+            animator.SetBool("twoHand",false);
+            animator.SetBool("oneHand",true);
+        }
+        else if (inventory.currentHeldItem == null || 
+                 inventory.scraps[playerRaycast.currentQuickSlot].IsShovel)
+        {
+            animator.SetBool("twoHand",false);
+            animator.SetBool("oneHand",false);
         }
     }
 }

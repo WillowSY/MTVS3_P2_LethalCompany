@@ -15,5 +15,7 @@ MonoBehaviour:
   scrapName: FancyLamp
   scrapPrice: 128
   scrapWeight: 21
-  scrapPrefab: {fileID: 1280117010310410474, guid: b55b89acd2c07484baa4b7c642f8c2b8, type: 3}
+  scrapPrefab: {fileID: 1698506087637339194, guid: 1ec89c5489c663c458f744636f75623a, type: 3}
   scrapIcon: {fileID: 21300000, guid: 5eaedb690aa4af949bdfaf4145d8eaed, type: 3}
+  isTwoHanded: 0
+  isShovel: 0
