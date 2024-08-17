@@ -2160,8 +2160,16 @@ PrefabInstance:
       value: Presser
       objectReference: {fileID: 0}
     - target: {fileID: 4016790130063057620, guid: 1084dc7e8f7faa04ea98cb3a80b362ee, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016790130063057620, guid: 1084dc7e8f7faa04ea98cb3a80b362ee, type: 3}
       propertyPath: MaxDistance
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016790130063057620, guid: 1084dc7e8f7faa04ea98cb3a80b362ee, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5854500241107937898, guid: 1084dc7e8f7faa04ea98cb3a80b362ee, type: 3}
       propertyPath: audioSource
