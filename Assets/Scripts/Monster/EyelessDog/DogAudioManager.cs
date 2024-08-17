@@ -7,8 +7,7 @@ public class DogSoundController : MonoBehaviour
     public AudioSource audioSource;
 
     public AudioClip breatheSound;
-    public AudioClip walkSound;
-    public AudioClip sprintSound;
+    public AudioClip stepSound;
     public AudioClip growlSound;
     public AudioClip roarSound;
     public AudioClip lungeSound;
@@ -34,12 +33,6 @@ public class DogSoundController : MonoBehaviour
     
     void Start()
     {
-        //anim = GetComponent<Animator>();
-        //growlSound = Resources.Load<AudioClip>("Audio/Monster/Dog/BaseRoar");
-        if (growlSound == null)
-        {
-            Debug.LogError("growlSound"+"이 존재하지 않습니다");
-        }
         if (audioSource == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
@@ -47,9 +40,6 @@ public class DogSoundController : MonoBehaviour
         
         //audioSource.volume = 0.3f;
         audioSource.playOnAwake = false;
-        Debug.Log("AudioManager Start");
-        // RoarSound 재생
-        StartCoroutine(PlayRoarSound());
     }
 
     void Update()
@@ -66,18 +56,10 @@ public class DogSoundController : MonoBehaviour
         }
         else if ( currentStateHash == combatPatrolHash)
         {
-            Debug.Log("State is On Growl");
             if (!isGrowling)
             {
                 isGrowling = true;
                 co = StartCoroutine(PlayGrowlSound());
-            }
-        }
-        else if (currentStateHash == attack_Roar)
-        {
-            if (!isRoaring)
-            {
-                isRoaring = true;
             }
         }
         else
@@ -85,7 +67,6 @@ public class DogSoundController : MonoBehaviour
             isGrowling = false;
             StopCoroutine(co);
         }
-        Debug.Log("isGrowl " + isGrowling);
         
     }
 
@@ -95,25 +76,20 @@ public class DogSoundController : MonoBehaviour
         audioSource.Play();
         PlaySprintEffect();
     }
-    private IEnumerator PlayRoarSound()
+    public void PlayRoarSound()
     {
-        yield return new WaitUntil(()=>isRoaring);
-        isRoaring = false;
-        audioSource.Stop();
-        audioSource.clip = roarSound;
-        audioSource.Play();
-        yield return new WaitForSeconds(roarSound.length);
+        audioSource.PlayOneShot(roarSound);
     }
     private IEnumerator PlayBreatheSound()
     {
-        audioSource.PlayOneShot(breatheSound);
+        audioSource.clip = breatheSound;
+        audioSource.Play();
         yield return new WaitForSeconds(breatheSound.length + 3f);
     }
     private IEnumerator PlayGrowlSound()
     {
         while (true)
         {
-            Debug.Log("Play Sound");
             audioSource.clip = growlSound;
             audioSource.Play();
             yield return new WaitForSeconds(growlSound.length + 3f);
@@ -130,6 +106,7 @@ public class DogSoundController : MonoBehaviour
             if (particleSystem != null)
             {
                 particleSystem.Play();
+                audioSource.PlayOneShot(stepSound);
             }
             Destroy(effectInstance, 2f);
         }
@@ -138,4 +115,6 @@ public class DogSoundController : MonoBehaviour
             Debug.LogWarning("DogAudioManager : dustEffect is null");
         }
     }
+    
+    
 }

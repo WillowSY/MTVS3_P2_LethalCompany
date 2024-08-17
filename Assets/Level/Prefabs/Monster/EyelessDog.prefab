@@ -414,11 +414,11 @@ MonoBehaviour:
   breatheSound: {fileID: 8300000, guid: 5da75adfbff98a049b1c4829a0216bf5, type: 3}
   walkSound: {fileID: 8300000, guid: 372db5b87f69dae4e808e1d2198a2efd, type: 3}
   sprintSound: {fileID: 0}
-  growlSound: {fileID: 8300000, guid: fd7aabe17ebff494bb42bdb8fbecbe19, type: 3}
-  roarSound: {fileID: 8300000, guid: 2303cf6a118eb2e479bb6d9635a3b582, type: 3}
+  growlSound: {fileID: 8300000, guid: 2303cf6a118eb2e479bb6d9635a3b582, type: 3}
+  roarSound: {fileID: 8300000, guid: fd7aabe17ebff494bb42bdb8fbecbe19, type: 3}
   lungeSound: {fileID: 8300000, guid: a3a5e137c3db8e0418208d5f0ca1e9d5, type: 3}
   biteSound: {fileID: 0}
-  dustEffect: {fileID: 100002, guid: c37f32eddbc45ad459e232f45014ca12, type: 3}
+  dustEffect: {fileID: 100002, guid: fc7f8379080d0a844ad699b91bfd56f0, type: 3}
   effectSpawnPoint: {fileID: 5360771747655450691}
 --- !u!4 &1043903519331786403 stripped
 Transform:

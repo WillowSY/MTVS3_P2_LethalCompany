@@ -20,11 +20,6 @@ public class SpiderAudioManager : MonoBehaviour
         }
     }
 
-    public void PlayStepSound()
-    {
-        audioSource.PlayOneShot(footStepSound);
-    }
-
     public void PlayDeathSound()
     {
         audioSource.PlayOneShot(deathSound);
