@@ -14,6 +14,9 @@ public class DogSoundController : MonoBehaviour
     public AudioClip lungeSound;
     public AudioClip biteSound;
 
+    public GameObject dustEffect;
+    public Transform effectSpawnPoint;
+    
     private UnityEngine.AnimatorStateInfo stateInfo;
 
     private int idlePatrolHash = Animator.StringToHash("Base Layer.IdlePatrol");
@@ -90,6 +93,7 @@ public class DogSoundController : MonoBehaviour
     {
         audioSource.clip = lungeSound;
         audioSource.Play();
+        PlaySprintEffect();
     }
     private IEnumerator PlayRoarSound()
     {
@@ -115,33 +119,23 @@ public class DogSoundController : MonoBehaviour
             yield return new WaitForSeconds(growlSound.length + 3f);
         }
     }
-    // private IEnumerator PlayWalkSound()
-    // {
-    //     audioSource.PlayOneShot(walkSound);
-    //     yield return new WaitForSeconds(audioSource.clip.length);
-    // }
-    
-    // IEnumerator PlaySprintSound()
-    // {
-    //     audioSource.PlayOneShot(sprintSound);
-    //     yield return new WaitForSeconds(audioSource.clip.length);
-    // }
-    //
-    // IEnumerator PlayRoarSound()
-    // {
-    //     audioSource.PlayOneShot(roarSound);
-    //     yield return new WaitForSeconds(audioSource.clip.length);
-    // }
-    //
-    // IEnumerator PlayLungeSound()
-    // {
-    //     audioSource.PlayOneShot(lungeSound);
-    //     yield return new WaitForSeconds(audioSource.clip.length);
-    // }
-    //
-    // IEnumerator PlayBiteSound()
-    // {
-    //     audioSource.PlayOneShot(biteSound);
-    //     yield return new WaitForSeconds(audioSource.clip.length);
-    // }
+   
+    public void PlaySprintEffect()
+    {
+        if (dustEffect != null && effectSpawnPoint != null)
+        {
+            GameObject effectInstance = Instantiate(dustEffect, effectSpawnPoint.position, effectSpawnPoint.rotation);
+
+            ParticleSystem particleSystem = effectInstance.GetComponent<ParticleSystem>();
+            if (particleSystem != null)
+            {
+                particleSystem.Play();
+            }
+            Destroy(effectInstance, 2f);
+        }
+        else
+        {
+            Debug.LogWarning("DogAudioManager : dustEffect is null");
+        }
+    }
 }

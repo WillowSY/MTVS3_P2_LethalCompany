@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3614406920928427296
+--- !u!1 &2736488994887920678
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6363901494017929699}
-  - component: {fileID: 873202233727133348}
+  - component: {fileID: 5360771747655450691}
   m_Layer: 0
-  m_Name: MonsterAudioManager
+  m_Name: EffectSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6363901494017929699
+--- !u!4 &5360771747655450691
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3614406920928427296}
+  m_GameObject: {fileID: 2736488994887920678}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 15}
+  m_LocalPosition: {x: 0, y: 0, z: -1.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5388237710632676058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &873202233727133348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3614406920928427296}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae7228497ed8be045ab9be675fe4ef16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 6970581497410906102}
-  audioSource: {fileID: 0}
-  breatheSound: {fileID: 8300000, guid: 5da75adfbff98a049b1c4829a0216bf5, type: 3}
-  walkSound: {fileID: 8300000, guid: 372db5b87f69dae4e808e1d2198a2efd, type: 3}
-  sprintSound: {fileID: 0}
-  growlSound: {fileID: 8300000, guid: 2303cf6a118eb2e479bb6d9635a3b582, type: 3}
-  roarSound: {fileID: 8300000, guid: fd7aabe17ebff494bb42bdb8fbecbe19, type: 3}
-  lungeSound: {fileID: 8300000, guid: a3a5e137c3db8e0418208d5f0ca1e9d5, type: 3}
-  biteSound: {fileID: 0}
 --- !u!1 &6821264205744292140
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,8 +70,8 @@ Transform:
   m_Children:
   - {fileID: 1043903519331786403}
   - {fileID: 4881129344462148680}
-  - {fileID: 6363901494017929699}
   - {fileID: 2158186352558374712}
+  - {fileID: 5360771747655450691}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!195 &4817290058600720927
@@ -440,6 +418,8 @@ MonoBehaviour:
   roarSound: {fileID: 8300000, guid: 2303cf6a118eb2e479bb6d9635a3b582, type: 3}
   lungeSound: {fileID: 8300000, guid: a3a5e137c3db8e0418208d5f0ca1e9d5, type: 3}
   biteSound: {fileID: 0}
+  dustEffect: {fileID: 100002, guid: c37f32eddbc45ad459e232f45014ca12, type: 3}
+  effectSpawnPoint: {fileID: 5360771747655450691}
 --- !u!4 &1043903519331786403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 66624adcb08886a4088f31e850a39325, type: 3}
