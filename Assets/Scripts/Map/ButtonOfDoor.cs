@@ -7,8 +7,7 @@ public class ButtonOfDoor : MonoBehaviour
     private bool isTriggerActive = false;
     public RightDoorOpener _rDO;
     public LeftDoorOpener _lDO;
-
-    public AudioSource audioSource;
+    public ScrapDataContoroller sdCon;
 
     private void OnTriggerStay(Collider other)
     {
@@ -19,9 +18,7 @@ public class ButtonOfDoor : MonoBehaviour
                 Debug.Log("E버튼 입력");
                 Debug.Log("문 닫힘");
                OnButtonPlay();
-
-                audioSource.Play();
-
+                sdCon.SavePosition();
             }
 
             if (Input.GetKey(KeyCode.F))
