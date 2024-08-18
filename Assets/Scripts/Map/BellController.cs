@@ -4,6 +4,7 @@ using UnityEngine;
 public class BellController : MonoBehaviour
 {
     public AudioSource audioSource;
+    public TentacleController tc;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,8 +25,11 @@ public class BellController : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 audioSource.Play();
+                tc.TenTacleMove();
             }
         }        
     }
+
+    
 }
 

@@ -10,6 +10,7 @@ public class PanelController : MonoBehaviour
     public LeftDoorOpener _lDO;
     private bool isTriggerActive = false;
     public AudioSource waitAudioSource;
+    public CanvasGroup canvasGroup;
     
     void Start()
     {
@@ -46,6 +47,7 @@ public class PanelController : MonoBehaviour
                Debug.Log("F버튼 입력");
                SceneManager.LoadScene(3);
                ScrapDataContoroller._isScrapPosition = true;
+               canvasGroup.alpha = 0;
            }
         }
     }

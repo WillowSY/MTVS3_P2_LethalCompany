@@ -41,6 +41,6 @@ public class ButtonOfDoor : MonoBehaviour
     private void OnButtonOpen()
     {
         _rDO.OpenRightDoor();
-        _lDO.OpenLeftDoor();
+        _lDO.OpenLeftDoorInBuilding();
     }
 }

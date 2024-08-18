@@ -5966,6 +5966,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1988618647032959160, guid: 014e65cedd5d42a4e95d69bd8980a196, type: 3}
+      propertyPath: canvasGroup
+      value: 
+      objectReference: {fileID: 1685350496}
     - target: {fileID: 2529598690785525988, guid: 014e65cedd5d42a4e95d69bd8980a196, type: 3}
       propertyPath: m_Name
       value: Ship
