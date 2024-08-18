@@ -1,9 +1,11 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class BellController : MonoBehaviour
 {
     public AudioSource audioSource;
+    public AudioSource tAudioSource;
     public TentacleController tc;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,11 +27,23 @@ public class BellController : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 audioSource.Play();
-                tc.TenTacleMove();
+                StartCoroutine(TentacleSound());
+                StartCoroutine(TentacleAttack());
             }
         }        
     }
 
-    
+    IEnumerator TentacleSound()
+    {
+        yield return new WaitForSeconds(1);
+        tAudioSource.Play();
+        
+    }
+
+    IEnumerator TentacleAttack()
+    {
+        yield return new WaitForSeconds (3);
+        tc.TenTacleMove();
+    }
 }
 

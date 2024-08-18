@@ -5,9 +5,18 @@ using UnityEngine.SceneManagement;
 public class CompanyEntranceController : MonoBehaviour
 {
     public CanvasGroup canvasGroup;
+    public AudioSource audioSource;
     void Update()
     {
         canvasGroup = FindObjectOfType<CanvasGroup>();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            audioSource.Play(5);
+        }
     }
 
     private void OnTriggerStay(Collider other)
