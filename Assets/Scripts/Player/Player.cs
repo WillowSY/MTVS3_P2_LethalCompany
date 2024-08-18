@@ -188,6 +188,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             _theStatusController.playerHp -= 30f;
+            soundEmitter.PlayDamaged();
             Debug.Log("player HP : " + _theStatusController.playerHp);
         }
     }

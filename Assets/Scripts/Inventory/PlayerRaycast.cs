@@ -83,7 +83,7 @@ public class PlayerRaycast : MonoBehaviour
         Vector3 rayDirection = Camera.main.transform.forward;
 
         // 디버깅용 로그: 레이캐스트 시작 위치와 방향 확인
-        Debug.Log($"Ray Origin: {rayOrigin}, Ray Direction: {rayDirection}");
+        //Debug.Log($"Ray Origin: {rayOrigin}, Ray Direction: {rayDirection}");
 
         // 레이캐스트 실행
         if (Physics.SphereCast(rayOrigin, SphereRadius, rayDirection, out hit, RayLength))

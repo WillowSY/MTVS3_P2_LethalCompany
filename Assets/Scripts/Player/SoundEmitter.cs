@@ -10,7 +10,7 @@ public class SoundEmitter : MonoBehaviour
     public Dictionary<int, SoundReceiver> receiverDic;
     private AudioSource footstepSource;
     
-    public AudioClip footstepSound;                     // 발자국 AudioClip
+    public AudioClip footstepSound; // 발자국 AudioClip
 
     [SerializeField]
     private AudioClip dropItemSound; //아이템 드롭사운드
@@ -20,6 +20,9 @@ public class SoundEmitter : MonoBehaviour
 
     [SerializeField] 
     private AudioClip hitShovel; //공격 사운드
+
+    [SerializeField] 
+    private AudioClip playerDamaged; //플레이어 데미지 입는 사운드
     
     void Start()
     {
@@ -115,5 +118,10 @@ public class SoundEmitter : MonoBehaviour
     public void PlayScanSound()
     {
         footstepSource.PlayOneShot(scanSound);
+    }
+
+    public void PlayDamaged()
+    {
+        footstepSource.PlayOneShot(playerDamaged);
     }
 }
