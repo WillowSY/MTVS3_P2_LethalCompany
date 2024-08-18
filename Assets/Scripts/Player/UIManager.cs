@@ -67,8 +67,6 @@ public class UIManager : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
         yield return new WaitForSeconds(2f);
-        Debug.Log("LoadScene");
         _statusController.playerHp = 100f;
-        SceneManager.LoadScene(0);
     }
 }

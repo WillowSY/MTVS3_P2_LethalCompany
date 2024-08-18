@@ -44,6 +44,8 @@ public class StatusController : MonoBehaviour
         if (playerHp <= 0)
         {
             _uiManager.UIDead();
+            StartCoroutine(Dead());
+            playerHp = 100f;
         }
         else if (playerHp <= 30 && !onFatal) 
         {
@@ -53,6 +55,12 @@ public class StatusController : MonoBehaviour
         {
             _uiManager.UIHp50();
         }
+    }
+
+    private IEnumerator Dead()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("MainScreen");
     }
     
     public void DecreaseStamina(float amount)
