@@ -22,7 +22,7 @@ public class TentacleController : MonoBehaviour
     public void TenTacleMove()
     {
         Vector3 speed = Vector3.zero;
-        Vector3 tentacleMove = new Vector3(transform.localPosition.x, transform.localPosition.y, -60f);
-        transform.localPosition = Vector3.SmoothDamp(transform.localPosition, tentacleMove, ref speed, 0.1f);
+        Vector3 tentacleMove = new Vector3(transform.localPosition.x, transform.localPosition.y, -70f);
+        transform.localPosition = tentacleMove;
     }
 }

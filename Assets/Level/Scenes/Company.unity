@@ -1766,6 +1766,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1556560587847557396, guid: 680928eda54f38e4db3d945227e4561c, type: 3}
+      propertyPath: m_Size.z
+      value: 1.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556560587847557396, guid: 680928eda54f38e4db3d945227e4561c, type: 3}
+      propertyPath: m_Center.y
+      value: -9.91
+      objectReference: {fileID: 0}
     - target: {fileID: 6742383202472652729, guid: 680928eda54f38e4db3d945227e4561c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -67
@@ -1849,7 +1857,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 100
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0

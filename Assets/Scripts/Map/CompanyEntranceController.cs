@@ -15,7 +15,7 @@ public class CompanyEntranceController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            audioSource.Play(5);
+            audioSource.Play(3);
         }
     }
 

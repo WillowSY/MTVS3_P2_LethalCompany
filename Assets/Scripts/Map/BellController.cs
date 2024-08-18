@@ -29,6 +29,7 @@ public class BellController : MonoBehaviour
                 audioSource.Play();
                 StartCoroutine(TentacleSound());
                 StartCoroutine(TentacleAttack());
+               
             }
         }        
     }
@@ -42,7 +43,7 @@ public class BellController : MonoBehaviour
 
     IEnumerator TentacleAttack()
     {
-        yield return new WaitForSeconds (3);
+        yield return new WaitForSeconds (2);
         tc.TenTacleMove();
     }
 }
