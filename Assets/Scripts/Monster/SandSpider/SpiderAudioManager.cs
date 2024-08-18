@@ -11,14 +11,6 @@ public class SpiderAudioManager : MonoBehaviour
     public AudioClip deathSound;
     
     private UnityEngine.AnimatorStateInfo stateInfo;
-    
-    void Start()
-    {
-        if (audioSource == null)
-        {
-            audioSource = gameObject.AddComponent<AudioSource>();
-        }
-    }
 
     public void PlayDeathSound()
     {

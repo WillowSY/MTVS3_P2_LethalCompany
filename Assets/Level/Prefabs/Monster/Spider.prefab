@@ -583,7 +583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 3365670292814887036}
   audioSource: {fileID: 209645379100990936}
-  footStepSound: {fileID: 8300000, guid: 821bc4d1162af334aacaf341a1b09d20, type: 3}
+  footStepSound: {fileID: 8300000, guid: 372db5b87f69dae4e808e1d2198a2efd, type: 3}
   attackSound: {fileID: 8300000, guid: 0658923ce154d54468bb8beebc2109b8, type: 3}
   deathSound: {fileID: 8300000, guid: c7c2acf92ee925d4282645caadb4787f, type: 3}
 --- !u!82 &209645379100990936
