@@ -14,7 +14,7 @@ public class PanelController : MonoBehaviour
     
     void Start()
     {
-
+        canvasGroup = FindObjectOfType<CanvasGroup>();
     }
     
     void Update()
