@@ -64,6 +64,7 @@ public class StartScene : MonoBehaviour
         // 배경 오브젝트 비활성화 및 메인 캔버스 활성화
         PDBG.SetActive(false);
         mainCanvas.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
     }
 }
 
