@@ -32,10 +32,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2275790080702254342}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: -80}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 140, y: 0}
+  m_SizeDelta: {x: 200, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4344051460555506666
 CanvasRenderer:
@@ -168,10 +168,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2275790080702254342}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: -80}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 140, y: 0}
+  m_SizeDelta: {x: 200, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6504846692432102767
 CanvasRenderer:
@@ -391,6 +391,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_Time: {fileID: 5983177667071946739}
   text_DailyCycle: {fileID: 5659636887694033830}
+  canvasGroup: {fileID: 2649268462542870069}
+  skyboxController: {fileID: 0}
   imageComponent: {fileID: 404657782081469307}
   morning: {fileID: 21300000, guid: 37b4dd950b888c2438cdbf9bed740ac8, type: 2}
   afternoon: {fileID: 21300000, guid: 0f0268e97b6476b4bb805b0b8c8c0790, type: 2}
@@ -404,7 +406,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5763812321281208768}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -458,7 +460,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 41, y: 376}
-  m_SizeDelta: {x: 500, y: 200}
+  m_SizeDelta: {x: 400, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8089081845024242413
 CanvasRenderer:

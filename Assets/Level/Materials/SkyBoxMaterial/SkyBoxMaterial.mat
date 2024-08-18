@@ -111,7 +111,9 @@ Material:
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Blend: 0.79694843
+
+    - _Blend: 0.054430127
+
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
