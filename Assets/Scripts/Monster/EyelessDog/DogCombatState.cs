@@ -10,14 +10,11 @@ public class DogCombatState : MonsterState
     
     public override void Enter()
     {
-        //Debug.Log("Combat Enter");
-        //FIXME : ScriptableObject로 변경
-        stateMachine._baseTracking.Tracking(stateMachine._playerTrans.position, 3.5f *1.5f, 120f);
         anim.SetBool("isPause", false);
+        stateMachine._baseTracking.Tracking(stateMachine._playerTrans.position, 3.5f *1.5f, 120f);
     }
     public override void Execute()
     {
-        //Debug.Log("Combat");
         IsAgentMoving();                // agent가 이동중이면 Walk 애니메이션 재생
     }
     public override void Exit()

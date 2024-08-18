@@ -91,7 +91,7 @@ public class Scanner : MonoBehaviour
     {
         Scrap data = scannedObject.GetComponent<Scrap>();
 
-        SOMonster monster = scannedObject.GetComponent<SOMonster>();
+        MonsterData monster = scannedObject.GetComponent<MonsterData>();
         string info = "";
         if (scannedObject.CompareTag("Item"))
         {

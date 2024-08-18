@@ -10,6 +10,8 @@ public class MineController : MonoBehaviour
     public Player player;
     public StatusController stc;
     public AudioSource audioSource;
+    public bool isPlaying;
+    public Coroutine co;
     
     void Start()
     {
@@ -23,13 +25,21 @@ public class MineController : MonoBehaviour
         
         if (Vector3.Distance(transform.position, player.transform.position) < lightOnRange)
         {
-            pointLight.intensity = 1f;
-            audioSource.Play();
+            if (!isPlaying)
+            {
+                isPlaying = true;
+                pointLight.intensity = 1f;
+                co = StartCoroutine(PlayMineSound());
+            }
         }
         else
         {
             pointLight.intensity = 0f;
-            audioSource.Stop();
+            isPlaying = false;
+            if (co != null)
+            {
+                StopCoroutine(co);
+            }
         }
     }
 
@@ -46,5 +56,14 @@ public class MineController : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         stc.playerHp -= exploseDamage;
+    }
+
+    IEnumerator PlayMineSound()
+    {
+        while (true)
+        {
+            audioSource.Play();
+            yield return new WaitForSeconds(4);
+        }
     }
 }
