@@ -89,17 +89,17 @@ public class Scanner : MonoBehaviour
     // 정보 표시
     private void ItemDataInfo(GameObject scannedObject)
     {
-        Scrap data = scannedObject.GetComponent<Scrap>();
+        Scrap itemdata = scannedObject.GetComponent<Scrap>();
 
-        MonsterData monster = scannedObject.GetComponent<MonsterData>();
+        Monster monsterdata = scannedObject.GetComponent<Monster>();
         string info = "";
         if (scannedObject.CompareTag("Item"))
         {
-            info = "아이템 발견 :<br>" + data.scrap.name;
+            info = "아이템 발견 :<br>" + itemdata.scrap.name;
         }
         else if (scannedObject.CompareTag("Enemy"))
         {
-            info = "적 발견 :<br>" + monster.monsterName;
+            info = "적 발견 :<br>" + monsterdata.monster.monsterName;
         }
         StartCoroutine(_uiManager.ScanDisplayInfo(info));
     }

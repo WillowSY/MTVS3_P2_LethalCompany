@@ -15,11 +15,8 @@ public class Spider : MonoBehaviour
     private void Awake()
     {
         basePatrol = GetComponent<BasePatrol>();
-        Debug.Log(basePatrol);
         agent = GetComponent<NavMeshAgent>();
-        Debug.Log(agent);
         baseTracking = GetComponent<BaseTracking>();
-        Debug.Log(baseTracking);
 
         if (basePatrol == null)
         {
@@ -44,7 +41,6 @@ public class Spider : MonoBehaviour
         {
             Debug.Log("SpiderMonsterController : webTrigger is null");
         }
-        //Debug.Log(playerTrans);
         if (stateMachine == null)
         {
             Debug.LogError("MonsterController : stateMachine is null");
