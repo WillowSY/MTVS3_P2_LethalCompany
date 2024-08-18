@@ -29,4 +29,9 @@ public class SpiderAudioManager : MonoBehaviour
         spider.GetComponent<BasePatrol>().enabled = false;
         spider.GetComponent<MonsterHpController>().enabled = false;
     }
+
+    public void PlayStepSound()
+    {
+        audioSource.PlayOneShot(footStepSound);
+    }
 }

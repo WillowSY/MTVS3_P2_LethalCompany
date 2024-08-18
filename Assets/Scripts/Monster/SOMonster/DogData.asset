@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae6e4d142b77a1c4da2452ec1932ee8f, type: 3}
   m_Name: DogData
   m_EditorClassIdentifier: 
-  _monsterName: 
+  _monsterName: EyelessDog
   _maxHp: 12
   _curHp: 12
   _damage: 100

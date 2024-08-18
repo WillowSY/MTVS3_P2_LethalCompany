@@ -30,17 +30,6 @@ public class DogSoundController : MonoBehaviour
     private bool isRoaring = false;
     
     private Coroutine co;
-    
-    void Start()
-    {
-        if (audioSource == null)
-        {
-            audioSource = gameObject.AddComponent<AudioSource>();
-        }
-        
-        //audioSource.volume = 0.3f;
-        audioSource.playOnAwake = false;
-    }
 
     void Update()
     {
@@ -78,6 +67,8 @@ public class DogSoundController : MonoBehaviour
     }
     public void PlayRoarSound()
     {
+        // audioSource.clip = roarSound;
+        // audioSource.Play();
         audioSource.PlayOneShot(roarSound);
     }
     private IEnumerator PlayBreatheSound()
@@ -106,7 +97,9 @@ public class DogSoundController : MonoBehaviour
             if (particleSystem != null)
             {
                 particleSystem.Play();
-                audioSource.PlayOneShot(stepSound);
+                //audioSource.clip = stepSound;
+                //audioSource.Play();
+                //audioSource.PlayOneShot(stepSound);
             }
             Destroy(effectInstance, 2f);
         }

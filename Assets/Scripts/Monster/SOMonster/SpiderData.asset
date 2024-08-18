@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae6e4d142b77a1c4da2452ec1932ee8f, type: 3}
   m_Name: SpiderData
   m_EditorClassIdentifier: 
-  _monsterName: 
+  _monsterName: BunkerSpider
   _maxHp: 5
   _curHp: 5
   _damage: 40

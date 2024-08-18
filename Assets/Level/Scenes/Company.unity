@@ -801,6 +801,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3147696354637287162, guid: 9a495ea74db2ef144a6fb2517197dd9f, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147696354637287162, guid: 9a495ea74db2ef144a6fb2517197dd9f, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147696354637287162, guid: 9a495ea74db2ef144a6fb2517197dd9f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147696354637287162, guid: 9a495ea74db2ef144a6fb2517197dd9f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147696354637287162, guid: 9a495ea74db2ef144a6fb2517197dd9f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147696354637287162, guid: 9a495ea74db2ef144a6fb2517197dd9f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147696354637287162, guid: 9a495ea74db2ef144a6fb2517197dd9f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6216816239449773898, guid: 9a495ea74db2ef144a6fb2517197dd9f, type: 3}
       propertyPath: m_Name
       value: ItemMSG
@@ -2023,7 +2051,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 7077d958390677b49822cf159dd4f812, type: 3}
   m_Resource: {fileID: 8300000, guid: 7077d958390677b49822cf159dd4f812, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.506
   m_Pitch: 1
   Loop: 0
   Mute: 0
