@@ -6126,70 +6126,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2121569849744677893, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2121569849744677893, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2121569849744677893, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2121569849744677893, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 2121569849744677893, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 2121569849744677893, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 140
-      objectReference: {fileID: 0}
-    - target: {fileID: 2275790080702254342, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 2628235392170974561, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2628235392170974561, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2628235392170974561, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2628235392170974561, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 2628235392170974561, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 2628235392170974561, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 140
-      objectReference: {fileID: 0}
-    - target: {fileID: 2649268462542870069, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: m_Alpha
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5763812321281208768, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
       propertyPath: m_Name
       value: Canvas - Timer
       objectReference: {fileID: 0}
-    - target: {fileID: 6384246887372185760, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
-      propertyPath: canvasGroup
-      value: 
-      objectReference: {fileID: 1685350496}
     - target: {fileID: 6384246887372185760, guid: 6dd07bbba9f65144685d899c4e521c14, type: 3}
       propertyPath: skyboxController
       value: 
