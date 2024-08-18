@@ -199,3 +199,4 @@ MonoBehaviour:
   dropItemSound: {fileID: 0}
   scanSound: {fileID: 0}
   hitShovel: {fileID: 0}
+  playerDamaged: {fileID: 8300000, guid: 67b91d4b381c2c749b96081d55670ee7, type: 3}

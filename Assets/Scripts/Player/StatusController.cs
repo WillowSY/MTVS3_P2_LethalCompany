@@ -37,6 +37,7 @@ public class StatusController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         playerHp -= damage;
+        Debug.Log("데미지 입음");
     }
 
     private void PlayerHPUpdata()
